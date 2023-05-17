@@ -2139,7 +2139,7 @@
             <span>|</span>
             <a href="https://idus.kr/ialAD" target="blank">입점문의</a>
             <span>|</span>
-            <a class="m-show" href="https://team.idus.com" target="blank">About idus</a>
+            <a class="m-show" href="https://team.idus.com" target="blank">About beans_mall</a>
             <span>|</span>
             <a href="https://team.idus.com/join-idus" target="blank">인재 영입</a>
         </nav>
