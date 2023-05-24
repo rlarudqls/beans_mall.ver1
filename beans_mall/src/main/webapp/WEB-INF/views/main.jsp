@@ -87,7 +87,7 @@
     {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "name": "아이디어스",
+        "name": "빈스몰",
         "url": "https://www.idus.com",
         "potentialAction": {
             "@type": "SearchAction",
@@ -222,7 +222,7 @@
                 </div>
                 <a id="gnb-login-button" href="/member/login">로그인</a>
               
-                <a href="/w/join" class="nav-btn" data-log-object="member_join">회원가입</a>
+                <a href="/member/login" class="nav-btn" data-log-object="member_join">회원가입</a>
 
                 
                 <div class="nav-btn ui-dropdown">
