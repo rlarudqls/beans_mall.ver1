@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>핸드폰 케이스 쇼핑몰</title>
 <link rel="stylesheet" href="/resources/css/member/login.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 	
 	<div class="wrap">
 		<div class="logo_wrap">
-			<span>Book Mall</span>
+			<span>Bean's Mall</span>
 		</div>
 		<div class="login_wrap"> 
 			<div class="id_wrap">

@@ -222,7 +222,7 @@
                 </div>
                 <a id="gnb-login-button" href="/member/login">로그인</a>
               
-                <a href="/member/login" class="nav-btn" data-log-object="member_join">회원가입</a>
+                <a href="/member/join" class="nav-btn" data-log-object="member_join">회원가입</a>
 
                 
                 <div class="nav-btn ui-dropdown">
