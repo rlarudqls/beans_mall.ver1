@@ -215,11 +215,12 @@
                 <div class="nav-btn ui-dropdown">
                     <button type="button" class="btn-dropdown">관리자 로그인</button>
                     <ul class="menu-dropdown">
-                        <li><a href="/w/board/notice">김경빈만</a></li>
-                        <li><a href="/w/board/faq">이용할수</a></li>
-                        <li><a href="mailto:support@backpac.kr">있습니다.</a></li>
+                        <li><a href="/admin/main">김경빈만</a></li>
+                        <li><a href="/admin/main">이용할수</a></li>
+                        <li><a href="/admin/main">있습니다.</a></li>
                     </ul>
                 </div>
+               
                 <a id="gnb-login-button" href="/member/login">로그인</a>
               
                 <a href="/member/join" class="nav-btn" data-log-object="member_join">회원가입</a>
@@ -228,9 +229,9 @@
                 <div class="nav-btn ui-dropdown">
                     <button type="button" class="btn-dropdown">고객센터</button>
                     <ul class="menu-dropdown">
-                        <li><a href="/w/board/notice">공지사항</a></li>
-                        <li><a href="/w/board/faq">자주 묻는 질문</a></li>
-                        <li><a href="mailto:support@backpac.kr">메일로 문의</a></li>
+                        <li><a href="/notice/notice">공지사항</a></li>
+                        <li><a href="/notice/inquire">자주 묻는 질문</a></li>
+                        <li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
                     </ul>
                 </div>
             </nav>

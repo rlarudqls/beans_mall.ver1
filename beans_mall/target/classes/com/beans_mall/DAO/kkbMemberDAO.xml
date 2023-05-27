@@ -5,21 +5,19 @@
   <mapper namespace="com.beans_mall.DAO.kkbMemberDAO">
   
   	<insert id="memberJoin">
-  		insert into book_member values(#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberAddr1}, #{memberAddr2}, #{memberAddr3}, 0, now(), 100000, 5000 )
+  		insert into beans_mall_member values(#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberAddr1}, #{memberAddr2}, #{memberAddr3}, 0, now(), 100000, 5000 )
 
   	</insert>
   	<!-- 아이디 중복검사 -->
   	<select id="idCheck" resultType="int">
   	
-  		select count(*) from book_member where memberId = #{memberId}
+  		select count(*) from beans_mall_member where memberId = #{memberId}
   	
   	</select>
   	
   	<!-- 로그인 -->
-      <select id="memberLogin" resultType="com.kkb.model.MemberVO">
+      <select id="memberLogin" resultType="com.beans_mall.VO.MemberVO">
       
- 		  select memberId, memberPw, memberName, adminck, money, point from book_member where memberId = #{memberId}
-          <!-- 기존코드 -->
-          <!-- select memberId, memberName, adminck, money, point from book_member where memberId = #{memberId} and memberPw = #{memberPw} -->      
-      </select>
+ 		  select memberId, memberPw, memberName, adminck, money, point from beans_mall_member where memberId = #{memberId}
+         </select>
   </mapper>
