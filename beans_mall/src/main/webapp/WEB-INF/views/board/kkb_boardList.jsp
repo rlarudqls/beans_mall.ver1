@@ -58,6 +58,12 @@
             color: #666;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var mainLink = document.getElementById("main-link");
+            mainLink.href = "/main";
+        });
+    </script>
 </head>
 <body>
     <h1>빈스몰 Q&A 게시판</h1>
@@ -90,5 +96,8 @@
     </div>
 
     <a class="create-link" href="/board/create">글쓰기</a>
+    <div class="main-link-wrapper">
+            <a href="/main" class="main-link">[메인으로]</a>
+        </div>
 </body>
 </html>

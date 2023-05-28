@@ -143,7 +143,7 @@ footer {
     <img src="/resources/img/kkbPetWalking.png" alt="상품3">
     <h3>반려동물과 산책</h3>
     <p>Bean's petWalking</p>
-    <button>더 알아보기</button>
+<button onclick="location.href='https://github.com/rlarudqls/petWalking'">더 알아보기</button>
   </div>
 </section>
 

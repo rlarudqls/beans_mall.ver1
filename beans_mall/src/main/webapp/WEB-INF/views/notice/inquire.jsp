@@ -35,7 +35,12 @@ margin-bottom: 0;
 color: #777;
 }
 </style>
-
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var mainLink = document.getElementById("main-link");
+            mainLink.href = "/main";
+        });
+    </script>
 </head>
 <body>
   <div class="container">
@@ -82,6 +87,9 @@ color: #777;
         <p>답변: 네, 케이스 구매 후에도 고객센터를 통해 서비스나 지원을 받을 수 있습니다. 제품에 문제가 있거나 궁금한 사항이 있을 경우 언제든 문의해 주세요.</p>
       </li>
     </ul>
+    <div class="main-link-wrapper">
+            <a href="/main" class="main-link">[메인으로]</a>
+        </div>
   </div>
 </body>
 </html>

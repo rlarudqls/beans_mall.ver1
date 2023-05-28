@@ -33,10 +33,10 @@
         <!-- project src -->
         <link rel="icon" href="/kkblogo.ico" />
 
-<link rel="stylesheet" href="resources/css/main.css">
-<link rel="stylesheet" href="resources/css/main1.css">
-<link rel="stylesheet" href="resources/css/main2.css">
-<link rel="stylesheet" href="resources/css/main3.css">
+<link rel="stylesheet" href="/resources/css/main.css">
+<link rel="stylesheet" href="/resources/css/main1.css">
+<link rel="stylesheet" href="/resources/css/main2.css">
+<link rel="stylesheet" href="/resources/css/main3.css">
 <script src="https://cdn.idus.kr/www/73840b1fad129bc627d28db19bb984ff64572f7c/resources/dist/js/vendor.client.min.js"></script>
 <script src="https://cdn.idus.kr/www/73840b1fad129bc627d28db19bb984ff64572f7c/resources/dist/js/vuepack.bundle.js"></script>
 <script src="https://cdn.idus.kr/www/73840b1fad129bc627d28db19bb984ff64572f7c/resources/dist/js/vuepack.js"></script>
@@ -248,20 +248,23 @@
                 <a href="/" class="active">작품</a>
                 <a href="/oc" class="">김경빈 블로그 보러가기</a>
             </nav>
-            <div class="main-search">
-                <form class="gnb-search-form">
-                    <input id="header-search"
-                        type="text"
-                        autocomplete="off"
-                        placeholder="김경빈의 생일날을 검색해보세요 "
-                    >
-                    <label class="searchLabel">
-                        <button type="submit" name="search">
-                            <i class="idus-icon-search"></i>
-                        </button>
-                    </label>
-                </form>
-            </div>
+        <div class="main-search">
+    <form class="naver-shopping-form" action="https://search.shopping.naver.com/search" method="GET">
+        <input id="header-search" type="text" autocomplete="off" name="query" value="가방" placeholder="검색어를 입력하세요">
+        <input type="hidden" name="channel" value="user">
+        <label class="searchLabel">
+            <button type="submit" name="btq" value="all">
+                <i class="naver-icon-search"></i>
+            </button>
+        </label>
+       
+    </form>
+</div>
+
+
+
+
+
 
             <nav class="profile-links">
                 <a href="/w/me" class="btn">
@@ -286,175 +289,175 @@
                                         <div class="ui_gnb__submenu">
                                                 <ul>
                                                         <li>
-                                <a href="/w/main/category/5c6bc7d4-7760-4702-b63f-7f29eca479e3" data-log-label="product_category" data-log-object="5c6bc7d4-7760-4702-b63f-7f29eca479e3">디저트/베이커리</a>
+                                <a href="/category/Dessert" data-log-label="product_category" data-log-object="5c6bc7d4-7760-4702-b63f-7f29eca479e3">디저트/베이커리</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/613ac4c3-df73-4a0f-b3dd-362849dabb2a" data-log-label="product_category" data-log-object="613ac4c3-df73-4a0f-b3dd-362849dabb2a">음료</a>
+                                <a href="/category/Beverage" data-log-label="product_category" data-log-object="613ac4c3-df73-4a0f-b3dd-362849dabb2a">음료</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/fa340e0b-f4b1-4aba-8d9c-a29086d5a8a4" data-log-label="product_category" data-log-object="fa340e0b-f4b1-4aba-8d9c-a29086d5a8a4">전통주</a>
+                                <a href="/category/traditional_liquor" data-log-label="product_category" data-log-object="fa340e0b-f4b1-4aba-8d9c-a29086d5a8a4">전통주</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/b3f853b9-333d-4eec-ad04-e4604d9d501b" data-log-label="product_category" data-log-object="b3f853b9-333d-4eec-ad04-e4604d9d501b">수제 반찬</a>
+                                <a href="/category/Handmade_side_dishes" data-log-label="product_category" data-log-object="b3f853b9-333d-4eec-ad04-e4604d9d501b">수제 반찬</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/8daa0fc3-d370-46c5-a58b-9a0c71a6ae08" data-log-label="product_category" data-log-object="8daa0fc3-d370-46c5-a58b-9a0c71a6ae08">수제 먹거리</a>
+                                <a href="/category/Handmade_food" data-log-label="product_category" data-log-object="8daa0fc3-d370-46c5-a58b-9a0c71a6ae08">수제 먹거리</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/4a8cbc36-3af8-4b75-af01-8795782df80d" data-log-label="product_category" data-log-object="4a8cbc36-3af8-4b75-af01-8795782df80d">농축수산물</a>
+                                <a href="/category/Agricultural_and_fishery" data-log-label="product_category" data-log-object="4a8cbc36-3af8-4b75-af01-8795782df80d">농축수산물</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/d9e8a56d-ae4c-4020-b043-9417fe26fbec" data-log-label="product_category" data-log-object="d9e8a56d-ae4c-4020-b043-9417fe26fbec">의류/홈웨어</a>
+                                <a href="/category/Clothing" data-log-label="product_category" data-log-object="d9e8a56d-ae4c-4020-b043-9417fe26fbec">의류/홈웨어</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/1616d42d-ea77-11e4-88d5-06530c0000b4" data-log-label="product_category" data-log-object="1616d42d-ea77-11e4-88d5-06530c0000b4">패션잡화</a>
+                                <a href="/category/fashion_miscellaneous_goods" data-log-label="product_category" data-log-object="1616d42d-ea77-11e4-88d5-06530c0000b4">패션잡화</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/a9970f75-ea75-11e4-8a46-06fd000000c2" data-log-label="product_category" data-log-object="a9970f75-ea75-11e4-8a46-06fd000000c2">지갑</a>
+                                <a href="/category/Wallet" data-log-label="product_category" data-log-object="a9970f75-ea75-11e4-8a46-06fd000000c2">지갑</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/bc5f4be5-c6bc-11e3-8b03-06fd000000c2" data-log-label="product_category" data-log-object="bc5f4be5-c6bc-11e3-8b03-06fd000000c2">가방/파우치</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                    </ul>
-                                                <ul>
-                                                        <li>
-                                <a href="/w/main/category/bc6a17ba-ea75-11e4-8878-06a6fa0000b9" data-log-label="product_category" data-log-object="bc6a17ba-ea75-11e4-8878-06a6fa0000b9">시계</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/8b4bf95d-c6bc-11e3-8577-06f4fe0000b5" data-log-label="product_category" data-log-object="8b4bf95d-c6bc-11e3-8577-06f4fe0000b5">홈 패브릭</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/1fc3c71a-88d6-4333-a09e-178e85bb742f" data-log-label="product_category" data-log-object="1fc3c71a-88d6-4333-a09e-178e85bb742f">남성신발/수제화</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/65477a55-7f4f-4a0f-9b05-dcaa271a8385" data-log-label="product_category" data-log-object="65477a55-7f4f-4a0f-9b05-dcaa271a8385">여성신발/수제화</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/0556009b-f9c6-11e3-8363-06fd000000c2" data-log-label="product_category" data-log-object="0556009b-f9c6-11e3-8363-06fd000000c2">육아/아동</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/387867a4-0da4-11e4-873e-06f4fe0000b5" data-log-label="product_category" data-log-object="387867a4-0da4-11e4-873e-06f4fe0000b5">반지</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/ac599662-0cdf-11e4-85f1-06fd000000c2" data-log-label="product_category" data-log-object="ac599662-0cdf-11e4-85f1-06fd000000c2">귀걸이</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/aef50134-0cdf-11e4-8182-06530c0000b4" data-log-label="product_category" data-log-object="aef50134-0cdf-11e4-8182-06530c0000b4">목걸이</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/b12b42eb-0cdf-11e4-85f1-06fd000000c2" data-log-label="product_category" data-log-object="b12b42eb-0cdf-11e4-85f1-06fd000000c2">팔찌</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/f0475fb1-c6bb-11e3-954e-06a6fa0000b9" data-log-label="product_category" data-log-object="f0475fb1-c6bb-11e3-954e-06a6fa0000b9">기타 액세서리</a>
+                                <a href="/category/Bags" data-log-label="product_category" data-log-object="bc5f4be5-c6bc-11e3-8b03-06fd000000c2">가방/파우치</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                     </ul>
                                                 <ul>
                                                         <li>
-                                <a href="/w/main/category/bec56c93-ea75-11e4-8a46-06fd000000c2" data-log-label="product_category" data-log-object="bec56c93-ea75-11e4-8a46-06fd000000c2">꽃/식물</a>
+                                <a href="/category/Clock" data-log-label="product_category" data-log-object="bc6a17ba-ea75-11e4-8878-06a6fa0000b9">시계</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/976cfb97-c6bc-11e3-83fc-06530c0000b4" data-log-label="product_category" data-log-object="976cfb97-c6bc-11e3-83fc-06530c0000b4">캔들/디퓨저</a>
+                                <a href="/category/Home_Fabric" data-log-label="product_category" data-log-object="8b4bf95d-c6bc-11e3-8577-06f4fe0000b5">홈 패브릭</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/66299878-c6bc-11e3-8577-06f4fe0000b5" data-log-label="product_category" data-log-object="66299878-c6bc-11e3-8577-06f4fe0000b5">홈인테리어</a>
+                                <a href="/category/men_shoes" data-log-label="product_category" data-log-object="1fc3c71a-88d6-4333-a09e-178e85bb742f">남성신발/수제화</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/c5010d79-e666-11e3-9874-06fd000000c2" data-log-label="product_category" data-log-object="c5010d79-e666-11e3-9874-06fd000000c2">도자기</a>
+                                <a href="/category/women_shoes" data-log-label="product_category" data-log-object="65477a55-7f4f-4a0f-9b05-dcaa271a8385">여성신발/수제화</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/30b3ae0f-c6bc-11e3-8577-06f4fe0000b5" data-log-label="product_category" data-log-object="30b3ae0f-c6bc-11e3-8577-06f4fe0000b5">주방/생활</a>
+                                <a href="/category/Child" data-log-label="product_category" data-log-object="0556009b-f9c6-11e3-8363-06fd000000c2">육아/아동</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/e866743b-0a33-4030-80c1-3a1ec943b0e4" data-log-label="product_category" data-log-object="e866743b-0a33-4030-80c1-3a1ec943b0e4">가구</a>
+                                <a href="/category/A_ring" data-log-label="product_category" data-log-object="387867a4-0da4-11e4-873e-06f4fe0000b5">반지</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/fa8c9d8e-c6bb-11e3-8577-06f4fe0000b5" data-log-label="product_category" data-log-object="fa8c9d8e-c6bb-11e3-8577-06f4fe0000b5">인형/장난감</a>
+                                <a href="/category/Earrings" data-log-label="product_category" data-log-object="ac599662-0cdf-11e4-85f1-06fd000000c2">귀걸이</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/f6335574-c6bb-11e3-83fc-06530c0000b4" data-log-label="product_category" data-log-object="f6335574-c6bb-11e3-83fc-06530c0000b4">반려용품/간식</a>
+                                <a href="/category/Necklace" data-log-label="product_category" data-log-object="aef50134-0cdf-11e4-8182-06530c0000b4">목걸이</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/002e6aef-c6bc-11e3-8b03-06fd000000c2" data-log-label="product_category" data-log-object="002e6aef-c6bc-11e3-8b03-06fd000000c2">파인아트</a>
+                                <a href="/category/Bracelet" data-log-label="product_category" data-log-object="b12b42eb-0cdf-11e4-85f1-06fd000000c2">팔찌</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                         <li>
-                                <a href="/w/main/category/9f4b9a69-c6bc-11e3-954e-06a6fa0000b9" data-log-label="product_category" data-log-object="9f4b9a69-c6bc-11e3-954e-06a6fa0000b9">공예</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                    </ul>
-                                                <ul>
-                                                        <li>
-                                <a href="/w/main/category/b3b31a1b-ea75-11e4-8a46-06fd000000c2" data-log-label="product_category" data-log-object="b3b31a1b-ea75-11e4-8a46-06fd000000c2">폰케이스</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/a923ab08-0643-11e4-98ba-06f4fe0000b5" data-log-label="product_category" data-log-object="a923ab08-0643-11e4-98ba-06f4fe0000b5">디지털 액세서리</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/b00844bc-c6bc-11e3-8577-06f4fe0000b5" data-log-label="product_category" data-log-object="b00844bc-c6bc-11e3-8577-06f4fe0000b5">문구/팬시</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/e3ba45b3-c165-11e3-8788-06fd000000c2" data-log-label="product_category" data-log-object="e3ba45b3-c165-11e3-8788-06fd000000c2">페인팅/캐리커쳐</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/1941c7fe-06f6-4e4f-b54d-ea9bdd9b6c30" data-log-label="product_category" data-log-object="1941c7fe-06f6-4e4f-b54d-ea9bdd9b6c30">차량용품</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/8ce1f0e9-0c96-41b4-9b19-cae4dd202a05" data-log-label="product_category" data-log-object="8ce1f0e9-0c96-41b4-9b19-cae4dd202a05">도서</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/869abe46-d8d5-4eed-bc6f-7a0359d9b5b6" data-log-label="product_category" data-log-object="869abe46-d8d5-4eed-bc6f-7a0359d9b5b6">향수</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/c468e7db-ea75-11e4-b903-06f4fe0000b5" data-log-label="product_category" data-log-object="c468e7db-ea75-11e4-b903-06f4fe0000b5">뷰티</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/6b1313ff-dc5b-463c-b0a8-0c0e1fb0f5fb" data-log-label="product_category" data-log-object="6b1313ff-dc5b-463c-b0a8-0c0e1fb0f5fb">헤어/바디</a>
-                                <i class="idus-icon-arrow-right"></i>
-                            </li>
-                                                        <li>
-                                <a href="/w/main/category/be3cf842-ea74-11e4-8878-06a6fa0000b9" data-log-label="product_category" data-log-object="be3cf842-ea74-11e4-8878-06a6fa0000b9">수제비누/클렌징</a>
+                                <a href="/category/Accessories" data-log-label="product_category" data-log-object="f0475fb1-c6bb-11e3-954e-06a6fa0000b9">기타 액세서리</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                     </ul>
                                                 <ul>
                                                         <li>
-                                <a href="/w/main/category/4094e656-c6bf-11e3-83fc-06530c0000b4" data-log-label="product_category" data-log-object="4094e656-c6bf-11e3-83fc-06530c0000b4">용돈이벤트/기타</a>
+                                <a href="/category/flower" data-log-label="product_category" data-log-object="bec56c93-ea75-11e4-8a46-06fd000000c2">꽃/식물</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Candle" data-log-label="product_category" data-log-object="976cfb97-c6bc-11e3-83fc-06530c0000b4">캔들/디퓨저</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Home_interior" data-log-label="product_category" data-log-object="66299878-c6bc-11e3-8577-06f4fe0000b5">홈인테리어</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Pottery" data-log-label="product_category" data-log-object="c5010d79-e666-11e3-9874-06fd000000c2">도자기</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Kitchen" data-log-label="product_category" data-log-object="30b3ae0f-c6bc-11e3-8577-06f4fe0000b5">주방/생활</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/furniture" data-log-label="product_category" data-log-object="e866743b-0a33-4030-80c1-3a1ec943b0e4">가구</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Toy" data-log-label="product_category" data-log-object="fa8c9d8e-c6bb-11e3-8577-06f4fe0000b5">인형/장난감</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/companion_goods" data-log-label="product_category" data-log-object="f6335574-c6bb-11e3-83fc-06530c0000b4">반려용품/간식</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Fine_art" data-log-label="product_category" data-log-object="002e6aef-c6bc-11e3-8b03-06fd000000c2">파인아트</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Craft" data-log-label="product_category" data-log-object="9f4b9a69-c6bc-11e3-954e-06a6fa0000b9">공예</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                    </ul>
+                                                <ul>
+                                                        <li>
+                                <a href="/main" data-log-label="product_category" data-log-object="b3b31a1b-ea75-11e4-8a46-06fd000000c2">폰케이스</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Digital_Accessories" data-log-label="product_category" data-log-object="a923ab08-0643-11e4-98ba-06f4fe0000b5">디지털 액세서리</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Phrase" data-log-label="product_category" data-log-object="b00844bc-c6bc-11e3-8577-06f4fe0000b5">문구/팬시</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/caricature" data-log-label="product_category" data-log-object="e3ba45b3-c165-11e3-8788-06fd000000c2">페인팅/캐리커쳐</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Vehicle_Supplies" data-log-label="product_category" data-log-object="1941c7fe-06f6-4e4f-b54d-ea9bdd9b6c30">차량용품</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Books" data-log-label="product_category" data-log-object="8ce1f0e9-0c96-41b4-9b19-cae4dd202a05">도서</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Perfume" data-log-label="product_category" data-log-object="869abe46-d8d5-4eed-bc6f-7a0359d9b5b6">향수</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Beauty" data-log-label="product_category" data-log-object="c468e7db-ea75-11e4-b903-06f4fe0000b5">뷰티</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Hair" data-log-label="product_category" data-log-object="6b1313ff-dc5b-463c-b0a8-0c0e1fb0f5fb">헤어/바디</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                        <li>
+                                <a href="/category/Handmade_soap" data-log-label="product_category" data-log-object="be3cf842-ea74-11e4-8878-06a6fa0000b9">수제비누/클렌징</a>
+                                <i class="idus-icon-arrow-right"></i>
+                            </li>
+                                                    </ul>
+                                                <ul>
+                                                        <li>
+                                <a href="/category/Allowance_event" data-log-label="product_category" data-log-object="4094e656-c6bf-11e3-83fc-06530c0000b4">용돈이벤트/기타</a>
                                 <i class="idus-icon-arrow-right"></i>
                             </li>
                                                     </ul>
@@ -470,13 +473,13 @@
                     <a href="/w/review">실시간 후기</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
-                    <a href="/w/main/recommend-artist-product">작가님 추천</a>
+                    <a href="/category/A_ring">판매자 추천</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
                     <a href="/w/main/live-recommend-product">실시간 추천</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
-                    <a href="/w/main/popular-category">인기 작품</a>
+                    <a href="/category/A_ring">인기 작품</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
                     <a href="/w/story">작가 피드</a>
@@ -488,7 +491,7 @@
                     <a href="/w/main/new-product">최신 작품</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
-                    <a href="/w/main/artist">인기작가</a>
+                    <a href="https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923">인기작가</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
                     <a href="https://www.idus.com/w/event/regular/ad764b9b-9f5c-4fa1-bfcb-f68f8639d4d4">소담상회</a>
@@ -517,7 +520,7 @@
             data-log-object="class"
         >
             <i class="idus-icon-class"></i>
-            클래스
+            룰렛
         </a>
         <a href="#">
             <i class="idus-icon-search"></i>
@@ -2174,7 +2177,7 @@
 
         <div class="text-box fl">
             <strong>고객센터</strong>
-            <span style="display: inline-block; margin-top: 2px;">(평일 오전 10시 ~ 오후 6시)</span>
+            <span style="display: inline-blk; margin-top: 2px;">(평일 오전 10시 ~ 오후 6시)</span>
             <ul>
                 <li>
                     <span class="fix-w">카카오톡</span>

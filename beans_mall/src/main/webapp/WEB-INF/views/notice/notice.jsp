@@ -5,6 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>공지사항</title>
+          <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var mainLink = document.getElementById("main-link");
+            mainLink.href = "/main";
+        });
+    </script>
     <link rel="stylesheet" type="text/css" href="/resources/css/notice/notice.css">
 </head>
 <body>
@@ -109,6 +115,9 @@
         기프트 카드 구매와 관련된 자세한 내용은 이벤트 페이지에서 확인해주세요.
     </div>
 </div>
+<div class="main-link-wrapper">
+            <a href="/main" class="main-link">[메인으로]</a>
+        </div>
 
         </div>
     </div>
