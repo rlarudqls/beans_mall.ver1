@@ -494,7 +494,8 @@
                     <a href="https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923">인기작가</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
-                    <a href="https://www.idus.com/w/event/regular/ad764b9b-9f5c-4fa1-bfcb-f68f8639d4d4">소담상회</a>
+                    <a href="${pageContext.request.contextPath}/play-tetris">게임경품이벤트</a>
+
                 </li>
                                 <li class="ui_gnb__menu " data-state="active">
                     <a href="/w/main/category">카테고리</a>
