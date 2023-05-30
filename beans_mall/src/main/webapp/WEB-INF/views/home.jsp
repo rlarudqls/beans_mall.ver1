@@ -131,13 +131,13 @@ footer {
     <img src="/resources/img/kkblogo.png" alt="상품1">
     <h3>쇼핑몰</h3>
     <p>Bean's Mall</p>
-    <button>더 알아보기</button>
+<button onclick="location.href='https://github.com/rlarudqls/kkbmall'">더 알아보기</button>
   </div>
   <div class="product">
     <img src="/resources/img/kkbERP_logo.png" alt="상품2">
     <h3>ERP</h3>
     <p>Bean's ERP</p>
-    <button>더 알아보기</button>
+<button onclick="location.href='https://github.com/rlarudqls/kkbERP'">더 알아보기</button>
   </div>
   <div class="product">
     <img src="/resources/img/kkbPetWalking.png" alt="상품3">
