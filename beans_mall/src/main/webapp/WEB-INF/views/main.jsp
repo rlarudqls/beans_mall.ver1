@@ -482,20 +482,19 @@
                     <a href="/category/A_ring">인기 작품</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
-                    <a href="/w/story">작가 피드</a>
-                </li>
-                                <li class="ui_gnb__menu " data-state="">
-                    <a href="/w/main/magazine">매거진</a>
+                    <a href="/w/story">시즌할인</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
                     <a href="/w/main/new-product">최신 작품</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
-                    <a href="https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923">인기작가</a>
+                    <a href="https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923">인기판매자</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
                     <a href="${pageContext.request.contextPath}/play-tetris">게임경품이벤트</a>
-
+                </li>
+                <li class="ui_gnb__menu " data-state="">
+                    <a href="/w/main/magazine">나만의 DIY</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="active">
                     <a href="/w/main/category">카테고리</a>
@@ -650,7 +649,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         새봄마켓                    </div>
                     <!-- 제목 -->
@@ -708,7 +707,7 @@
                             <div class="review-comment__contents">너무 이뻐요 최고예요 정면사진 많이 찍어서 또 주문할께요♡♡
 기본사이즈도 좋은데 왕그립톡이 진짜 맘에 듭니다
 
-작가님 감하해요♡♡</div>
+판매자님 감하해요♡♡</div>
                         </div>
                                             </div>
                                     </div>
@@ -727,7 +726,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         리지스토어                    </div>
                     <!-- 제목 -->
@@ -799,7 +798,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         핫티몰                    </div>
                     <!-- 제목 -->
@@ -874,7 +873,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         소유템 폰케이스( soutem)                    </div>
                     <!-- 제목 -->
@@ -951,7 +950,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         비올레타                    </div>
                     <!-- 제목 -->
@@ -1019,7 +1018,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         윰쓰샵 폰케이스                    </div>
                     <!-- 제목 -->
@@ -1089,7 +1088,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         얀이토리                    </div>
                     <!-- 제목 -->
@@ -1161,7 +1160,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         보나톡 (BONA TOK)                    </div>
                     <!-- 제목 -->
@@ -1233,7 +1232,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         컴바이유 폰케이스                    </div>
                     <!-- 제목 -->
@@ -1307,7 +1306,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         미소랜드                    </div>
                     <!-- 제목 -->
@@ -1375,7 +1374,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         소유템 폰케이스( soutem)                    </div>
                     <!-- 제목 -->
@@ -1428,7 +1427,7 @@
                         </div>
                                                 <div class="review-comment">
                             <div class="review-comment__badge">후기</div>
-                            <div class="review-comment__contents">너어어무 이쁘구 너어어무 저렴하구 가성비 좋고 퀄리티 좋고 작가님 친절하시구❤️ 너무 만족스러운 구매였습니다!!! 기회가된다면 재구매하구 싶네욤!</div>
+                            <div class="review-comment__contents">너어어무 이쁘구 너어어무 저렴하구 가성비 좋고 퀄리티 좋고 판매자님 친절하시구❤️ 너무 만족스러운 구매였습니다!!! 기회가된다면 재구매하구 싶네욤!</div>
                         </div>
                                             </div>
                                     </div>
@@ -1447,7 +1446,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         코지인사이드 COZYINSIDE                    </div>
                     <!-- 제목 -->
@@ -1521,7 +1520,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         일루에이(illu.A)                    </div>
                     <!-- 제목 -->
@@ -1591,7 +1590,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         마인드마이닝                    </div>
                     <!-- 제목 -->
@@ -1665,7 +1664,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         하루빛                    </div>
                     <!-- 제목 -->
@@ -1734,7 +1733,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         잉애링                    </div>
                     <!-- 제목 -->
@@ -1806,7 +1805,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         소유템 폰케이스( soutem)                    </div>
                     <!-- 제목 -->
@@ -1878,7 +1877,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         비올레타                    </div>
                     <!-- 제목 -->
@@ -1947,7 +1946,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         미소랜드                    </div>
                     <!-- 제목 -->
@@ -2016,7 +2015,7 @@
                     </div>
                 </div>
                 <div class="card-info product-info">
-                    <!-- 작가 이름 -->
+                    <!-- 판매자 이름 -->
                     <div class="product-info__artist-name">
                         일루에이(illu.A)                    </div>
                     <!-- 제목 -->
@@ -2097,7 +2096,7 @@
             // recommend
             artistProduct: {
                 items: [{"uuid":"ba0eba2b-1dd2-4039-b6af-2992792c884d","name":"\uc0ac\uacc4\uc808\ud5e4\uc5b4\ud15c\ucd94\ucc9c~\ud83c\udf38\ub7ed\uc154\ub93c~\ubb34\uad11\ube45\ub9ac\ubcf8 \uc62c\ub9bc\ud540\u2764","category_uuid":"f0475fb1-c6bb-11e3-954e-06a6fa0000b9","artist_uuid":"125017cf-4b22-4372-941c-9da0908818c5","artist_name":"\ub7ec\ube14\ub9ac\ub9ac\ubcf8\uc5b8\ub2c8","is_sale":true,"sale_rate":25,"price_origin":14500,"price_sale":10900,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/b66315cd1dcb4ec280d985dedf9b9caf_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":33,"rate":4.9,"rate_label":"4.9","contents":"\ud384\uac10\uc774 \ub290\uaef4\uc9c0\uace0 \ud654\uba74\uacfc \ub2e4\ub978 \uce74\ud0a4\uace8\ub4dc\ub124\uc694\n\uc9d1\uac8c \uc9f1\uc9f1\ud558\ub124\uc694","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79374","ad_id":"79374"},{"uuid":"8a0bc134-c884-45f9-ad1d-87edee25340a","name":"\ubca8\ubcb3 \uc790\uc774\uc5b8\ud2b8\uc580 \uce74\uc138\ud2b8\ubc31 \uc2a4\ubab0\uc0ac\uc774\uc988(\uc544\uc774\ud3f0\uac00\ubc29)\ud83c\udf80","category_uuid":"bc5f4be5-c6bc-11e3-8b03-06fd000000c2","artist_uuid":"3421e80f-1b66-4d69-87f1-e79dee46d2c5","artist_name":"\ub108\ub97c \uc704\ud55c \uacf5\ubc29","is_sale":true,"sale_rate":11,"price_origin":45000,"price_sale":40000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/991c96ba9f68485e886c9497a7f238db_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79373","ad_id":"79373"},{"uuid":"f79ded20-6ffa-47ca-b47f-211137f47898","name":"\u2764\ufe0f4+1\uc785\uc810\ud589\uc0ac\u2764\ufe0f\uace8\ub77c\uba39\ub294 11\uac00\uc9c0 \uc218\uc81c\ub3c8\uae4c\uc2a4\u2764\ufe0f","category_uuid":"8daa0fc3-d370-46c5-a58b-9a0c71a6ae08","artist_uuid":"1767b05e-29c9-4f35-9097-fc689b3b15a1","artist_name":"\uce74\uce20\uc5d0\uc9c4\uc2ec\uc778\uc0ac\ub78c\ub4e4","is_sale":true,"sale_rate":15,"price_origin":3700,"price_sale":3145,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/b16975fa4ad04343a96bf63a510b1d3e_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":26,"rate":5,"rate_label":"5.0","contents":"\ub108\ubb34 \ub9db\uc788\uc5b4\uc694\u314e \uc801\uadf9 \ucd94\ucc9c\ud569\ub2c8\ub2e4\u314e","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79372","ad_id":"79372"},{"uuid":"fced58bf-14b8-4c44-8ce5-07255ed0f604","name":"\uc2dc\ub4e4\uc9c0\uc54a\ub294 \uaf43\ube0c\ub85c\uce58 \ubd80\ubaa8\ub2d8 \uae30\ub150\uc77c \uc120\ubb3c \ucd94\ucc9c","category_uuid":"1616d42d-ea77-11e4-88d5-06530c0000b4","artist_uuid":"cc13d291-ff97-41bf-a0d1-c1e6322bd01a","artist_name":"baekee_more","is_sale":true,"sale_rate":30,"price_origin":53000,"price_sale":37100,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/8b1c0b888e304c78b6c4f8d21d9e2e36_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79371","ad_id":"79371"},{"uuid":"f3b179d4-605a-43b5-8305-8f881f56fc8b","name":"\ud53c\uce58&\uc610\ub85c\uc6b0 \ubbf9\uc2a4 \uc6e8\ub529 \uc870\ud654\ubd80\ucf00 \/ \uc140\ud504\uc6e8\ub529 \ube0c\ub77c\uc774\ub35c","category_uuid":"bec56c93-ea75-11e4-8a46-06fd000000c2","artist_uuid":"e5633d33-3dab-4a11-a6a6-59099de708f2","artist_name":"\ub8f0\ub8e8\ub784\ub77c\ud50c\ub77c\uc6cc\ub79c\ub4dc","is_sale":true,"sale_rate":5,"price_origin":37000,"price_sale":35000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/a7fc1eb0733d4c68b0599a3d69808178_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":1,"rate":5,"rate_label":"5.0","contents":"\uc0ac\uc9c4\uc774\ub791 \ub611\uac19\uc544\uc694! \uc140\ud504\uc6e8\ub529 \uc900\ube44\ud558\ub824\uace0 \uc0ac\uc9c4\uc798\ubc1b\ub294 \ud654\uc0ac\ud55c \ubd80\ucf00 \ucc3e\uc558\ub294\ub370 \uc815\ub9d0 \uc608\uc058\uace0 \ub300\ub9cc\uc871\uc785\ub2c8\ub2e4~ \ud5a5\uae30\ub3c4 \ubfcc\ub824\uc8fc\uc168\ub294\uc9c0 \uaf43\ud5a5\uae30\ub3c4\ub098\uc11c \uc800\ud76c \ub315\ub315\uc774\uac00 \uc9c4\uc9dc\uaf43\uc778\uc904 \uc54c\uc558\ub124\uc694^^\n\uc140\ud504\uc6e8\ub529\ud558\ub294\ubd84\ub4e4\uc5d0\uac8c \uc5ec\uae30\uc800\uae30 \ucd94\ucc9c\ud558\uace0\uc2f6\ub124\uc6a9\u314b\u314b!!","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79370","ad_id":"79370"},{"uuid":"22ba27c1-e029-4665-afb1-77343202b993","name":"\uc870\uc57d\ub3cc \ub3cc\uba69\uc774 \ud551\uac70 \uadf8\ub9bd \uc2a4\ub9c8\ud2b8 \ud1a1 \uc544\uc774\ud3f0 \uac24\ub7ed\uc2dc","category_uuid":"b3b31a1b-ea75-11e4-8a46-06fd000000c2","artist_uuid":"e5d59179-7522-4f15-96bd-28775edc75fa","artist_name":"\uace0\uc694\ubb34\ub4dc","is_sale":false,"sale_rate":0,"price_origin":10900,"price_sale":10900,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/10d14847a5714cdb9a46d2e50f6159fc_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":4,"rate":5,"rate_label":"5.0","contents":"\ub108\ubb34 \ub9c8\uc74c\uc5d0 \ub4ed\ub2c8\ub2e4. \uc2ec\ud50c \uae54\ub054 \ucd5c\uace0\uc785\ub2c8\ub2e4 \ud83d\udc4d\ud83c\udffb","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79369","ad_id":"79369"},{"uuid":"cfb49258-c7a8-4842-88e8-1638690ad43c","name":"\ud83d\ude98 \ucc28\ub7c9\ubc0f \ub2e4\uc6a9\ub3c4 \ubc14\uad6c\ub2c8 (\uacf0\ub3cc\uc774 \uc2dc\ub9ac\uc988)","category_uuid":"bc5f4be5-c6bc-11e3-8b03-06fd000000c2","artist_uuid":"2f639eb1-8e3f-4c66-ae03-a6d85401c539","artist_name":"\ud328\ube0c\ub9ad \uc624\ube0c\uc81d\ud2b8","is_sale":false,"sale_rate":0,"price_origin":15000,"price_sale":15000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/6ba651111bbc496096f4adade1d8b006_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":1,"rate":5,"rate_label":"5.0","contents":"\uc88b\uc740 \uc791\ud488\ub9cc\ub4e4\uc5b4 \uc8fc\uc154\uc11c \uac10\uc0ac\ud569\ub2c8\ub2e4~ ^^ \n\ucc1c\uc744 \uba87\ubc88 \ub20c\ub800\ub2e4 \uc9c0\uc6e0\ub2e4 \uad6c\ub9e4\ud560\uae4c \uace0\ubbfc\ud574\ubcf4\ub2e4\uac00 \uad6c\ub9e4\ud558\uac8c \ub418\uc5c8\ub294\ub370 \uc815\ub9d0 \uad6c\ub9e4\ud558\uae30 \uc798\ud588\ub2e4\ub294 \uc0dd\uac01\uc774 \ub4ed\ub2c8\ub2e4^^\n\uc9c1\uc811 \uad6c\ub9e4\uc790\ub4e4\uc5d0\uac8c \uc190\uae00\uc528\ub85c \uac10\uc0ac\uc758 \uae00\ub3c4 \uc368\uc8fc\uc2dc\uace0 \uaf3c\uaf3c\ud788 \ud3ec\uc7a5\ub3c4 \ud574\uc8fc\uc154\uc11c \uc791\uac00\ub2d8\uc758 \uc815\uc131\uc774 \ub290\uaef4\uc9d1\ub2c8\ub2e4^^\n\uc120\ubb3c\uae4c\uc9c0 \uc8fc\uc154\uc11c \uac10\uc0ac\ud569\ub2c8\ub2e4^^ \ub098\uc911\uc5d0 \ub610 \uad6c\ub9e4\ud558\uaca0\uc2b5\ub2c8\ub2e4^^","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79368","ad_id":"79368"},{"uuid":"62e0248c-6c07-46c1-9986-6e27dcad0ccc","name":"\uc300\ub85c \ub9cc\ub4e0 \ud55c\uc785\uc5d0 \uc3d9 \ubc14\uc2a4\ucf13 \ucfe0\ud0a4\ud83c\udf6a\ud83d\udc9b","category_uuid":"5c6bc7d4-7760-4702-b63f-7f29eca479e3","artist_uuid":"4c14acba-c8af-4f4c-ac26-3d1b4654830f","artist_name":"\ub9c8\ub204\ub514\uc800\ud2b8","is_sale":true,"sale_rate":7,"price_origin":7500,"price_sale":7000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/c5808127e8be496e9ba774007525f1a9_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79367","ad_id":"79367"},{"uuid":"234cce6e-03b1-421f-97f0-98d7de739243","name":"\ube48\ud2f0\uc9c0\uc774\ub2c8\uc15c\ubc31_\ube14\ub799","category_uuid":"bc5f4be5-c6bc-11e3-8b03-06fd000000c2","artist_uuid":"d7509982-a418-4dd6-8ecd-a13603e7616b","artist_name":"\uceec\ub7ec\uba5c\ud305","is_sale":true,"sale_rate":38,"price_origin":32000,"price_sale":19800,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/70400d47f4184f74aa6943dd1c51a6ad_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":1,"rate":5,"rate_label":"5.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79366","ad_id":"79366"},{"uuid":"a2cd5b5e-3cde-408c-9123-83742f21863f","name":"\ud328\ube0c\ub9ad \ud734\ub300\ud3f0\uac00\ubc29","category_uuid":"bc5f4be5-c6bc-11e3-8b03-06fd000000c2","artist_uuid":"2c074121-80a4-48d6-8813-e4eeb8fe84bc","artist_name":"\ub354 \uc720\ub2c8\ud06c","is_sale":false,"sale_rate":0,"price_origin":19000,"price_sale":19000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/8e75896add2149a08fd5bb685ed4ab77_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79365","ad_id":"79365"},{"uuid":"ae6873ab-cde9-4de9-81c0-279cc8989003","name":"\ub9cc\ud0c0\uac00\uc624\ub9ac \ucc45\uac08\ud53c","category_uuid":"b00844bc-c6bc-11e3-8577-06f4fe0000b5","artist_uuid":"1ad25bf6-e744-4b39-8752-563b9de0f123","artist_name":"minswood","is_sale":false,"sale_rate":0,"price_origin":28000,"price_sale":28000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/3e31bf7a160343edb1cd2d4b7439357b_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79364","ad_id":"79364"},{"uuid":"4d2af9c2-a4ad-436d-8c19-949a32720ee0","name":"\uc544\ucf54\ub514\uc5b8 \uce74\ub4dc\uc9c0\uac11Ver.1(4color)","category_uuid":"a9970f75-ea75-11e4-8a46-06fd000000c2","artist_uuid":"c6c6d6c6-8193-4984-8a7c-6099420518b6","artist_name":"\ub2ec\uc2a4\ub808\ub354(Dal's Leather)","is_sale":true,"sale_rate":13,"price_origin":62000,"price_sale":54000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/3618ff9dce1a462a81bd6c46e340e92c_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":39,"rate":5,"rate_label":"5.0","contents":"\ubbfc\ud2b8\uc0c9 \uc368\ubcf4\uace0 \ub108\ubb34 \ud3b8\ud558\uace0 \uc608\ubed0\uc11c \ub3d9\uc0dd \uc120\ubb3c\ub85c \uad6c\ub9e4\ud588\uc2b5\ub2c8\ub2e4! \uc608\uc058\ub2e4\uace0 \ub3d9\uc0dd\ub3c4 \ub9cc\uc871\ud558\ub124\uc694^^ \ud0a4\ub9c1\uc774\ub791 \uac19\uc774 \uad6c\ub9e4\ud588\ub294\ub370 \uc798 \uc5b4\uc6b8\ub9bd\ub2c8\ub2e4. \uad6c\uba4d \ub6ab\uc73c\uc2e4 \ub54c \uc544\uc77c\ub81b\ud540 \uc694\uccad\ud558\uc2dc\uba74 \uc880\ub354 \ud2bc\ud2bc\ud569\ub2c8\ub2e4. \uc0c9\uae54\uc740 \ub538\uae30 \uc6b0\uc720 \ube44\uc2b7\ud558\ub2e4\uace0 \ud558\ub294\ub370 \uc0ac\uc9c4\uc5d4 \uc798 \ubabb \ub2f4\uc558\ub2e4\uace0 \ud569\ub2c8\ub2e4\u3160","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79363","ad_id":"79363"},{"uuid":"1a06dcce-179f-45be-b58a-76edda50f70c","name":"\ub204\ub4dc \ubb34\uc120\ucda9\uc804\uae30 \ubb34\ub4dc\ub4f1","category_uuid":"a923ab08-0643-11e4-98ba-06f4fe0000b5","artist_uuid":"e4018595-4591-492b-84fa-2f1a1b2974ea","artist_name":"(\uc8fc)\uc774\uc5d8\uc0ac\uc774\uc5b8\uc2a4","is_sale":false,"sale_rate":0,"price_origin":25000,"price_sale":25000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/87a74e92c58b4165a7353b64b6bb79b9_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79362","ad_id":"79362"},{"uuid":"d0907efb-bfcd-45ef-8d71-4a03db75a6ce","name":"\uc368\uc9c0\uceec \ud558\ud2b8\uccb4\uc778 \ud0c4\uc0dd\uc11d \ud314\ucc0c \/ \ubc1c\ucc0c","category_uuid":"b12b42eb-0cdf-11e4-85f1-06fd000000c2","artist_uuid":"f5bce6ec-5806-4b4e-adae-8974c978ece7","artist_name":"MinEmade(\ubbf8\ub2c8\uba54\uc774\ub4dc)","is_sale":true,"sale_rate":23,"price_origin":13000,"price_sale":10000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/ff843847136248fdb2facb0fcf2be78e_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":6,"rate":4.8,"rate_label":"4.8","contents":"\ub108\ubb34\uc774\ubed0\uc694~\ub2e8\uc21c\ud574\uc11c\ub354\uc774\ubed0\uc6a9~\ub9ac\ubdf0\uc0c1\ud488\ub3c4 \ub118\uc774\ubed0\uc11c \ub9d8\uc774\ud761\uc871\ud569\ub2c8\ub2e4~","star_one":true},"badges":[],"thumb_badge":{"type":"PRICE_SALE_SHOWROOM","label":"\uae30\ud68d\uc804 \ud560\uc778\uc911","font_color":"#ffffffff","background_color":"#99000000"},"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":\"\uae30\ud68d\uc804 \ud560\uc778\uc911\",\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79361","ad_id":"79361"},{"uuid":"f591ee4c-1346-4bdf-80a8-f125584faeeb","name":"\u2764\ufe0f\ub098\ub9cc\uc758 \uc77c\ub7ec\uc2a4\ud2b8\/\ucee4\ud50c\/\uc6b0\uc815\/\uc778\uc0dd\ub124\ucef7 \uc77c\ub7ec\uc2a4\ud2b8\u2764\ufe0f","category_uuid":"e3ba45b3-c165-11e3-8788-06fd000000c2","artist_uuid":"82b1a1e8-3e63-45b6-969b-aaca2fc41ae0","artist_name":"\uc870\uc138\ud504 dr.","is_sale":true,"sale_rate":40,"price_origin":9000,"price_sale":5400,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/6b2b0fca88c844cb92f538c1dccef8ca_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79360","ad_id":"79360"},{"uuid":"cbfaba00-eb5e-4405-9332-b2897747e65a","name":"\ud3ec\ud130\ub9ac\uc640\uc774 \ub77c\uc6b4\ub4dc \ud654\ubcd1","category_uuid":"9f4b9a69-c6bc-11e3-954e-06a6fa0000b9","artist_uuid":"63f5ec4c-2e92-40e0-af04-8a273a27a069","artist_name":"\ud3ec\ud130\ub9ac\uc640\uc774","is_sale":true,"sale_rate":11,"price_origin":65000,"price_sale":58000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/a553b449fdf548d7a9536d4e8eda095e_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"DELIVERY","label":"\ubb34\ub8cc\ubc30\uc1a1","font_color":"#ff666666","background_color":"#fff5f5f5"},{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"\ubb34\ub8cc\ubc30\uc1a1\",\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79359","ad_id":"79359"},{"uuid":"ad6f4fb3-4117-4bd9-ac29-051f3259605c","name":"\uc218\uad6d \ub9ac\uc2a4 (\ub7ec\ube14\ub9ac \ud551\ud06c, \uccad\uc21c \uc6e8\ub529 \ud654\uc774\ud2b8)","category_uuid":"bec56c93-ea75-11e4-8a46-06fd000000c2","artist_uuid":"99d24962-1bce-4504-af4a-2756ee441243","artist_name":"Floraison U","is_sale":false,"sale_rate":0,"price_origin":35000,"price_sale":35000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/9ae80e92e81f4242b01f6451c7c03101_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79358","ad_id":"79358"},{"uuid":"cc1383c8-05b5-4185-babc-94fdbd2738c8","name":"\u2b50\ubb34\ub8cc\ubc30\uc1a1\u2b50[925\uc2e4\ubc84] \u27641+1\u2764 \ud589\uc6b4\uc758 \ubb3c\uace0\uae30\ubc18\uc9c0","category_uuid":"387867a4-0da4-11e4-873e-06f4fe0000b5","artist_uuid":"98282b6b-59da-44f1-ac2d-b624f6a8b0f5","artist_name":"\uc740\ub2c8\ud06c","is_sale":true,"sale_rate":24,"price_origin":38000,"price_sale":29000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/20fd235193644f39a62f7f80c1b2ab1c_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":7,"rate":5,"rate_label":"5.0","contents":"\uc774\ubaa8\ub791 \uce5c\ucc99\uc5b8\ub2c8\ud55c\ud14c\ub3c4 \uc120\ubb3c\ub85c \uc8fc\ub824\uace0 \uc7ac\uc8fc\ubb38\ud588\ub294\ub370 \uc5ed\uc2dc \ub108\ubb34 \ud3b8\ud558\uace0 \uc608\ubed0\uc6a9\u2661","star_one":true},"badges":[{"type":"DELIVERY","label":"\ubb34\ub8cc\ubc30\uc1a1","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"\ubb34\ub8cc\ubc30\uc1a1\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79357","ad_id":"79357"},{"uuid":"169b6769-c3b7-4af2-8d57-c8065415c054","name":"[\uac00\uc815\uc758\ub2ec]\uc2ec\ud50c\uc7a5\uc9c0\uac11&\uc7a5\uc9c0\uac11&\ud604\uae08\uc9c0\uac11&\uc9c0\ud37c\uc7a5\uc9c0\uac11","category_uuid":"a9970f75-ea75-11e4-8a46-06fd000000c2","artist_uuid":"a05bd486-e1a1-4006-9486-655522ed4a4b","artist_name":"\ub315\ub315\uc774\uc0b0\ucc45","is_sale":true,"sale_rate":8,"price_origin":26000,"price_sale":24000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/7bdf0dfbf7e34daa954a7059311d0c56_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79356","ad_id":"79356"},{"uuid":"14157919-29ba-46e4-af0b-d064b667bebe","name":"\ud83c\udf4b[\uadc0\uac78\uc774\/14k\uace8\ub4dc]  \ub378\ub9ac\ub098","category_uuid":"ac599662-0cdf-11e4-85f1-06fd000000c2","artist_uuid":"e0f0eb04-cd85-437d-a11c-358231692a20","artist_name":"\ub808\ubaac\uc564\ud2f8","is_sale":false,"sale_rate":0,"price_origin":13900,"price_sale":13900,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/c871b140476e4fa9a3dd18e66026a030_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79355","ad_id":"79355"},{"uuid":"208012cb-b74f-4598-85d1-e892f23a5950","name":"\ud83e\ude94\ub77c\ud0c4\uc2a4\ud0e0\ub4dc(\ub0b4\ucd94\ub7f4\ud83e\udd0d\/\ube14\ub799\ud83d\udda4)","category_uuid":"66299878-c6bc-11e3-8577-06f4fe0000b5","artist_uuid":"b3766764-1c76-4124-a7ca-434961f28834","artist_name":"\ub530\uc2a4\uc6c0","is_sale":true,"sale_rate":15,"price_origin":52000,"price_sale":44200,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/d37b0e853cd9449a9c08f24ba176ca59_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":{"type":"PRICE_SALE_SHOWROOM","label":"\uae30\ud68d\uc804 \ud560\uc778\uc911","font_color":"#ffffffff","background_color":"#99000000"},"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":\"\uae30\ud68d\uc804 \ud560\uc778\uc911\",\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79354","ad_id":"79354"},{"uuid":"8bc59af5-2bc5-4fc2-a2d1-85ee489892a8","name":"\ud83d\udc9a\u2764\ufe0f \ud558\ud2f0 \uce74\ub4dc\uc9c0\uac11 \u2764\ufe0f\ud83d\udc9a","category_uuid":"a9970f75-ea75-11e4-8a46-06fd000000c2","artist_uuid":"1738e109-bed2-4367-91bf-bab8a4dd78c7","artist_name":"\ucf54\ubaa8\uc544(KOMOA)","is_sale":false,"sale_rate":0,"price_origin":15000,"price_sale":15000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/afa152f0d3504e3f9964f00707671804_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[{"type":"NEW","label":"NEW","font_color":"#ff666666","background_color":"#fff5f5f5"}],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[\"NEW\"],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79353","ad_id":"79353"},{"uuid":"a0588c2b-5356-4983-b449-33f58826a552","name":"\ub0a0\uce74\uc774\ube0c \ub18d\uad6c\uacf5 \uc778\ud615 \ud0a4\ub9c1","category_uuid":"1616d42d-ea77-11e4-88d5-06530c0000b4","artist_uuid":"f4612b9f-6920-49fe-b932-6caa76d504ca","artist_name":"\ub0a0\uce74\uc774\ube0c","is_sale":false,"sale_rate":0,"price_origin":20000,"price_sale":20000,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/988e22b23769467fbe2592147cd478e8_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":0,"rate":0,"rate_label":"0.0","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79352","ad_id":"79352"},{"uuid":"52260401-2f62-47af-9e7d-45ad55bb30c1","name":"\ud83d\ude0a\uc2a4\ub9c8\uc77c\ud83d\ude0a \ubb34\uc9c0\uac1c\ub864\uc19c\uc0ac\ud0d5","category_uuid":"5c6bc7d4-7760-4702-b63f-7f29eca479e3","artist_uuid":"f99c421e-eab3-4c03-8211-cb7add637dae","artist_name":"\ud5c8\ub2c8\ubbf8\ub2c8 \uc19c\uc0ac\ud0d5","is_sale":false,"sale_rate":0,"price_origin":1100,"price_sale":1100,"thumb_image_url":"https:\/\/image.idus.com\/image\/files\/d8b7b3b3a7c24bb88f3c06dedc1b105b_400.jpg","keyword_ad":false,"sale_status":"ACTIVE","sale_status_label":"","is_favorite":false,"review":{"count":1,"rate":5,"rate_label":"5.0","star_one":true},"badges":[],"thumb_badge":null,"log_property":"{\"product_log\":{\"badge\":[],\"thumb_nail_badge\":null,\"price\":null,\"sale_rate\":null,\"sale_price\":null,\"product_review_rate\":null,\"review_count\":null,\"is_discount_coupon\":false,\"is_review_preview\":false,\"live_pick_ad_id\":null,\"artist_pick_ad_bidding_id\":null},\"unit_log\":{\"is_survey\":false},\"model_product_log\":null,\"model_unit_log\":null}","id":"79351","ad_id":"79351"}],
-                title: "작가님 추천 작품",
+                title: "판매자님 추천 작품",
                 path: "recommend-artist-product"
             },
             liveProduct: {
@@ -2136,9 +2135,9 @@
             <span class="m-show">|</span>
             <a class="m-show"href="/w/board/terms/privacy"><strong>개인정보 처리방침</strong></a>
             <span class="m-show">|</span>
-            <a class="m-show" href="/w/board/notice">공지사항</a>
+            <a class="m-show" href="/notice/notice">공지사항</a>
             <span class="m-show">|</span>
-            <a href="/w/board/faq">자주 묻는 질문</a>
+            <a href="/notice/inquire">자주 묻는 질문</a>
             <span>|</span>
             <a href="/w/board/event">이벤트</a>
             <span>|</span>
