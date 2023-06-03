@@ -205,44 +205,59 @@
             </div>
 
             <nav class="fr">
-                <input type="text"
-                    id="current_user_email"
-                    class="hidden"
-                    name="current_user_email"
-                    value=""
-                    readonly
-                >
-                <div class="nav-btn ui-dropdown">
-                    <button type="button" class="btn-dropdown">관리자 로그인</button>
-                    <ul class="menu-dropdown">
-                        <li><a href="/admin/main">김경빈만</a></li>
-                        <li><a href="/admin/main">이용할수</a></li>
-                        <li><a href="/admin/main">있습니다.</a></li>
-                    </ul>
-                </div>
-               
-                <a id="gnb-login-button" href="/member/login">로그인</a>
-              
-                <a href="/member/join" class="nav-btn" data-log-object="member_join">회원가입</a>
+    <input type="text"
+        id="current_user_email"
+        class="hidden"
+        name="current_user_email"
+        value=""
+        readonly
+    >
+    
+    <div class="nav-btn ui-dropdown">
+        <button type="button" class="btn-dropdown">관리자 로그인</button>
+        <ul class="menu-dropdown">
+            <li><a href="/admin/main">김경빈만</a></li>
+            <li><a href="/admin/main">이용할수</a></li>
+            <li><a href="/admin/main">있습니다.</a></li>
+        </ul>
+    </div>
+    
+    <div class="nav-btn ui-dropdown">
+        <button type="button" class="btn-dropdown">고객센터</button>
+        <ul class="menu-dropdown">
+            <li><a href="/notice/notice">공지사항</a></li>
+            <li><a href="/notice/inquire">자주 묻는 질문</a></li>
+            <li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
+        </ul>
+    </div>
+     <c:if test="${member == null}">
+        <!-- 로그인되지 않은 상태 -->
+        <div class="login_button">
+            <a href="/member/login">로그인   </a> 
+            <a href="/member/join">회원가입</a>
+        </div>
+    </c:if>
 
-                
-                <div class="nav-btn ui-dropdown">
-                    <button type="button" class="btn-dropdown">고객센터</button>
-                    <ul class="menu-dropdown">
-                        <li><a href="/notice/notice">공지사항</a></li>
-                        <li><a href="/notice/inquire">자주 묻는 질문</a></li>
-                        <li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <c:if test="${member != null}">
+        <!-- 로그인된 상태 -->
+        <div class="login_success_area">
+            <span>회원: ${member.memberName}</span>
+            <span>충전금액: <fmt:formatNumber value="${member.money}" pattern="\#,###.##"/></span>
+            <span>포인트: <fmt:formatNumber value="${member.point}" pattern="#,###"/></span>
+            <a href="/member/logout.do">로그아웃</a>
+        </div>
+    </c:if>
+</nav>
         </div>
     </div>
 
-    <div class="bg-wrapper" data-vue="SearchHeader">
-        <div class="inner-w top">
-            <h1 class="logo">
-                <a href="/" class="icon-iduslogo"><img src="resources/img/kkblogo.png" alt="IDUS, Unique Lifestyle Guide" loading="lazy"></a>
-            </h1>
+<div class="bg-wrapper" data-vue="SearchHeader">
+    <div class="inner-w top">
+        <h1 class="logo">
+            <a href="/" class="icon-iduslogo">
+                <img id="logo-image" src="resources/img/kkblogo.png" alt="IDUS, Unique Lifestyle Guide" loading="lazy">
+            </a>
+        </h1>
 
             <nav class="service-nav">
                 <a href="/" class="active">작품</a>
@@ -259,14 +274,7 @@
         </label>
        
     </form>
-</div>
-
-
-
-
-
-
-            <nav class="profile-links">
+</div>  <nav class="profile-links">
                 <a href="/w/me" class="btn">
                     <i class="idus-icon-mypage"></i>
                     내 정보
@@ -279,7 +287,6 @@
             </nav>
         </div>
     </div>
-
         <div class="full-w gnb-scroll " data-ui="gnb-scroll" data-state="static">
         
         <div class="inner-w container_gnb" data-ui="gnb">
@@ -464,7 +471,7 @@
                                             </div>
                                     </li>
                                                 <li class="ui_gnb__menu " data-state="">
-                    <a href="/">홈</a>
+                    <a href="/main">홈</a>
                 </li>
                                 <li class="ui_gnb__menu " data-state="">
                     <a href="/w/main/liver-order-product">실시간 구매</a>
@@ -534,11 +541,10 @@
             카테고리
         </a>
         <a
-            href="/w/me"
+            href="/personal_profile"
             class=""
-            data-log-object="my_page"
+            data-log-object="class"
         >
-            <i class="idus-icon-mypage"></i>
             내 정보
         </a>
         <div data-vue="bottom-nav-message-nudging"></div>
@@ -601,6 +607,7 @@
                 }, true)
             });
             // 알림 모두 보기 로깅
+            
             $('header#header [data-log-noti-object]').on('click', function (event) {
                 var logObject = $(event.currentTarget).data('logNotiObject');
                 Logger.sendClick({
@@ -2109,17 +2116,7 @@
     });
     vuepack.create(vueComponents);
 
-    (function () {
-        var Logger = vuepack.externals.IdusLog.Logger;
-        var PageName = vuepack.externals.IdusLog.PageName;
-        Logger.sendPageView(PageName.ProductList, {
-            property: {
-                product_category_uuid: '1',
-                list_title: '1',
-                sort_type: Logger.getCurrentSortFromQuery(filterList)
-            }
-        })
-    })();
+    
 </script>
 <div data-vue="BottomSheet"></div>
 <div data-vue="WideBottomSheet"></div>
@@ -2305,5 +2302,6 @@ window.addEventListener('DOMContentLoaded', function () {
                 ]);
             });
         </script>
+       
     </body>
 </html>

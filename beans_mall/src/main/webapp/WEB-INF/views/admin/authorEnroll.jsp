@@ -15,8 +15,8 @@
 </head>
 <body>
 
-				<%@include file="../includes/admin/header.jsp" %>
 				
+				<%@include file="../includes/admin/header.jsp" %>
                 <div class="admin_content_wrap">
                     <div class="admin_content_subject"><span>판매자 등록</span></div>
                     <div class="admin_content_main">

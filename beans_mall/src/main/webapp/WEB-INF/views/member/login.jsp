@@ -143,6 +143,7 @@ body {
 
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   /* 로그인 버튼 클릭 메서드 */
   $(".login_button").click(function(){

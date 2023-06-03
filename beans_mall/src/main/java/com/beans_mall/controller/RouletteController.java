@@ -28,4 +28,14 @@ public class RouletteController {
     public String oc() {
         return "oc";
     }
+    
+    @GetMapping("/w/me")
+    public String showMePage() {
+        return "w/me";
+    }
+
+    @GetMapping("/w/cart")
+    public String showMePage2() {
+        return "w/cart";
+    }
 }

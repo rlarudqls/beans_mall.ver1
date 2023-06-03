@@ -9,88 +9,93 @@ a{
 ul{
     list-style: none;
 }
-/* 화면 전체 렙 */
-.wrapper{
+/* 추가한 CSS 코드 */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
     width: 100%;
 }
-/* content 랩 */
-.wrap{
-    width : 1080px;
-    margin: auto;
+
+.wrap {
+    width: 1080px;
+    margin: 0 auto;
 }
-/* 홈페이지 기능 네비 */
+
 .top_gnb_area {
-  width: 100%;
-  height: 50px;
-  background-color: #f0f0f1;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    background-color: #f0f0f1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .top_gnb_area .list {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 
 .top_gnb_area .list li {
-  list-style: none;
-  margin-left: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 16px;
+    list-style: none;
+    margin-left: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .top_gnb_area .list li a {
-  text-decoration: none;
-  color: #333;
-  padding: 8px 10px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .top_gnb_area .list li a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
- 
-/* 관리제 페이지 상단 현페이지 정보 */
-.admin_top_wrap{
-    height:110px;
+.admin_top_wrap {
+    height: 110px;
     line-height: 110px;
     background-color: #5080bd;
-    
 }
-.admin_top_wrap>span{
+
+.admin_top_wrap > span {
     margin-left: 30px;
-    display:inline-block;
+    display: inline-block;
     color: white;
     font-size: 50px;
     font-weight: bolder;
-    margin-bottom : 15px;
+    margin-bottom: 15px;
 }
-/* 관리자 wrap(네비+컨텐츠) */
-.admin_wrap{
-    
-    
+
+.admin_wrap {
+    display: flex;
 }
- 
-/* 관리자페이지 네비 영역 */
-.admin_navi_wrap{
+
+.admin_navi_wrap {
     width: 20%;
-    height: 300px;
-    float:left;
     height: 100%;
+    background-color: #c8c8c8;
 }
-.admin_navi_wrap li{
-    display: block;
+
+.admin_navi_wrap ul {
+    padding: 0;
+}
+
+.admin_navi_wrap ul li {
+    list-style: none;
     height: 80px;
     line-height: 80px;
     text-align: center;
 }
-.admin_navi_wrap li a{
+
+.admin_navi_wrap ul li a {
     display: block;
     height: 100%;
     width: 95%;
@@ -98,95 +103,76 @@ ul{
     cursor: pointer;
     font-size: 30px;
     font-weight: bolder;
+    text-decoration: none;
+    color: #000;
 }
-.admin_navi_wrap li a:link {color: black;}
-.admin_navi_wrap li a:visited {color: black;}
-.admin_navi_wrap li a:active {color: black;}
-.admin_navi_wrap li a:hover {color: black;}
-/* 
-.admin_list_01{
-    background-color: #c8c8c8;
-} */
- 
- 
-/* 관리자페이지 컨텐츠 영역 */
-.admin_content_wrap{
-    width: 80%;
-    float:left;
-    height: 100%;
-    height: 700px;
-    
+
+.admin_navi_wrap ul li a:hover {
+    background-color: #ddd;
 }
-.admin_content_wrap div{
-    margin-top: 280px;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
+
+.admin_content_wrap {
+    flex: 1;
+    background-color: #f0f0f1;
+    padding: 20px;
 }
- 
- 
- /* footer navai 영역 */
-.footer_nav{
-    width:100%;
-    height:50px;
+
+.footer_nav {
+    width: 100%;
+    height: 50px;
+    background-color: #8EC0E4;
 }
-.footer_nav_container{
+
+.footer_nav_container {
     width: 100%;
     height: 100%;
-    background-color:#8EC0E4;
+    background-color: #8EC0E4;
 }
-.footer_nav_container>ul{
-    font-weight : bold;
-    float:left;
-    list-style:none;
-    position:relative;
-    padding-top:10px;
-    line-height: 27px;
-    font-family: dotum;
+
+.footer_nav_container ul {
+    padding: 0;
     margin-left: 10px;
 }
-.footer_nav_container>ul>li{
-    display:inline;
-    width: 45px;
-    height: 19px;
-    padding: 10px 9px 0 10px;
+
+.footer_nav_container ul li {
+    display: inline;
+    padding: 0 10px;
+    line-height: 27px;
+    font-weight: bold;
+    font-family: dotum;
 }
-.footer_nav_container>ul>span{
+
+.footer_nav_container ul span {
     margin: 0 4px;
 }
-/* footer 영역 */
-.footer{
-    width:100%;
-    height:130px;
-    background-color:#E0E0E0;
-    padding-bottom : 50px;
+
+.footer {
+    width: 100%;
+    height: 130px;
+    background-color: #E0E0E0;
+    padding-bottom: 50px;
 }
-.footer_container{
+
+.footer_container {
     width: 100%;
     height: 100%;
     margin: auto;
 }
-.footer_left>img {
-    width: 150%;
-    height: 130px;
-    margin-left: -20px;
-    margin-top: -12px;
-}
-.footer_left{
-    float :left;
+
+.footer_left {
+    float: left;
     width: 170px;
     margin-left: 20px;
-    margin-top : 30px;
-    
+    margin-top: 30px;
 }
-.footer_right{
-    float :left;
+
+.footer_right {
+    float: left;
     width: 680px;
     margin-left: 70px;
-    margin-top : 30px;
-}    
- 
-/* float 속성 해제 */
-.clearfix{
+    margin-top: 30px;
+}
+
+.clearfix {
     clear: both;
 }
