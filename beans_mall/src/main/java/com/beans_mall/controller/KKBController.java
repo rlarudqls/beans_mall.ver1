@@ -3,6 +3,7 @@ package com.beans_mall.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -298,5 +299,4 @@ public class KKBController {
 			logger.info("Allowance_event 페이지 진입");
 			// 여기에 Allowance_event.jsp로 이동하는 로직 추가
 		}
-	
 }
