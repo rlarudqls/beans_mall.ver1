@@ -157,7 +157,6 @@ public class KKBController {
 		@RequestMapping(value = "/category/Accessories", method = RequestMethod.GET)
 		public void accessoriesPageGET() {
 			logger.info("Accessories 페이지 진입");
-			// 여기에 Accessories.jsp로 이동하는 로직 추가
 		}
 		
 		// flower 페이지 이동

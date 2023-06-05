@@ -133,13 +133,19 @@ body {
           <div class="login_warn">사용자 ID 또는 비밀번호를 잘못 입력하셨습니다.</div>
         </c:if>
         
-        <div class="login_button_wrap">
-          <input type="button" class="login_button" value="로그인">
-        </div>      
+       <div class="login_button_wrap">
+    <input type="button" class="login_button" value="로그인">
+    <div class="nav-btn">
+        <button type="button" class="btn-dropdown" onclick="location.href='/admin/main'">관리자 로그인</button>
+    </div>
+</div>
+
       </div>
     </form>
     
   </div>
+
+
 
 </div>
 
