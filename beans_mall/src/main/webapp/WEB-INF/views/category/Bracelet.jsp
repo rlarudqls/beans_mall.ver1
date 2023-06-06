@@ -1022,7 +1022,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/Bracelet20.jpg')"></div>
+												style="background-image: url('/resources/category/img/Bracelet10.png')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>

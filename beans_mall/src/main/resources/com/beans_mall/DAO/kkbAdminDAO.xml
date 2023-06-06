@@ -3,20 +3,130 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <mapper namespace="com.beans_mall.DAO.kkbAdminDAO">
+<!-- 상품 등록 -->
+<insert id="beanEnroll">
 
+	<selectKey resultType="int" keyProperty="beanId" order="AFTER">
+	
+		SELECT LAST_INSERT_ID()
+	
+	</selectKey>		
 
-<!-- 작가 등록 -->
-  	<insert id="bookEnroll">
-  	
-  		insert into kkb_book(bookName, authorId, publeYear, publisher, cateCode, bookPrice, bookStock, bookDiscount, bookIntro, bookContents)
-		values(#{bookName},#{authorId}, #{publeYear},#{publisher},#{cateCode},#{bookPrice},#{bookStock},#{bookDiscount},#{bookIntro},#{bookContents})
+	insert into kkb_bean(beanName, authorId, publeYear, publisher, cateCode, beanPrice, beanStock, beanDiscount, beanIntro, beanContents)
+	values(#{beanName},#{authorId}, #{publeYear},#{publisher},#{cateCode},#{beanPrice},#{beanStock},#{beanDiscount},#{beanIntro},#{beanContents})
 
-  	</insert>
-  	
-  	<!-- 카테고리 리스트 -->
-  	<select id="cateList" resultType="com.beans_mall.VO.CateVO">
-  	
-  		select * from kkb_bcate order by catecode
-  	
-  	</select>
+</insert>
+
+<!-- 카테고리 리스트 -->
+<select id="cateList" resultType="com.beans_mall.VO.CateVO">
+
+	select * from kkb_cate order by catecode
+
+</select>
+
+<!-- 상품 리스트 -->
+<select id="goodsGetList" resultType="com.beans_mall.VO.BeanVO">
+
+	select  beanId, beanName,  b.authorName, c.cateName, beanStock, a.regDate
+	from kkb_bean a 
+	left outer join kkb_author b on a.authorId = b.authorId
+	left outer join kkb_bcate c on a.cateCode = c.cateCode
+	<if test="keyword != null">
+		where (beanName like concat ('%', #{keyword}, '%'))
+	</if>
+	order by beanId desc 
+	limit #{skip}, #{amount}		
+
+</select>
+
+<!-- 상품 총 갯수 -->
+<select id="goodsGetTotal" resultType="int">
+
+	select count(*) from kkb_bean
+	
+	<if test="keyword != null">
+	
+		where beanName like concat('%' , #{keyword}, '%')
+	
+	</if>
+
+</select>
+
+<!-- 상품 조회 페이지 -->
+<select id="goodsGetDetail" resultType="com.beans_mall.VO.BeanVO">
+
+	select beanId, beanName, (select authorName from kkb_author where authorId =kkb_bean.authorId) authorName, 
+		authorId, publeYear, publisher, cateCode, beanPrice, beanStock, beanDiscount, beanIntro, beanContents, regDate, updateDate 
+	from kkb_bean where beanId = #{beanId}
+
+</select> 	
+
+<!-- 상품 정보 수정 -->
+<update id="goodsModify">
+	
+	update kkb_bean set beanName = #{beanName}, authorId = #{authorId}, publeYear = #{publeYear}, publisher = #{publisher}, cateCode = ${cateCode}, 
+	beanPrice = #{beanPrice}, beanStock = #{beanStock}, beanDiscount = #{beanDiscount}, beanIntro = #{beanIntro}, beanContents = #{beanContents}, updateDate = now()
+	where beanId = ${beanId}
+	
+</update>
+
+<!-- 상품 정보 삭제 -->
+<delete id="goodsDelete">
+
+	delete from kkb_bean where beanId = #{beanId}
+
+</delete>	
+
+<!-- 이미지 등록 -->
+<insert id="imageEnroll">
+
+	insert into kkb_image(beanId, fileName, uploadPath, uuid) values (#{beanId}, #{fileName}, #{uploadPath}, #{uuid})
+
+</insert>	
+
+<!-- 지정 상품 이미지 전체 삭제 --> 
+<delete id="deleteImageAll">
+
+	delete FROM kkb_image where beanId = #{beanId}
+
+</delete>	
+
+<!-- 어제자 날자 이미지 리스트 -->
+<select id="checkFileList" resultType="com.beans_mall.VO.AttachImageVO">
+
+	select * from kkb_image where uploadpath = DATE_FORMAT(DATE_ADD(NOW(), INTERVAL -1 DAY), '%Y\%m\%d')	
+
+</select>	
+
+<!-- 지정 상품 이미지 정보 얻기 -->
+<select id="getAttachInfo" resultType="com.beans_mall.VO.AttachImageVO">
+
+	select * from kkb_image where beanId = #{beanId}
+
+</select>		
+
+<!-- 주문 리스트 -->
+<select id="getOrderList" resultType="com.beans_mall.VO.OrderDTO">	
+		
+		select orderId, memberId, orderstate, orderdate
+	    from kkb_order 
+	    <if test="keyword != null">
+	    	where memberId like concat('%',#{keyword}, '%')
+	    </if>
+	    order by orderdate desc
+	    limit #{skip}, #{amount}
+	    
+</select>	
+
+<!-- 상품 총 개수 -->
+<select id="getOrderTotal" resultType="int">
+
+	select count(*) from kkb_order
+	
+    <if test="keyword != null">
+    	where memberId like concat('%',#{keyword}, '%')
+    </if>
+
+</select>	
+
   </mapper>

@@ -20,4 +20,12 @@
       
  		  select memberId, memberPw, memberName, adminck, money, point from beans_mall_member where memberId = #{memberId}
          </select>
+         <!-- 주문자 정보 -->
+  	<select id="getMemberInfo" resultType="com.beans_mall.VO.MemberVO">
+  	
+  		SELECT memberId, memberName, memberMail, memberAddr1, memberAddr2, memberAddr3, money, point 
+  		FROM bean_member 
+  		WHERE memberId = #{memberId}
+  	
+  	</select> 
   </mapper>

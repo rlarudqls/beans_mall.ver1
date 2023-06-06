@@ -48,10 +48,14 @@
 
 
 <script>
-    (function(d,s,i) {
-        var se = d.createElement(s);se.type='text/javascript';se.async=true;se.src='//assets.datarize.ai/logger/genesis.'+i+'.min.js';
-        var x = d.getElementsByTagName(s)[0];x.parentNode.insertBefore(se,x);
-    })(document, 'script', '11185');
+	(function(d, s, i) {
+		var se = d.createElement(s);
+		se.type = 'text/javascript';
+		se.async = true;
+		se.src = '//assets.datarize.ai/logger/genesis.' + i + '.min.js';
+		var x = d.getElementsByTagName(s)[0];
+		x.parentNode.insertBefore(se, x);
+	})(document, 'script', '11185');
 </script>
 <!-- Kakao web SDK -->
 <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -73,7 +77,7 @@
 	src="https://cdn.idus.kr/www/73840b1fad129bc627d28db19bb984ff64572f7c/resources/dist/js/vuepack.bundle.js"></script>
 <script
 	src="https://cdn.idus.kr/www/73840b1fad129bc627d28db19bb984ff64572f7c/resources/dist/js/vuepack.js"></script>
-	<style>
+<style>
 .icon-iduslogo {
 	display: none;
 }
@@ -88,13 +92,11 @@
 		<div class="head_banner_group">
 			<div data-vue="TopBanner"></div>
 			<script>
-                    vuepack.create([
-                        {
-                            selector: '[data-vue="TopBanner"]',
-                            component: 'TopBanner',
-                        },
-                    ]);
-                </script>
+				vuepack.create([ {
+					selector : '[data-vue="TopBanner"]',
+					component : 'TopBanner',
+				}, ]);
+			</script>
 		</div>
 
 
@@ -102,14 +104,24 @@
 			<input type="hidden" name="isLoggedIn" value="">
 			<div class="top-navigation full-w">
 				<div class="inner-w clf">
-					<div class="nav-btn ui-dropdown" data-disabled="hover">
+					<style>
+.menu-dropdown {
+	display: none;
+}
+
+.menu-dropdown.show {
+	display: block;
+}
+</style>
+
+					<div class="nav-btn ui-dropdown" data-disabled="hover"
+						onmouseover="showDropdown('app-install-guide')"
+						onmouseout="hideDropdown('app-install-guide')">
 						<input readonly type="text" name="" class="btn-dropdown reset"
 							value="빈스몰 앱 설치하기">
-						<section class="menu-dropdown app-install-guide">
-							<h1>
-								<span class="sp-icon img-appicon"></span>빈스몰을 스마트폰으로 더욱 편리하게
-								사용하세요.
-							</h1>
+						<section class="menu-dropdown app-install-guide"
+							id="app-install-guide">
+							<h1>빈스몰을 스마트폰으로 더욱 편리하게 사용하세요.</h1>
 							<ol>
 								<li>
 									<h2>1. 문자로 앱설치 안내받기(앱 출시예정)</h2>
@@ -122,64 +134,98 @@
 										않습니다.
 								</span>
 								</li>
-								<li></li>
+								<li>
+									<h2>2. 앱스토어에서 직접 설치하기</h2>
+									<p>빈스몰 앱을 스마트폰에 더욱 편리하게 사용하려면 아래의 단계를 따라주세요:</p>
+									<ol>
+										<li>스마트폰의 앱스토어(예: App Store 또는 Google Play 스토어)를 엽니다.</li>
+										<li>앱스토어의 검색 창에 "빈스몰"을 입력합니다.</li>
+										<li>검색 결과에서 빈스몰 앱을 찾아 선택합니다.</li>
+										<li>선택한 앱 페이지에서 "설치" 버튼을 눌러 앱을 다운로드합니다.</li>
+										<li>다운로드가 완료되면 빈스몰 앱을 열고 회원가입 또는 로그인을 진행합니다.</li>
+										<li>이제 빈스몰 앱을 스마트폰에서 편리하게 이용할 수 있습니다.</li>
+									</ol>
+								</li>
 							</ol>
 						</section>
+
 					</div>
 
 					<nav class="fr">
 						<input type="text" id="current_user_email" class="hidden"
 							name="current_user_email" value="" readonly>
+					</nav>
 
-						<div class="nav-btn ui-dropdown">
-							<button type="button" class="btn-dropdown">관리자 로그인</button>
-							<ul class="menu-dropdown">
-								<li><a href="/admin/main">김경빈만</a></li>
-								<li><a href="/admin/main">이용할수</a></li>
-								<li><a href="/admin/main">있습니다.</a></li>
-							</ul>
+					<script>
+						function showDropdown(menuId) {
+							var dropdownMenu = document.getElementById(menuId);
+							dropdownMenu.classList.add("show");
+						}
+
+						function hideDropdown(menuId) {
+							var dropdownMenu = document.getElementById(menuId);
+							dropdownMenu.classList.remove("show");
+						}
+					</script>
+
+					<style>
+.menu-dropdown {
+	display: none;
+}
+
+.menu-dropdown.show {
+	display: block;
+}
+</style>
+
+
+
+					<div class="nav-btn ui-dropdown"
+						onmouseover="showDropdown('customer-service')"
+						onmouseout="hideDropdown('customer-service')">
+						<button type="button" class="btn-dropdown">고객센터</button>
+						<ul class="menu-dropdown" id="customer-service">
+							<li><a href="/notice/notice">공지사항</a></li>
+							<li><a href="/notice/inquire">자주 묻는 질문</a></li>
+							<li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
+						</ul>
+					</div>
+
+					<script>
+						function showDropdown(menuId) {
+							var dropdownMenu = document.getElementById(menuId);
+							dropdownMenu.classList.add("show");
+						}
+
+						function hideDropdown(menuId) {
+							var dropdownMenu = document.getElementById(menuId);
+							dropdownMenu.classList.remove("show");
+						}
+					</script>
+
+
+
+					<c:if test="${member == null}">
+						<!-- 로그인되지 않은 상태 -->
+						<div class="login_button">
+							<a href="/member/login">로그인 </a> <a href="/member/join">회원가입</a>
 						</div>
+					</c:if>
 
-						<div class="nav-btn ui-dropdown">
-							<button type="button" class="btn-dropdown">고객센터</button>
-							<ul class="menu-dropdown">
-								<li><a href="/notice/notice">공지사항</a></li>
-								<li><a href="/notice/inquire">자주 묻는 질문</a></li>
-								<li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
-							</ul>
+					<c:if test="${member != null}">
+						<!-- 로그인된 상태 -->
+						<div class="login_success_area">
+							<span>회원: ${member.memberName}</span> <span>충전금액: <fmt:formatNumber
+									value="${member.money}" pattern="\#,###.##" /></span> <span>포인트:
+								<fmt:formatNumber value="${member.point}" pattern="#,###" />
+							</span> <a href="/member/logout.do">로그아웃</a>
 						</div>
-						<c:if test="${member == null}">
-							<!-- 로그인되지 않은 상태 -->
-							<div class="login_button">
-								<a href="/member/login">로그인 </a> <a href="/member/join">회원가입</a>
-							</div>
-						</c:if>
-
-						<c:if test="${member != null}">
-							<!-- 로그인된 상태 -->
-							<div class="login_success_area">
-								<span>회원: ${member.memberName}</span> <span>충전금액: <fmt:formatNumber
-										value="${member.money}" pattern="\#,###.##" /></span> <span>포인트:
-									<fmt:formatNumber value="${member.point}" pattern="#,###" />
-								</span> <a href="/member/logout.do">로그아웃</a>
-							</div>
-						</c:if>
+					</c:if>
 					</nav>
 				</div>
 			</div>
-
 			<div class="bg-wrapper" data-vue="SearchHeader">
 				<div class="inner-w top">
-					<h1 class="logo">
-						<a href="/" class="icon-logo"> <img id="logo-image"
-							src="resources/img/kkblogo.png">
-						</a>
-					</h1>
-
-					<nav class="service-nav">
-						<a href="/" class="active">작품</a> <a href="/oc" class="">김경빈
-							블로그 보러가기</a>
-					</nav>
 					<div class="main-search">
 						<form class="naver-shopping-form"
 							action="https://search.shopping.naver.com/search" method="GET">
@@ -191,7 +237,6 @@
 									<i class="naver-icon-search"></i>
 								</button>
 							</label>
-
 						</form>
 					</div>
 					<nav class="profile-links">
@@ -210,177 +255,56 @@
 						<li class="ui_gnb__menu"><span>카테고리</span>
 							<div class="ui_gnb__submenu">
 								<ul>
-									<li><a href="/category/Dessert"
-										data-log-label="product_category"
-										data-log-object="5c6bc7d4-7760-4702-b63f-7f29eca479e3">디저트/베이커리</a>
-									</li>
-									<li><a href="/category/Beverage"
-										data-log-label="product_category"
-										data-log-object="613ac4c3-df73-4a0f-b3dd-362849dabb2a">음료</a>
-									</li>
-									<li><a href="/category/traditional_liquor"
-										data-log-label="product_category"
-										data-log-object="fa340e0b-f4b1-4aba-8d9c-a29086d5a8a4">전통주</a>
-									</li>
-									<li><a href="/category/Handmade_side_dishes"
-										data-log-label="product_category"
-										data-log-object="b3f853b9-333d-4eec-ad04-e4604d9d501b">수제
-											반찬</a></li>
-									<li><a href="/category/Handmade_food"
-										data-log-label="product_category"
-										data-log-object="8daa0fc3-d370-46c5-a58b-9a0c71a6ae08">수제
-											먹거리</a></li>
-									<li><a href="/category/Agricultural_and_fishery"
-										data-log-label="product_category"
-										data-log-object="4a8cbc36-3af8-4b75-af01-8795782df80d">농축수산물</a>
-									</li>
-									<li><a href="/category/Clothing"
-										data-log-label="product_category"
-										data-log-object="d9e8a56d-ae4c-4020-b043-9417fe26fbec">의류/홈웨어</a>
-									</li>
-									<li><a href="/category/fashion_miscellaneous_goods"
-										data-log-label="product_category"
-										data-log-object="1616d42d-ea77-11e4-88d5-06530c0000b4">패션잡화</a>
-									</li>
-									<li><a href="/category/Wallet"
-										data-log-label="product_category"
-										data-log-object="a9970f75-ea75-11e4-8a46-06fd000000c2">지갑</a>
-									</li>
-									<li><a href="/category/Bags"
-										data-log-label="product_category"
-										data-log-object="bc5f4be5-c6bc-11e3-8b03-06fd000000c2">가방/파우치</a>
-									</li>
+									<li><a href="/category/Dessert">디저트/베이커리</a></li>
+									<li><a href="/category/Beverage">음료</a></li>
+									<li><a href="/category/traditional_liquor">전통주</a></li>
+									<li><a href="/category/Handmade_side_dishes">수제반찬</a></li>
+									<li><a href="/category/Handmade_food">수제먹거리</a></li>
+									<li><a href="/category/Agricultural_and_fishery">농축수산물</a></li>
+									<li><a href="/category/Clothing">의류/홈웨어</a></li>
+									<li><a href="/category/fashion_miscellaneous_goods">패션잡화</a></li>
+									<li><a href="/category/Wallet">지갑</a></li>
+									<li><a href="/category/Bags">가방/파우치</a></li>
 								</ul>
 								<ul>
-									<li><a href="/category/Clock"
-										data-log-label="product_category"
-										data-log-object="bc6a17ba-ea75-11e4-8878-06a6fa0000b9">시계</a>
-									</li>
-									<li><a href="/category/Home_Fabric"
-										data-log-label="product_category"
-										data-log-object="8b4bf95d-c6bc-11e3-8577-06f4fe0000b5">홈
-											패브릭</a></li>
-									<li><a href="/category/men_shoes"
-										data-log-label="product_category"
-										data-log-object="1fc3c71a-88d6-4333-a09e-178e85bb742f">남성신발/수제화</a>
-									</li>
-									<li><a href="/category/women_shoes"
-										data-log-label="product_category"
-										data-log-object="65477a55-7f4f-4a0f-9b05-dcaa271a8385">여성신발/수제화</a>
-									</li>
-									<li><a href="/category/Child"
-										data-log-label="product_category"
-										data-log-object="0556009b-f9c6-11e3-8363-06fd000000c2">육아/아동</a>
-									</li>
-									<li><a href="/category/A_ring"
-										data-log-label="product_category"
-										data-log-object="387867a4-0da4-11e4-873e-06f4fe0000b5">반지</a>
-									</li>
-									<li><a href="/category/Earrings"
-										data-log-label="product_category"
-										data-log-object="ac599662-0cdf-11e4-85f1-06fd000000c2">귀걸이</a>
-									</li>
-									<li><a href="/category/Necklace"
-										data-log-label="product_category"
-										data-log-object="aef50134-0cdf-11e4-8182-06530c0000b4">목걸이</a>
-									</li>
-									<li><a href="/category/Bracelet"
-										data-log-label="product_category"
-										data-log-object="b12b42eb-0cdf-11e4-85f1-06fd000000c2">팔찌</a>
-									</li>
-									<li><a href="/category/Accessories"
-										data-log-label="product_category"
-										data-log-object="f0475fb1-c6bb-11e3-954e-06a6fa0000b9">기타
-											액세서리</a></li>
+									<li><a href="/category/Clock">시계</a></li>
+									<li><a href="/category/Home_Fabric">홈 패브릭</a></li>
+									<li><a href="/category/men_shoes">남성신발/수제화</a></li>
+									<li><a href="/category/women_shoes">여성신발/수제화</a></li>
+									<li><a href="/category/Child">육아/아동</a></li>
+									<li><a href="/category/A_ring">반지</a></li>
+									<li><a href="/category/Earrings">귀걸이</a></li>
+									<li><a href="/category/Necklace">목걸이</a></li>
+									<li><a href="/category/Bracelet">팔찌</a></li>
+									<li><a href="/category/Accessories">기타 액세서리</a></li>
 								</ul>
 								<ul>
-									<li><a href="/category/flower"
-										data-log-label="product_category"
-										data-log-object="bec56c93-ea75-11e4-8a46-06fd000000c2">꽃/식물</a>
-									</li>
-									<li><a href="/category/Candle"
-										data-log-label="product_category"
-										data-log-object="976cfb97-c6bc-11e3-83fc-06530c0000b4">캔들/디퓨저</a>
-									</li>
-									<li><a href="/category/Home_interior"
-										data-log-label="product_category"
-										data-log-object="66299878-c6bc-11e3-8577-06f4fe0000b5">홈인테리어</a>
-									</li>
-									<li><a href="/category/Pottery"
-										data-log-label="product_category"
-										data-log-object="c5010d79-e666-11e3-9874-06fd000000c2">도자기</a>
-									</li>
-									<li><a href="/category/Kitchen"
-										data-log-label="product_category"
-										data-log-object="30b3ae0f-c6bc-11e3-8577-06f4fe0000b5">주방/생활</a>
-									</li>
-									<li><a href="/category/furniture"
-										data-log-label="product_category"
-										data-log-object="e866743b-0a33-4030-80c1-3a1ec943b0e4">가구</a>
-									</li>
-									<li><a href="/category/Toy"
-										data-log-label="product_category"
-										data-log-object="fa8c9d8e-c6bb-11e3-8577-06f4fe0000b5">인형/장난감</a>
-									</li>
-									<li><a href="/category/companion_goods"
-										data-log-label="product_category"
-										data-log-object="f6335574-c6bb-11e3-83fc-06530c0000b4">반려용품/간식</a>
-									</li>
-									<li><a href="/category/Fine_art"
-										data-log-label="product_category"
-										data-log-object="002e6aef-c6bc-11e3-8b03-06fd000000c2">파인아트</a>
-									</li>
-									<li><a href="/category/Craft"
-										data-log-label="product_category"
-										data-log-object="9f4b9a69-c6bc-11e3-954e-06a6fa0000b9">공예</a>
-									</li>
+									<li><a href="/category/flower">꽃/식물</a></li>
+									<li><a href="/category/Candle">캔들/디퓨저</a></li>
+									<li><a href="/category/Home_interior">홈인테리어</a></li>
+									<li><a href="/category/Pottery">도자기</a></li>
+									<li><a href="/category/Kitchen">주방/생활</a></li>
+									<li><a href="/category/furniture">가구</a></li>
+									<li><a href="/category/Toy">인형/장난감</a></li>
+									<li><a href="/category/companion_goods">반려용품/간식</a></li>
+									<li><a href="/category/Fine_art">파인아트</a></li>
+									<li><a href="/category/Craft">공예</a></li>
 								</ul>
 								<ul>
-									<li><a href="/main" data-log-label="product_category"
-										data-log-object="b3b31a1b-ea75-11e4-8a46-06fd000000c2">폰케이스</a>
+									<li><a href="/main" data-log-label="product_category">폰케이스</a>
 									</li>
-									<li><a href="/category/Digital_Accessories"
-										data-log-label="product_category"
-										data-log-object="a923ab08-0643-11e4-98ba-06f4fe0000b5">디지털
-											액세서리</a></li>
-									<li><a href="/category/Phrase"
-										data-log-label="product_category"
-										data-log-object="b00844bc-c6bc-11e3-8577-06f4fe0000b5">문구/팬시</a>
-									</li>
-									<li><a href="/category/caricature"
-										data-log-label="product_category"
-										data-log-object="e3ba45b3-c165-11e3-8788-06fd000000c2">페인팅/캐리커쳐</a>
-									</li>
-									<li><a href="/category/Vehicle_Supplies"
-										data-log-label="product_category"
-										data-log-object="1941c7fe-06f6-4e4f-b54d-ea9bdd9b6c30">차량용품</a>
-									</li>
-									<li><a href="/category/Books"
-										data-log-label="product_category"
-										data-log-object="8ce1f0e9-0c96-41b4-9b19-cae4dd202a05">도서</a>
-									</li>
-									<li><a href="/category/Perfume"
-										data-log-label="product_category"
-										data-log-object="869abe46-d8d5-4eed-bc6f-7a0359d9b5b6">향수</a>
-									</li>
-									<li><a href="/category/Beauty"
-										data-log-label="product_category"
-										data-log-object="c468e7db-ea75-11e4-b903-06f4fe0000b5">뷰티</a>
-									</li>
-									<li><a href="/category/Hair"
-										data-log-label="product_category"
-										data-log-object="6b1313ff-dc5b-463c-b0a8-0c0e1fb0f5fb">헤어/바디</a>
-									</li>
-									<li><a href="/category/Handmade_soap"
-										data-log-label="product_category"
-										data-log-object="be3cf842-ea74-11e4-8878-06a6fa0000b9">수제비누/클렌징</a>
-									</li>
+									<li><a href="/category/Digital_Accessories">디지털 액세서리</a></li>
+									<li><a href="/category/Phrase">문구/팬시</a></li>
+									<li><a href="/category/caricature">페인팅/캐리커쳐</a></li>
+									<li><a href="/category/Vehicle_Supplies">차량용품</a></li>
+									<li><a href="/category/Books">도서</a></li>
+									<li><a href="/category/Perfume">향수</a></li>
+									<li><a href="/category/Beauty">뷰티</a></li>
+									<li><a href="/category/Hair">헤어/바디</a></li>
+									<li><a href="/category/Handmade_soap">수제비누/클렌징</a></li>
 								</ul>
 								<ul>
-									<li><a href="/category/Allowance_event"
-										data-log-label="product_category"
-										data-log-object="4094e656-c6bf-11e3-83fc-06530c0000b4">용돈이벤트/기타</a>
-									</li>
+									<li><a href="/category/Allowance_event">용돈이벤트/기타</a></li>
 								</ul>
 							</div></li>
 						<li class="ui_gnb__menu " data-state=""><a href="/main">홈</a>
@@ -419,94 +343,286 @@
 				<a href="/" class=""> 작품 </a> <a href="/oc" class=""
 					data-log-object="class"> 룰렛 </a> <a href="#"> 검색 </a> <a
 					href="/w/main/category" class="active"> 카테고리 </a> <a
-					href="/personal_profile" class="" data-log-object="class">
-					내 정보 </a>
+					href="/personal_profile" class="" data-log-object="class"> 내 정보
+				</a>
 				<div data-vue="bottom-nav-message-nudging"></div>
 			</nav>
 			<script>
-        var components = [];
-        var redirectUrl = new vuepack.externals.Applink().generateWebUrlByScheme('');
-        var justShow = false;
-        if (redirectUrl === '/oc') justShow = true;
-        var topNavNudging = {
-                imageUrl: '',
-                location: '',
-                message: '',
-                scheme: redirectUrl,
-                justShow: justShow
-        };
-        var bottomNavNudging = {
-            imageUrl: '',
-            location: '',
-            message: '',
-            scheme: redirectUrl,
-            justShow: justShow
-        };
-        components.push({
-            selector: '[data-vue="bottom-nav-message-nudging"]',
-            component: 'BottomNavigationMessageNudging',
-            props: {
-                gnbTooltip: bottomNavNudging,
-                isEdu: false            }
-        });
-        var encodingWord = '';
-        var decodingWord = encodingWord ? vuepack.externals.vuepackDecoder.vuepackDecode(encodingWord) : '';
-        components.push({
-            selector: '[data-vue="SearchHeader"]',
-            component: 'SearchHeader',
-            props: {
-                placeholder: '김경빈의 생일날을 검색해보세요! ',
-                placeholderWord: '김경빈의날',
-                searchWord: decodingWord,
-                popularWordList: [{"key":"\uc2a4\uc2b9\uc758\ub0a0","docCount":1390000},{"key":"\ud0a4\ub9c1","docCount":950000},{"key":"\ub124\uc784\ud0dd","docCount":686000},{"key":"\ud3f0\ucf00\uc774\uc2a4","docCount":663000},{"key":"\uc9c0\ube44\uce20","docCount":613000},{"key":"\uadf8\ub9bd\ud1a1","docCount":564000},{"key":"\ubc18\uc9c0","docCount":430000},{"key":"\uce74\ub4dc\uc9c0\uac11","docCount":398000},{"key":"\ucf00\uc774\ud06c","docCount":375000},{"key":"\ucfe0\ud0a4","docCount":372000},{"key":"\ud314\ucc0c","docCount":368000},{"key":"\ub2f5\ub840\ud488","docCount":345000},{"key":"\uac00\ubc29","docCount":331000},{"key":"\ud30c\uc6b0\uce58","docCount":310000},{"key":"\uc57d\uacfc","docCount":310000},{"key":"\ucee4\ud50c\ub9c1","docCount":305000},{"key":"\ubaa9\uac78\uc774","docCount":286000},{"key":"\ud578\ub4dc\ud3f0\ucf00\uc774\uc2a4","docCount":280000},{"key":"\uc5d0\ucf54\ubc31","docCount":273000},{"key":"\ub9c8\uce74\ub871","docCount":269000}],
-                hotWordList: [{"key":"\ud658\uac11","doc_count":14084,"diff_rank":0},{"key":"\uac1c\uc131\uc8fc\uc545","doc_count":13541,"diff_rank":0},{"key":"\ub2e4\uc774\uc5b4\ud2b8","doc_count":11480,"diff_rank":2},{"key":"\uc5d0\uc5b4\ud31f\ucf00\uc774\uc2a4","doc_count":11439,"diff_rank":0},{"key":"\uc0dd\uc77c","doc_count":10493,"diff_rank":2},{"key":"\ud478\ub529","doc_count":9740,"diff_rank":5},{"key":"\uc57d\uacfc\ucfe0\ud0a4","doc_count":9505,"diff_rank":6},{"key":"\ucc28\ud0a4\ucf00\uc774\uc2a4","doc_count":9174,"diff_rank":-2},{"key":"\uc778\ud615","doc_count":8901,"diff_rank":99},{"key":"\ud06c\ub85c\uc2a4\ubc31","doc_count":8719,"diff_rank":0},{"key":"\ucee4\ud50c","doc_count":8651,"diff_rank":6},{"key":"\ud53c\uc5b4\uc2f1","doc_count":8602,"diff_rank":-4},{"key":"\ud658\uac11 \ud604\uc218\ub9c9","doc_count":8028,"diff_rank":3},{"key":"\uc9d1\ub4e4\uc774","doc_count":8012,"diff_rank":99},{"key":"\ucc28\ub7c9\uc6a9\ubc29\ud5a5\uc81c","doc_count":7900,"diff_rank":-6},{"key":"\ucea0\ud551","doc_count":7814,"diff_rank":-1},{"key":"\ub514\uc800\ud2b8","doc_count":7789,"diff_rank":-5},{"key":"\uac1c\uc5c5\uc120\ubb3c","doc_count":7782,"diff_rank":99},{"key":"\uce90\ub9ac\uc5b4\ub124\uc784\ud0dd","doc_count":7331,"diff_rank":1},{"key":"\ub9e5\uc138\uc774\ud504 \uadf8\ub9bd\ud1a1","doc_count":7303,"diff_rank":99}],
-                isEdu: false,
-                isClassSearch: false,
-                topNavNudging: topNavNudging
-            }
-        });
-        vuepack.create(components);
+				var components = [];
+				var redirectUrl = new vuepack.externals.Applink()
+						.generateWebUrlByScheme('');
+				var justShow = false;
+				if (redirectUrl === '/oc')
+					justShow = true;
+				var topNavNudging = {
+					imageUrl : '',
+					location : '',
+					message : '',
+					scheme : redirectUrl,
+					justShow : justShow
+				};
+				var bottomNavNudging = {
+					imageUrl : '',
+					location : '',
+					message : '',
+					scheme : redirectUrl,
+					justShow : justShow
+				};
+				components.push({
+					selector : '[data-vue="bottom-nav-message-nudging"]',
+					component : 'BottomNavigationMessageNudging',
+					props : {
+						gnbTooltip : bottomNavNudging,
+						isEdu : false
+					}
+				});
+				var encodingWord = '';
+				var decodingWord = encodingWord ? vuepack.externals.vuepackDecoder
+						.vuepackDecode(encodingWord)
+						: '';
+				components
+						.push({
+							selector : '[data-vue="SearchHeader"]',
+							component : 'SearchHeader',
+							props : {
+								placeholder : '김경빈의 생일날을 검색해보세요! ',
+								placeholderWord : '김경빈의날',
+								searchWord : decodingWord,
+								popularWordList : [
+										{
+											"key" : "\uc2a4\uc2b9\uc758\ub0a0",
+											"docCount" : 1390000
+										},
+										{
+											"key" : "\ud0a4\ub9c1",
+											"docCount" : 950000
+										},
+										{
+											"key" : "\ub124\uc784\ud0dd",
+											"docCount" : 686000
+										},
+										{
+											"key" : "\ud3f0\ucf00\uc774\uc2a4",
+											"docCount" : 663000
+										},
+										{
+											"key" : "\uc9c0\ube44\uce20",
+											"docCount" : 613000
+										},
+										{
+											"key" : "\uadf8\ub9bd\ud1a1",
+											"docCount" : 564000
+										},
+										{
+											"key" : "\ubc18\uc9c0",
+											"docCount" : 430000
+										},
+										{
+											"key" : "\uce74\ub4dc\uc9c0\uac11",
+											"docCount" : 398000
+										},
+										{
+											"key" : "\ucf00\uc774\ud06c",
+											"docCount" : 375000
+										},
+										{
+											"key" : "\ucfe0\ud0a4",
+											"docCount" : 372000
+										},
+										{
+											"key" : "\ud314\ucc0c",
+											"docCount" : 368000
+										},
+										{
+											"key" : "\ub2f5\ub840\ud488",
+											"docCount" : 345000
+										},
+										{
+											"key" : "\uac00\ubc29",
+											"docCount" : 331000
+										},
+										{
+											"key" : "\ud30c\uc6b0\uce58",
+											"docCount" : 310000
+										},
+										{
+											"key" : "\uc57d\uacfc",
+											"docCount" : 310000
+										},
+										{
+											"key" : "\ucee4\ud50c\ub9c1",
+											"docCount" : 305000
+										},
+										{
+											"key" : "\ubaa9\uac78\uc774",
+											"docCount" : 286000
+										},
+										{
+											"key" : "\ud578\ub4dc\ud3f0\ucf00\uc774\uc2a4",
+											"docCount" : 280000
+										}, {
+											"key" : "\uc5d0\ucf54\ubc31",
+											"docCount" : 273000
+										}, {
+											"key" : "\ub9c8\uce74\ub871",
+											"docCount" : 269000
+										} ],
+								hotWordList : [
+										{
+											"key" : "\ud658\uac11",
+											"doc_count" : 14084,
+											"diff_rank" : 0
+										},
+										{
+											"key" : "\uac1c\uc131\uc8fc\uc545",
+											"doc_count" : 13541,
+											"diff_rank" : 0
+										},
+										{
+											"key" : "\ub2e4\uc774\uc5b4\ud2b8",
+											"doc_count" : 11480,
+											"diff_rank" : 2
+										},
+										{
+											"key" : "\uc5d0\uc5b4\ud31f\ucf00\uc774\uc2a4",
+											"doc_count" : 11439,
+											"diff_rank" : 0
+										},
+										{
+											"key" : "\uc0dd\uc77c",
+											"doc_count" : 10493,
+											"diff_rank" : 2
+										},
+										{
+											"key" : "\ud478\ub529",
+											"doc_count" : 9740,
+											"diff_rank" : 5
+										},
+										{
+											"key" : "\uc57d\uacfc\ucfe0\ud0a4",
+											"doc_count" : 9505,
+											"diff_rank" : 6
+										},
+										{
+											"key" : "\ucc28\ud0a4\ucf00\uc774\uc2a4",
+											"doc_count" : 9174,
+											"diff_rank" : -2
+										},
+										{
+											"key" : "\uc778\ud615",
+											"doc_count" : 8901,
+											"diff_rank" : 99
+										},
+										{
+											"key" : "\ud06c\ub85c\uc2a4\ubc31",
+											"doc_count" : 8719,
+											"diff_rank" : 0
+										},
+										{
+											"key" : "\ucee4\ud50c",
+											"doc_count" : 8651,
+											"diff_rank" : 6
+										},
+										{
+											"key" : "\ud53c\uc5b4\uc2f1",
+											"doc_count" : 8602,
+											"diff_rank" : -4
+										},
+										{
+											"key" : "\ud658\uac11 \ud604\uc218\ub9c9",
+											"doc_count" : 8028,
+											"diff_rank" : 3
+										},
+										{
+											"key" : "\uc9d1\ub4e4\uc774",
+											"doc_count" : 8012,
+											"diff_rank" : 99
+										},
+										{
+											"key" : "\ucc28\ub7c9\uc6a9\ubc29\ud5a5\uc81c",
+											"doc_count" : 7900,
+											"diff_rank" : -6
+										},
+										{
+											"key" : "\ucea0\ud551",
+											"doc_count" : 7814,
+											"diff_rank" : -1
+										},
+										{
+											"key" : "\ub514\uc800\ud2b8",
+											"doc_count" : 7789,
+											"diff_rank" : -5
+										},
+										{
+											"key" : "\uac1c\uc5c5\uc120\ubb3c",
+											"doc_count" : 7782,
+											"diff_rank" : 99
+										},
+										{
+											"key" : "\uce90\ub9ac\uc5b4\ub124\uc784\ud0dd",
+											"doc_count" : 7331,
+											"diff_rank" : 1
+										},
+										{
+											"key" : "\ub9e5\uc138\uc774\ud504 \uadf8\ub9bd\ud1a1",
+											"doc_count" : 7303,
+											"diff_rank" : 99
+										} ],
+								isEdu : false,
+								isClassSearch : false,
+								topNavNudging : topNavNudging
+							}
+						});
+				vuepack.create(components);
 
-        $(function () {
+				$(function() {
 
-            $('header#header [data-log-object]').on('click', function (event) {
-                var logObject = $(event.currentTarget).data('logObject');
-                Logger.sendClick({
-                    section: Section.Gnb,
-                    object: logObject
-                }, true)
-            });
-            // 알림 모두 보기 로깅
-            
-            $('header#header [data-log-noti-object]').on('click', function (event) {
-                var logObject = $(event.currentTarget).data('logNotiObject');
-                Logger.sendClick({
-                    logLabel: LogLabel.Inbox,
-                    section: Section.Gnb,
-                    object: logObject
-                }, true)
-            });
+					$('header#header [data-log-object]').on(
+							'click',
+							function(event) {
+								var logObject = $(event.currentTarget).data(
+										'logObject');
+								Logger.sendClick({
+									section : Section.Gnb,
+									object : logObject
+								}, true)
+							});
+					// 알림 모두 보기 로깅
 
-            $('header#header [data-log-label="product_category"]').on('click', function(event) {
-                var logObject = $(event.currentTarget).data('logObject');
-                Logger.sendClick({
-                    logLabel: LogLabel.ProductCategory,
-                    section: Section.Gnb,
-                    object: logObject,
-                    objectType: ObjectType.ProductCategoryUuid
-                },true);
-            })
+					$('header#header [data-log-noti-object]').on(
+							'click',
+							function(event) {
+								var logObject = $(event.currentTarget).data(
+										'logNotiObject');
+								Logger.sendClick({
+									logLabel : LogLabel.Inbox,
+									section : Section.Gnb,
+									object : logObject
+								}, true)
+							});
 
+					$('header#header [data-log-label="product_category"]').on(
+							'click',
+							function(event) {
+								var logObject = $(event.currentTarget).data(
+										'logObject');
+								Logger.sendClick({
+									logLabel : LogLabel.ProductCategory,
+									section : Section.Gnb,
+									object : logObject,
+									objectType : ObjectType.ProductCategoryUuid
+								}, true);
+							})
 
-        });
-    </script>
+				});
+			</script>
 		</header>
 		<div class="dimmed-background"></div>
 		<div data-vue="category-detail">
 			<div id="content" class="content" data-page="2dep-list">
 				<div class="inner-w mobile-full hide-gnb">
 					<div class="ui_title m-mod mobile-hide">
-						<h2 class="ui_title__txt">폰케이스</h2>
+						<h2 class="ui_title__txt">디지털 액세서리</h2>
 					</div>
 				</div>
 				<div class="inner-w">
@@ -517,7 +633,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/a7ebf91a0ada440ba62a292c26c8e6ac_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories1.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -525,19 +641,17 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
-											<div class="product-info__artist-name">새봄마켓</div>
-											<!-- 제목 -->
-											<div class="product-info__name">💖런칭할인💖나만의 커스텀 포토 그립
-												스마트톡</div>
-											<!-- 가격 -->
+											<div class="product-info__artist-name">실버바오</div>
+											<div class="product-info__name">💫 화려한 악세서리로 빛나는 나만의 패션 스타일을 완성해보세요! ✨
+
+</div>
 											<div class="product-info__price">
-												<span class="sale-rate"> 40% </span> <span
-													class="price-sale"> 5,900<span
+												<span class="sale-rate"> 20% </span> <span
+													class="price-sale"> 40,000<span
 													style="font-size: 14px;">원</span>
 												</span>
 												<div class="price-origin--before-sale">
-													<del>9,900원</del>
+													<del>50,000원</del>
 												</div>
 											</div>
 											<div class="product-info__badge-group"
@@ -551,9 +665,7 @@
 												</div>
 												<div class="review-comment">
 													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">너무 이뻐요 최고예요
-														정면사진 많이 찍어서 또 주문할께요♡♡ 기본사이즈도 좋은데 왕그립톡이 진짜 맘에 듭니다 판매자님
-														감하해요♡♡</div>
+													<div class="review-comment__contents">이 악세서리를 착용하면서 느끼는 특별한 감성이 있어요. 손쉽게 패션 스타일을 업그레이드시킬 수 있고, 다른 사람들의 시선을 끌 수 있어요. 섬세한 디자인과 품질로 만들어진 악세서리라 만족도가 높습니다.♡♡</div>
 												</div>
 											</div>
 										</div>
@@ -565,7 +677,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/ff71ee2cb5654466bb4842f365bac970_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories2.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -573,12 +685,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">리지스토어</div>
-											<!-- 제목 -->
-											<div class="product-info__name">강아지 고양이 아기 얼굴 사진 아크릴 그립
-												톡홀더 제작</div>
-											<!-- 가격 -->
+											<div class="product-info__name">🌟 특별한 순간을 더욱 빛나게 할 악세서리를 만나보세요. 💍
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 37% </span> <span
 													class="price-sale"> 6,900<span
@@ -597,8 +707,7 @@
 												</div>
 												<div class="review-comment">
 													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">누끼를 너무 잘따주셔서 너무
-														귀엽게 잘낭왔어여😆</div>
+													<div class="review-comment__contents">악세서리의 디자인이 매우 독특하고 멋져요. 다른 사람들이 착용한 것과는 조금 다른 분위기를 연출할 수 있어요. 특별한 날이나 소중한 자리에서 착용하면 더욱 빛나는 느낌을 받을 수 있어요😆</div>
 												</div>
 											</div>
 										</div>
@@ -610,7 +719,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/b6d3846925894f3e82657c004575db42_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories3.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -618,12 +727,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">핫티몰</div>
-											<!-- 제목 -->
-											<div class="product-info__name">1+1 [에폭시톡+젤리 BEST모음전]
-												핸드폰케이스</div>
-											<!-- 가격 -->
+											<div class="product-info__name">👑 왕자와 공주처럼 눈부시게 매력적인 악세서리로 특별한 날을 연출해보세요! 💫
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 31% </span> <span
 													class="price-sale"> 12,800<span
@@ -644,8 +751,7 @@
 												</div>
 												<div class="review-comment">
 													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">귀여운 호랑이 쟁여서 너무
-														좋습니다 ㅎㅅㅎ 같이 주신 케이스도 심플하고 넘 마음에 듭니다~~~!!♡</div>
+													<div class="review-comment__contents">이 악세서리를 착용하면 분위기가 한층 더 업그레이드되는 것 같아요. 다양한 스타일과 의상에 어울리고, 고급스러운 느낌을 주어요. 소중한 자리나 특별한 이벤트 때 착용하면 자신감이 넘치는 느낌을 받을 수 있어요♡</div>
 												</div>
 											</div>
 										</div>
@@ -657,7 +763,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('resources/img/kkbface.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories4.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -665,13 +771,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
-											<div class="product-info__artist-name">소유템 폰케이스(
-												soutem)</div>
-											<!-- 제목 -->
-											<div class="product-info__name">아이폰14 갤럭시❤️포토 커플 아기 톡
-												폰케이스 그립</div>
-											<!-- 가격 -->
+											<div class="product-info__artist-name">엘리강트</div>
+											<div class="product-info__name">💎 화려한 보석 같은 악세서리로 눈길을 사로잡아보세요. 💫
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 66% </span> <span
 													class="price-sale"> 6,900<span
@@ -706,7 +809,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/02c025a0276c45628721766cc0ecf8e0_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories5.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -714,12 +817,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">비올레타</div>
-											<!-- 제목 -->
-											<div class="product-info__name">S23입고]언더더씨 뮤토젤리&그립
-												스마트톡/렌즈보호</div>
-											<!-- 가격 -->
+											<div class="product-info__name">🌟 스타일을 완성시킬 작은 도장, 악세서리의 매력에 빠져보세요! ✨
+
+</div>
 											<div class="product-info__price">
 												<span class="price-origin"> 14,800<span
 													style="font-size: 14px;">원</span>
@@ -749,7 +850,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/1c1920e5240a4cfbacbd5a9ac56e79d2_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories6.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -757,12 +858,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
-											<div class="product-info__artist-name">윰쓰샵 폰케이스</div>
-											<!-- 제목 -->
-											<div class="product-info__name">곰돌찡 토끼찡 커플 젤리 폰케이스 4종/
-												신기종추가!</div>
-											<!-- 가격 -->
+											<div class="product-info__artist-name">아이리스악세사리</div>
+											<div class="product-info__name">🌸 매일의 룩을 돋보이게 할 악세서리로 스타일을 즐겨보세요. 💫
+
+</div>
 											<div class="product-info__price">
 												<span class="price-origin"> 15,400<span
 													style="font-size: 14px;">원</span>
@@ -794,7 +893,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/acce8902f5ec48eb9a48690db0a8b433_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories7.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -802,11 +901,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">얀이토리</div>
-											<!-- 제목 -->
-											<div class="product-info__name">도레미탭 리듬탭 스마트톡/키링🎶</div>
-											<!-- 가격 -->
+											<div class="product-info__name">🌟 악세서리 하나로 다양한 스타일을 연출해보세요. 당신의 패션 센스가 돋보일 거예요! 💍
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 15% </span> <span
 													class="price-sale"> 17,000<span
@@ -838,7 +936,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/5d3e3e5dec604b9abce008e0df99089b_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories8.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -846,12 +944,9 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
-											<div class="product-info__artist-name">보나톡 (BONA TOK)</div>
-											<!-- 제목 -->
+											<div class="product-info__artist-name">트렌디바이</div>
 											<div class="product-info__name">💐4color 5월 할인중! 수국 생화
 												일반&맥세이프</div>
-											<!-- 가격 -->
 											<div class="product-info__price">
 												<span class="sale-rate"> 27% </span> <span
 													class="price-sale"> 10,900<span
@@ -884,7 +979,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/b01f0973e32d47d68446b8e6f8038481_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories9.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -892,12 +987,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
-											<div class="product-info__artist-name">컴바이유 폰케이스</div>
-											<!-- 제목 -->
-											<div class="product-info__name">특가할인🔥나만의 주문제작 포토 커스텀
-												그립 스마트톡</div>
-											<!-- 가격 -->
+											<div class="product-info__artist-name">빈티지마법</div>
+											<div class="product-info__name">🌟 악세서리 하나로 다양한 스타일을 연출해보세요. 당신의 패션 센스가 돋보일 거예요! 💍
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 54% </span> <span
 													class="price-sale"> 6,900<span
@@ -929,7 +1022,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/6d5f7249e89b4526ba3c96a8af645eaf_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories10.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -937,12 +1030,9 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">미소랜드</div>
-											<!-- 제목 -->
-											<div class="product-info__name">[투명톡+젤리 BEST모음전] 핸드폰케이스
-											</div>
-											<!-- 가격 -->
+											<div class="product-info__name">💖 화려한 악세서리가 당신의 매력을 한층 더해줄 거예요.
+</div>
 											<div class="product-info__price">
 												<span class="price-origin"> 8,900<span
 													style="font-size: 14px;">원</span>
@@ -972,7 +1062,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/760a17d723d4454ba3ede49dd9a1209c_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories11.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -980,13 +1070,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
-											<div class="product-info__artist-name">소유템 폰케이스(
-												soutem)</div>
-											<!-- 제목 -->
-											<div class="product-info__name">아이폰14 갤럭시❤️강아지 고양이 톡
-												폰케이스 그립</div>
-											<!-- 가격 -->
+											<div class="product-info__artist-name">아이리스악세사리</div>
+											<div class="product-info__name">💍 특별한 사람에게 선물로 전할 수 있는 아름다운 악세서리를 만나보세요. 💖
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 66% </span> <span
 													class="price-sale"> 6,900<span
@@ -1019,7 +1106,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/aab1860c7b4940f694448a4c75a9022c_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories12.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1027,13 +1114,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
-											<div class="product-info__artist-name">코지인사이드
-												COZYINSIDE</div>
-											<!-- 제목 -->
-											<div class="product-info__name">💛 바니 폰케이스 아이폰/ S23
-												/제트플립</div>
-											<!-- 가격 -->
+											<div class="product-info__artist-name">명품악세사리</div>
+											<div class="product-info__name">💛✨ 소중한 순간을 기억에 남게 할 악세서리로 특별한 추억을 만들어보세요. 💖
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 20% </span> <span
 													class="price-sale"> 15,920<span
@@ -1066,7 +1150,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/24c96dc123814942b618ec6e3fbd6a24_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories13.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1074,11 +1158,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">일루에이(illu.A)</div>
-											<!-- 제목 -->
-											<div class="product-info__name">❤️힙스마일 카드슬라이드 폰케이스</div>
-											<!-- 가격 -->
+											<div class="product-info__name">❤️힙스마일 🌟 특별한 순간을 더욱 빛나게 할 악세서리를 만나보세요. 💍
+
+</div>
 											<div class="product-info__price">
 												<span class="price-origin"> 17,900<span
 													style="font-size: 14px;">원</span>
@@ -1095,10 +1178,9 @@
 												</div>
 												<div class="review-comment">
 													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">그립톡 붙일때 껴봤는데
-														부드럽게 잘들어가더라고요ㅡ 주의사항에 하루정도 두는게 낫대서 우선 펼쳐두고 있어요 ㅎㅎㅎ 색상이 너무
-														예뽀요 ㅠㅠㅠ 귀엽고 배송은 왜케 빨라유???? 거기다가 지시사항도 꼼꼼하게 보내주셔서 좋았어요
-														많이파세요!!!</div>
+													<div class="review-comment__contents">악세서리의 디자인이 너무 아름다워서 놀라웠어요. 소중한 자리나 특별한 이벤트 때 착용하면 분위기를 한층 더해줘요. 다른 사람들로부터 많은 관심과 칭찬을 받을 수 있을 거예요."
+
+</div>
 												</div>
 											</div>
 										</div>
@@ -1110,7 +1192,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/8d492438815d435bb71cbf2cd3d72bb0_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories14.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1118,12 +1200,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">마인드마이닝</div>
-											<!-- 제목 -->
-											<div class="product-info__name">아이폰14💖무배/각인💖이모지
-												업슬라이드카드 폰케이스</div>
-											<!-- 가격 -->
+											<div class="product-info__name">✨ 소중한 순간을 기억에 남게 할 악세서리로 특별한 추억을 만들어보세요. 💖
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 48% </span> <span
 													class="price-sale"> 12,900<span
@@ -1157,7 +1237,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/c627f19c891f4d80b60fe86d07d8588c_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories15.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1165,12 +1245,10 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">하루빛</div>
-											<!-- 제목 -->
-											<div class="product-info__name">민트/핑크/퍼플❤️ 마카롱 곰돌이 링고리
-												z플립케이스</div>
-											<!-- 가격 -->
+											<div class="product-info__name">💎 화려한 보석 같은 악세서리로 눈길을 사로잡아보세요. 💫
+
+</div>
 											<div class="product-info__price">
 												<span class="price-origin"> 23,900<span
 													style="font-size: 14px;">원</span>
@@ -1200,7 +1278,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/55564e68266a416c8f7cab57e2eeae62_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories16.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1208,12 +1286,9 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">잉애링</div>
-											<!-- 제목 -->
 											<div class="product-info__name">2️⃣버전 💙투명한 푸른바다 폰케이스 &
 												스마트그립톡🌊</div>
-											<!-- 가격 -->
 											<div class="product-info__price">
 												<span class="sale-rate"> 20% </span> <span
 													class="price-sale"> 20,800<span
@@ -1245,7 +1320,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/f83ea070fef645df913c71d6df6deb62_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories17.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1253,13 +1328,11 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">소유템 폰케이스(
 												soutem)</div>
-											<!-- 제목 -->
-											<div class="product-info__name">갤럭시 z플립3 4 ♥트웰브 소가죽+링
-												폰케이스 스트랩</div>
-											<!-- 가격 -->
+											<div class="product-info__name">💎 화려한 보석 같은 악세서리로 눈길을 사로잡아보세요. 💫
+
+</div>
 											<div class="product-info__price">
 												<span class="sale-rate"> 23% </span> <span
 													class="price-sale"> 19,900<span
@@ -1290,7 +1363,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/e0434ecad95544d78987ab0ec662c71b_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories18.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1298,12 +1371,11 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">비올레타</div>
-											<!-- 제목 -->
-											<div class="product-info__name">봄맞이 벚꽃피크닉 뮤토젤리케이스/렌즈보호
+											<div class="product-info__name">💍 특별한 사람에게 선물로 전할 수 있는 아름다운 악세서리를 만나보세요. 💖
+
+
 											</div>
-											<!-- 가격 -->
 											<div class="product-info__price">
 												<span class="price-origin"> 14,800<span
 													style="font-size: 14px;">원</span>
@@ -1333,7 +1405,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/900c4ed45b59436b9271187fdefacb22_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories19.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1341,12 +1413,8 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">미소랜드</div>
-											<!-- 제목 -->
-											<div class="product-info__name">[모양톡+카드하드 BEST모음전]
-												핸드폰케이스</div>
-											<!-- 가격 -->
+											<div class="product-info__name">💫 화려한 악세서리로 빛나는 나만의 패션 스타일을 완성해보세요! ✨</div>
 											<div class="product-info__price">
 												<span class="price-origin"> 11,900<span
 													style="font-size: 14px;">원</span>
@@ -1378,7 +1446,7 @@
 									<a href="/w/product/" target="_blank">
 										<div class="card-thumb-cover">
 											<div class="product-thumb-img"
-												style="background-image: url('https://image.idus.com/image/files/9ef271ed0d22477691e15ce470c4ceae_512.jpg')"></div>
+												style="background-image: url('/resources/category/img/Digital_Accessories20.jpg')"></div>
 											<div class="product-bookmark">
 												<button class="full-button">
 													<button type="button" class="sp-icon icon-favorite"></button>
@@ -1386,12 +1454,13 @@
 											</div>
 										</div>
 										<div class="card-info product-info">
-											<!-- 판매자 이름 -->
 											<div class="product-info__artist-name">일루에이(illu.A)</div>
-											<!-- 제목 -->
-											<div class="product-info__name">z플립4 z플립3 츄키스
-												곰돌이키링+하드폰케이스</div>
-											<!-- 가격 -->
+											<div class="product-info__name">💖 화려한 악세서리가 당신의 매력을 한층 더해줄 거예요. 특
+
+
+
+
+</div>
 											<div class="product-info__price">
 												<span class="price-origin"> 24,900<span
 													style="font-size: 14px;">원</span>

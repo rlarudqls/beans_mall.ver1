@@ -32,15 +32,15 @@
 	                    				<td class="th_column_3">판매자 국가</td>
 	                    			</tr>
 	                    		</thead>
-	                    		<c:forEach items="${list}" var="list">
+	                    		<c:forEach items="${list}" var="bean">
 	                    		<tr>
-	                    			<td><c:out value="${list.authorId}"></c:out> </td>
+	                    			<td><c:out value="${bean.authorId}"></c:out> </td>
 	                    			<td>
-	                    				<a class="move" href='<c:out value="${list.authorId}"/>' data-name='<c:out value="${list.authorName}"/>'>
-	                    					<c:out value="${list.authorName}"></c:out>
+	                    				<a class="move" href='<c:out value="${bean.authorId}"/>' data-name='<c:out value="${bean.authorName}"/>'>
+	                    					<c:out value="${bean.authorName}"></c:out>
 	                    				</a> 
 	                    			</td>
-	                    			<td><c:out value="${list.nationName}"></c:out> </td>
+	                    			<td><c:out value="${bean.nationName}"></c:out> </td>
 	                    		</tr>
 	                    		</c:forEach>
 	                    	</table>

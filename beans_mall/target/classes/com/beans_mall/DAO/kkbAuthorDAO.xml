@@ -4,14 +4,14 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <mapper namespace="com.beans_mall.DAO.kkbAuthorDAO">
   
-    <!-- 작가 등록 -->
+    <!-- 판매자 등록 -->
   	<insert id="authorEnroll">
   	
   		insert into kkb_author(authorName, nationId, authorIntro) values(#{authorName}, #{nationId}, #{authorIntro} )
 
   	</insert>	
   	
-	<!-- 작가 목록 -->
+	<!-- 판매자 목록 -->
 	<select id="authorGetList" resultType="com.beans_mall.VO.AuthorVO">
 	
 		select authorId, authorName, nationId, regDate, updateDate
@@ -24,7 +24,7 @@
 	
 	</select>
 	
-  	<!-- 작가 수 -->
+  	<!-- 판매자 수 -->
   	<select id="authorGetTotal" resultType="int">
   	
   		select count(*) from kkb_author
@@ -37,21 +37,21 @@
   		
   	</select>
   	
-  	<!-- 작가 디테일 페이지 -->
+  	<!-- 판매자 디테일 페이지 -->
   	<select id="authorGetDetail" resultType="com.beans_mall.VO.AuthorVO">
   	
   		select * from kkb_author where authorId = #{authorId}
   	
   	</select>  	
   	
-	<!-- 작가 내용 수정 -->
+	<!-- 판매자 내용 수정 -->
 	<update id="authorModify">
 	
 		update kkb_author set authorName=#{authorName}, nationId=#{nationId}, authorIntro=#{authorIntro}, updateDate=now() where authorId = #{authorId}
 	
 	</update>  	
   
-    	<!-- 작가 정보 삭제 -->
+    	<!-- 판매자 정보 삭제 -->
   	<delete id="authorDelete">
   	
   		delete from kkb_author where authorId = #{authorId}

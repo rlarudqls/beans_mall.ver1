@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class AuthorVO {
 	
-	  /* 판매자 아이디 */
+	/* 판매자 아이디 */
     private int authorId;
     
     /* 판매자 이름 */
