@@ -30,5 +30,16 @@
             <beans:bean id="loginIntreceptor" class="com.beans_mall.interceptor.LoginInterceptor"></beans:bean>
         </interceptor>
     </interceptors>
-	
+	<!-- DateFormatter bean 추가 -->
+<beans:bean id="dateFormatter" class="com.beans_mall.DateFormatter">
+    <beans:constructor-arg>
+        <beans:value type="java.lang.String">yyyy-MM-dd</beans:value>
+    </beans:constructor-arg>
+</beans:bean>
+
+
+    
+    
+    
+    
 </beans:beans>

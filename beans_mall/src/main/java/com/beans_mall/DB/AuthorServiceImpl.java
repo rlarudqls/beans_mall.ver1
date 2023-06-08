@@ -17,22 +17,18 @@ public class AuthorServiceImpl implements AuthorService {
 	private static final Logger log = LoggerFactory.getLogger(AuthorServiceImpl.class);	
 	
 	@Autowired
-	kkbAuthorDAO kkbAuthorDAO;
+	private kkbAuthorDAO kkbAuthorDAO;
 
 	/* 판매자 등록 */
 	@Override
 	public void authorEnroll(AuthorVO author) throws Exception {
-		
 		kkbAuthorDAO.authorEnroll(author);
-		
 	}	
 
 	/* 판매자 목록 */
 	@Override
 	public List<AuthorVO> authorGetList(Criteria cri) throws Exception {
-		
 		log.info("(service)authorGetList()......." + cri);
-		
 		return kkbAuthorDAO.authorGetList(cri);
 	}	
 	
@@ -50,17 +46,15 @@ public class AuthorServiceImpl implements AuthorService {
 		return kkbAuthorDAO.authorGetDetail(authorId);
 	}
 
+	/* 판매자 정보 수정 */
 	@Override
 	public int authorModify(AuthorVO author) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return kkbAuthorDAO.authorModify(author);
 	}
 
+	/* 판매자 정보 삭제 */
 	@Override
 	public int authorDelete(int authorId) {
-		// TODO Auto-generated method stub
-		return 0;
+		return kkbAuthorDAO.authorDelete(authorId);
 	}
-	
-
 }

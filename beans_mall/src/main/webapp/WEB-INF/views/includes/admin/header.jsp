@@ -8,11 +8,10 @@
             <div class="top_gnb_area">
                 <ul class="list">    
                     <li><a href="/main">메인 페이지</a></li>
-                    <li><a href="/member/logout.do">로그아웃</a></li>
-                    <li><a href="/notice/notice">고객센터</li>            
+                    <li><a href="/member/logout.do">로그아웃</a></li>           
                 </ul>
             </div>
-            <!-- top_subject_area -->
+                  <!-- top_subject_area -->
             <div class="admin_top_wrap">
                 <span>관리자 페이지</span>
                 
@@ -36,7 +35,7 @@
                   </lI>
                   <lI>
                       <a class="admin_list_05">회원 관리</a>                            
-                  </lI>                                                                                                                         
+                  </lI>                                                                                             
               </ul>
 <!-- 
                     <div class="admin_list_01">

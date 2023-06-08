@@ -42,7 +42,14 @@
                                 <c:out value="${list.authorName}"></c:out>
                             </a>                         
                         </td>
-                        <td><c:out value="${list.nationName}"></c:out> </td>
+                        <td>
+                            <c:if test="${list.nationId eq '01'}">
+                                <c:out value="국내 판매자" />
+                            </c:if>
+                            <c:if test="${list.nationId eq '02'}">
+                                <c:out value="국외 판매자" />
+                            </c:if>
+                        </td>
                         <td><fmt:formatDate value="${list.regDate}" pattern="yyyy-MM-dd"/></td>
                         <td><fmt:formatDate value="${list.updateDate}" pattern="yyyy-MM-dd"/></td>
                     </tr>

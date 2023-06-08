@@ -1,193 +1,194 @@
 package com.beans_mall.VO;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 import java.util.List;
 
 public class BeanVO {
 
-	/* 상품 id */
-	private int beanId;
-	
-	/* 상품 이름 */
-	private String beanName;
-	
-	/* 작가 id */
-	private int authorId;
-	
-	/* 작가 이름 */
-	private String authorName;
-	
-	/* 출판일 */
-	private String publeYear;
-	
-	/* 출판사 */
-	private String publisher;
-	
-	/* 카테고리 코드 */
-	private String cateCode;
-	
-	/* 카테고리 이름 */
-	private String cateName;
-	
-	/* 상품 가격 */
-	private int beanPrice;
-	
-	/* 상품 재고 */
-	private int beanStock;
-	
-	/* 상품 할인률(백분율) */
-	private double beanDiscount;
-	
-	/* 상품 소개 */
-	private String beanIntro;
-	
-	/* 상품 목차 */
-	private String beanContents;
-	
-	/* 등록 날짜 */
-	private Date regDate;
-	
-	/* 수정 날짜 */
-	private Date updateDate;
+    /* 상품 id */
+    private int beanId;
 
-	/* 이미지 정보 */
-	private List<AttachImageVO> imageList;	
-	
-	public int getBeanId() {
-		return beanId;
-	}
+    /* 상품 이름 */
+    private String beanName;
 
-	public void setBeanId(int beanId) {
-		this.beanId = beanId;
-	}
+    /* 판매자 id */
+    private int authorId;
 
-	public String getBeanName() {
-		return beanName;
-	}
+    /* 출판일 */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date publeYear;
 
-	public void setBeanName(String beanName) {
-		this.beanName = beanName;
-	}
+    /* 출판사 */
+    private String publisher;
 
-	public int getAuthorId() {
-		return authorId;
-	}
+    /* 카테고리 코드 */
+    private String cateCode;
 
-	public void setAuthorId(int authorId) {
-		this.authorId = authorId;
-	}
+    /* 상품 가격 */
+    private int beanPrice;
 
-	public String getAuthorName() {
-		return authorName;
-	}
+    /* 상품 재고 */
+    private int beanStock;
 
-	public void setAuthorName(String authorName) {
-		this.authorName = authorName;
-	}
+    /* 상품 할인률(백분율) */
+    private double beanDiscount;
 
-	public String getPubleYear() {
-		return publeYear;
-	}
+    /* 상품 소개 */
+    private String beanIntro;
 
-	public void setPubleYear(String publeYear) {
-		this.publeYear = publeYear;
-	}
+    /* 상품 목차 */
+    private String beanContents;
 
-	public String getPublisher() {
-		return publisher;
-	}
+    /* 등록 날짜 */
+    private Date regDate;
 
-	public void setPublisher(String publisher) {
-		this.publisher = publisher;
-	}
+    /* 수정 날짜 */
+    private Date updateDate;
 
-	public String getCateCode() {
-		return cateCode;
-	}
+    /* 이미지 정보 */
+    private List<AttachImageVO> imageList;
 
-	public void setCateCode(String cateCode) {
-		this.cateCode = cateCode;
-	}
+    /* 판매자 이름 */
+    private String authorName;
 
-	public String getCateName() {
-		return cateName;
-	}
+    /* 카테고리 이름 */
+    private String cateName;
 
-	public void setCateName(String cateName) {
-		this.cateName = cateName;
-	}
+    public int getBeanId() {
+        return beanId;
+    }
 
-	public int getBeanPrice() {
-		return beanPrice;
-	}
+    public void setBeanId(int beanId) {
+        this.beanId = beanId;
+    }
 
-	public void setBeanPrice(int beanPrice) {
-		this.beanPrice = beanPrice;
-	}
+    public String getBeanName() {
+        return beanName;
+    }
 
-	public int getBeanStock() {
-		return beanStock;
-	}
+    public void setBeanName(String beanName) {
+        this.beanName = beanName;
+    }
 
-	public void setBeanStock(int beanStock) {
-		this.beanStock = beanStock;
-	}
+    public int getAuthorId() {
+        return authorId;
+    }
 
-	public double getBeanDiscount() {
-		return beanDiscount;
-	}
+    public void setAuthorId(int authorId) {
+        this.authorId = authorId;
+    }
 
-	public void setBeanDiscount(double beanDiscount) {
-		this.beanDiscount = beanDiscount;
-	}
+    public Date getPubleYear() {
+        return publeYear;
+    }
 
-	public String getBeanIntro() {
-		return beanIntro;
-	}
+    public void setPubleYear(Date publeYear) {
+        this.publeYear = publeYear;
+    }
 
-	public void setBeanIntro(String beanIntro) {
-		this.beanIntro = beanIntro;
-	}
+    public String getPublisher() {
+        return publisher;
+    }
 
-	public String getBeanContents() {
-		return beanContents;
-	}
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
 
-	public void setBeanContents(String beanContents) {
-		this.beanContents = beanContents;
-	}
+    public String getCateCode() {
+        return cateCode;
+    }
 
-	public Date getRegDate() {
-		return regDate;
-	}
+    public void setCateCode(String cateCode) {
+        this.cateCode = cateCode;
+    }
 
-	public void setRegDate(Date regDate) {
-		this.regDate = regDate;
-	}
+    public int getBeanPrice() {
+        return beanPrice;
+    }
 
-	public Date getUpdateDate() {
-		return updateDate;
-	}
+    public void setBeanPrice(int beanPrice) {
+        this.beanPrice = beanPrice;
+    }
 
-	public void setUpdateDate(Date updateDate) {
-		this.updateDate = updateDate;
-	}
-	public List<AttachImageVO> getImageList() {
-		return imageList;
-	}
+    public int getBeanStock() {
+        return beanStock;
+    }
 
-	public void setImageList(List<AttachImageVO> imageList) {
-		this.imageList = imageList;
-	}
+    public void setBeanStock(int beanStock) {
+        this.beanStock = beanStock;
+    }
 
+    public double getBeanDiscount() {
+        return beanDiscount;
+    }
 
-	@Override
-	public String toString() {
-		return "BeanVO [beanId=" + beanId + ", beanName=" + beanName + ", authorId=" + authorId + ", authorName="
-				+ authorName + ", publeYear=" + publeYear + ", publisher=" + publisher + ", cateCode=" + cateCode
-				+ ", cateName=" + cateName + ", beanPrice=" + beanPrice + ", beanStock=" + beanStock + ", beanDiscount="
-				+ beanDiscount + ", beanIntro=" + beanIntro + ", beanContents=" + beanContents + ", regDate=" + regDate
-				+ ", updateDate=" + updateDate + "]";
-	}
-	
+    public void setBeanDiscount(double beanDiscount) {
+        this.beanDiscount = beanDiscount;
+    }
+
+    public String getBeanIntro() {
+        return beanIntro;
+    }
+
+    public void setBeanIntro(String beanIntro) {
+        this.beanIntro = beanIntro;
+    }
+
+    public String getBeanContents() {
+        return beanContents;
+    }
+
+    public void setBeanContents(String beanContents) {
+        this.beanContents = beanContents;
+    }
+
+    public Date getRegDate() {
+        return regDate;
+    }
+
+    public void setRegDate(Date regDate) {
+        this.regDate = regDate;
+    }
+
+    public Date getUpdateDate() {
+        return updateDate;
+    }
+
+    public void setUpdateDate(Date updateDate) {
+        this.updateDate = updateDate;
+    }
+
+    public List<AttachImageVO> getImageList() {
+        return imageList;
+    }
+
+    public void setImageList(List<AttachImageVO> imageList) {
+        this.imageList = imageList;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
+    }
+
+    public String getCateName() {
+        return cateName;
+    }
+
+    public void setCateName(String cateName) {
+        this.cateName = cateName;
+    }
+
+    @Override
+    public String toString() {
+        return "BeanVO [beanId=" + beanId + ", beanName=" + beanName + ", authorId=" + authorId + ", publeYear=" + publeYear
+                + ", publisher=" + publisher + ", cateCode=" + cateCode + ", beanPrice=" + beanPrice + ", beanStock="
+                + beanStock + ", beanDiscount=" + beanDiscount + ", beanIntro=" + beanIntro + ", beanContents="
+                + beanContents + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
+    }
 }

@@ -29,7 +29,7 @@
                     <tr>
                         <td class="th_column_1">상품 번호</td>
                         <td class="th_column_2">상품 이름</td>
-                        <td class="th_column_3">작가 이름</td>
+                        <td class="th_column_3">판매자 이름</td>
                         <td class="th_column_4">카테고리</td>
                         <td class="th_column_5">재고</td>
                         <td class="th_column_6">등록날짜</td>
@@ -37,15 +37,15 @@
                 </thead>	
                 <c:forEach items="${list}" var="bean">
                     <tr>
-                        <td><c:out value="${bean.bookId}"></c:out></td>
+                        <td><c:out value="${bean.beanId}"></c:out></td>
                         <td>
-                            <a class="move" href='<c:out value="${bean.bookId}"/>'>
-                                <c:out value="${bean.bookName}"></c:out>
+                            <a class="move" href='<c:out value="${bean.beanId}"/>'>
+                                <c:out value="${bean.beanName}"></c:out>
                             </a>
                         </td>
                         <td><c:out value="${bean.authorName}"></c:out></td>
                         <td><c:out value="${bean.cateName}"></c:out></td>
-                        <td><c:out value="${bean.bookStock}"></c:out></td>
+                        <td><c:out value="${bean.beanStock}"></c:out></td>
                         <td><fmt:formatDate value="${bean.regDate}" pattern="yyyy-MM-dd"/></td>
                     </tr>
                 </c:forEach>
@@ -54,7 +54,7 @@
         <!-- 상품 리스트 X -->
         <c:if test="${listCheck == 'empty'}">
             <div class="table_empty">
-                등록된 작가가 없습니다.
+                등록된 판매자가 없습니다.
             </div>
         </c:if> 
     </div>
@@ -177,7 +177,7 @@ $(".move").on("click", function(e){
 	
     e.preventDefault();
 	
-    moveForm.append("<input type='hidden' name='bookId' value='"+$(this).attr("href") + "'>");
+    moveForm.append("<input type='hidden' name='beanId' value='"+$(this).attr("href") + "'>");
     moveForm.attr("action", "/admin/goodsDetail");
     moveForm.submit();
 	

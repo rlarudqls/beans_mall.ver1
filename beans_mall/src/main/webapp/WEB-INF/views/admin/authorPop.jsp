@@ -141,7 +141,7 @@
 			
 		});	
 		
-		/* 작가 선택 및 팝업창 닫기 */
+		/* 판매자 선택 및 팝업창 닫기 */
 		$(".move").on("click", function(e){
 			
 			e.preventDefault();

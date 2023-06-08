@@ -162,56 +162,56 @@ public class AdminController {
 		return "redirect:/admin/goodsManage";
 	}
 
-	/* 작가 등록 페이지 접속 */
+	/* 판매자 등록 페이지 접속 */
 	@RequestMapping(value = "authorEnroll", method = RequestMethod.GET)
 	public void authorEnrollGET() throws Exception {
-		logger.info("작가 등록 페이지 접속");
+		logger.info("판매자 등록 페이지 접속");
 	}
 
-	/* 작가 관리 페이지 접속 */
+	/* 판매자 관리 페이지 접속 */
 	@RequestMapping(value = "authorManage", method = RequestMethod.GET)
 	public void authorManageGET(Criteria cri, Model model) throws Exception {
-		logger.info("작가 관리 페이지 접속.........." + cri);
+		logger.info("판매자 관리 페이지 접속.........." + cri);
 
-		/* 작가 목록 출력 데이터 */
+		/* 판매자 목록 출력 데이터 */
 		List<AuthorVO> list = authorService.authorGetList(cri);
 
 		if (!list.isEmpty()) {
-			model.addAttribute("list", list); // 작가 존재 경우
+			model.addAttribute("list", list); // 판매자 존재 경우
 		} else {
-			model.addAttribute("listCheck", "empty"); // 작가 존재하지 않을 경우
+			model.addAttribute("listCheck", "empty"); // 판매자 존재하지 않을 경우
 		}
 
 		/* 페이지 이동 인터페이스 데이터 */
 		model.addAttribute("pageMaker", new PageDTO(cri, authorService.authorGetTotal(cri)));
 	}
 
-	/* 작가 등록 */
+	/* 판매자 등록 */
 	@RequestMapping(value = "authorEnroll.do", method = RequestMethod.POST)
 	public String authorEnrollPOST(AuthorVO author, RedirectAttributes rttr) throws Exception {
 
 		logger.info("authorEnroll :" + author);
 
-		authorService.authorEnroll(author); // 작가 등록 쿼리 수행
+		authorService.authorEnroll(author); // 판매자 등록 쿼리 수행
 
-		rttr.addFlashAttribute("enroll_result", author.getAuthorName()); // 등록 성공 메시지(작가이름)
+		rttr.addFlashAttribute("enroll_result", author.getAuthorName()); // 등록 성공 메시지(판매자 이름)
 
 		return "redirect:/admin/authorManage";
 	}
 
-	/* 작가 상세, 수정 페이지 */
+	/* 판매자 상세, 수정 페이지 */
 	@GetMapping({ "/authorDetail", "/authorModify" })
 	public void authorGetInfoGET(int authorId, Criteria cri, Model model) throws Exception {
 		logger.info("authorDetail......." + authorId);
 
-		/* 작가 관리 페이지 정보 */
+		/* 판매자 관리 페이지 정보 */
 		model.addAttribute("cri", cri);
 
-		/* 선택 작가 정보 */
+		/* 선택 판매자 정보 */
 		model.addAttribute("authorInfo", authorService.authorGetDetail(authorId));
 	}
 
-	/* 작가 정보 수정 */
+	/* 판매자 정보 수정 */
 	@PostMapping("/authorModify")
 	public String authorModifyPOST(AuthorVO author, RedirectAttributes rttr) throws Exception {
 		logger.info("authorModifyPOST......." + author);
@@ -223,7 +223,7 @@ public class AdminController {
 		return "redirect:/admin/authorManage";
 	}
 
-	/* 작가 정보 삭제 */
+	/* 판매자 정보 삭제 */
 	@PostMapping("/authorDelete")
 	public String authorDeletePOST(int authorId, RedirectAttributes rttr) {
 		logger.info("authorDeletePOST..........");
@@ -261,7 +261,7 @@ public class AdminController {
 		return "redirect:/admin/goodsManage";
 	}
 
-	/* 작가 검색 팝업창 */
+	/* 판매자 검색 팝업창 */
 	@GetMapping("/authorPop")
 	public void authorPopGET(Criteria cri, Model model) throws Exception {
 		logger.info("authorPopGET.......");
@@ -272,9 +272,9 @@ public class AdminController {
 		List<AuthorVO> list = authorService.authorGetList(cri);
 
 		if (!list.isEmpty()) {
-			model.addAttribute("list", list); // 작가 존재 경우
+			model.addAttribute("list", list); // 판매자 존재 경우
 		} else {
-			model.addAttribute("listCheck", "empty"); // 작가 존재하지 않을 경우
+			model.addAttribute("listCheck", "empty"); // 판매자 존재하지 않을 경우
 		}
 
 		/* 페이지 이동 인터페이스 데이터 */

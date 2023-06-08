@@ -6,7 +6,7 @@
 
 	<select id="getAttachList" resultType="com.beans_mall.VO.AttachImageVO">
 	
-		select * from kkb_image where beanId = #{beanId}
+		select * from beans_mall_image where beanId = #{beanId}
 	
 	</select>
 
