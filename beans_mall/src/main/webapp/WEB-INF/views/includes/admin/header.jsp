@@ -34,12 +34,7 @@
                       <a class="admin_list_04" href="/admin/authorManage">판매자 관리</a>                            
                   </lI>
                   <lI>
-                      <a class="admin_list_05">회원 관리</a>                            
+                      <a class="admin_list_05" href="/w/me">>회원 관리</a>                            
                   </lI>                                                                                             
               </ul>
-<!-- 
-                    <div class="admin_list_01">
-                        <a>상품 관리</a>
-                    </div>
-                     -->
                 </div>

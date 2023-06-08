@@ -35,40 +35,41 @@ public class BeanServiceImpl implements BeanService{
 	/* 상품 검색 */
 	@Override
 	public List<BeanVO> getGoodsList(Criteria cri) {
-		
-		log.info("getGoodsList().......");
-		
-		String type = cri.getType();
-		String[] typeArr = type.split("");
-		String[] authorArr = kkbBeanDAO.getAuthorIdList(cri.getKeyword());
-		
-		
-		if(type.equals("A") || type.equals("AC") || type.equals("AT") || type.equals("ACT")) {
-			if(authorArr.length == 0) {
-				return new ArrayList();
-			}
-		}
-		
-		for(String t : typeArr) {
-			if(t.equals("A")) {
-				cri.setAuthorArr(authorArr);
-			}
-		}			
-		
-		List<BeanVO> list = kkbBeanDAO.getGoodsList(cri);
-		
-		list.forEach(bean -> {
-			
-			int beanId = bean.getBeanId();
-			
-			List<AttachImageVO> imageList = kkbAttachDAO.getAttachList(beanId);
-			
-			bean.setImageList(imageList);
-			
-		});
-		
-		return list;
+	    
+	    log.info("getGoodsList().......");
+	    
+	    String type = cri.getType();
+	    String[] typeArr = type.split("");
+	    String[] authorArr = kkbBeanDAO.getAuthorIdList(cri.getKeyword());
+	    
+	    
+	    if(type.equals("A") || type.equals("AC") || type.equals("AT") || type.equals("ACT")) {
+	        if(authorArr.length == 0) {
+	            return new ArrayList();
+	        }
+	    }
+	    
+	    for(String t : typeArr) {
+	        if(t.equals("A")) {
+	            cri.setAuthorArr(authorArr);
+	        }
+	    }            
+	            
+	    List<BeanVO> list = kkbBeanDAO.getGoodsList(cri);
+	    
+	    list.forEach(bean -> {
+	        
+	        int beanId = bean.getBeanId();
+	        
+	        List<AttachImageVO> imageList = kkbAttachDAO.getAttachList(beanId);
+	        
+	        bean.setImageList(imageList);
+	        
+	    });
+	    
+	    return list;
 	}
+
 
 	/* 사품 총 개수 */
 	@Override

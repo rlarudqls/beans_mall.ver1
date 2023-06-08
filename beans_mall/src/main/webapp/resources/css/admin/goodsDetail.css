@@ -6,6 +6,7 @@
 a{
 	text-decoration: none;
 }
+
 ul{
     list-style: none;
 }
@@ -44,7 +45,7 @@ ul{
     height:110px;
     line-height: 110px;
     background-color: #5080bd;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 .admin_top_wrap>span{
     margin-left: 30px;
@@ -85,8 +86,8 @@ ul{
 .admin_navi_wrap li a:visited {color: black;}
 .admin_navi_wrap li a:active {color: black;}
 .admin_navi_wrap li a:hover {color: black;}
-
-.admin_list_01{
+ 
+.admin_list_02{
     background-color: #c8c8c8;
 } 
 
@@ -95,9 +96,9 @@ ul{
 .admin_content_wrap{
     width: 80%;
     float:left;
-    min-height:700px;  
+    min-height: 700px;
 }
-.admin_content_subject{			/* 관리자 컨텐츠 제목 영역 */
+.admin_content_subject{	/* 관리자 컨텐츠 제목 영역 */
     font-size: 40px;
     font-weight: bolder;
     padding-left: 15px;
@@ -106,6 +107,7 @@ ul{
     line-height: 80px;
     color: white;	
 }
+
 /* 관리자 컨텐츠 메인 영역 */
 .form_section{
 	width: 95%;
@@ -132,18 +134,8 @@ ul{
     font-size: 20px;
     padding: 5px 1%;
 }
-.form_section_content select{
-	width: 98%;
-    height: 35px;
-    font-size: 20px;
-    text-align-last: center;
-}
 
-.ck-content {						/* ckeditor 높이 */
-    height: 270px;
-}
-
-
+							
 .ui-datepicker-trigger {			/* 캘린더 css 설정 */
     margin-left: 25px;
     width: 14%;
@@ -153,12 +145,8 @@ ul{
     font-size: 15px;
     cursor:pointer;
 }
-input[name='publeYear'] {
-    width: 80%;
-    text-align: center;
-}
 
-.authorId_btn {						/* 판매자 선택 css 설정 */
+.authorId_btn {						/* 작가 선택 css 설정 */
     margin-left: 20px;
     width: 14%;
     height: 38px;
@@ -167,39 +155,10 @@ input[name='publeYear'] {
     font-size: 15px;
     cursor:pointer;
 }
-#authorName_input {
-    width: 80%;
-    text-align: center;
-}
 
-.form_section_content select {		/* 카테고리 css 설정 */
-    width: 92%;
-    height: 35px;
-    font-size: 20px;
-    text-align-last: center;
-    margin-left: 5px;
+.ck-content {						/* ckeditor 높이 */
+    height: 170px;
 }
-.cate_wrap span {
-    font-weight: 600;
-}
-.cate_wrap:not(:first-child) {
-    margin-top: 20px;
-}
-
-.ck_warn{						/* 입력란 공란 경고 태그 */
-	display: none;
-    padding-top: 10px;
-    text-align: center;
-    color: #e05757;
-    font-weight: 300;    
-}
-
-.step_val{						/* 할인 가격 문구 */
-	display: block;
-    padding-top: 5px;
-    font-weight: 500;
-}
-
 
 /* 버튼 영역 */
 .btn_section{
@@ -220,6 +179,24 @@ input[name='publeYear'] {
 #enrollBtn:hover {
     background-color: #c9cbd0;
 }
+
+.form_section_content select {		/* 카테고리 css 설정 */
+    width: 92%;
+    height: 35px;
+    font-size: 20px;
+    text-align-last: center;
+    margin-left: 5px;
+}
+.cate_wrap span {
+    font-weight: 600;
+}
+.cate_wrap:not(:first-child) {
+    margin-top: 20px;
+}
+
+
+
+
 
 
 /* footer navai 영역 */
@@ -282,7 +259,6 @@ input[name='publeYear'] {
 	margin-left: 70px;
 	margin-top : 30px;
 }
-
 
 
 

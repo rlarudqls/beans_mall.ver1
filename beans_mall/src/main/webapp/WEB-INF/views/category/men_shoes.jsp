@@ -1593,6 +1593,19 @@
 		</footer>
 
 	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+	$(window).scroll(function() {
+	  var scrollHeight = $(document).height();
+	  var scrollPosition = $(window).height() + $(window).scrollTop();
+	  if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+	    // 페이지 하단에 도달한 경우
+	    // 다음 카테고리로 스크롤하는 코드 작성
+	    // 예를 들어, accessories.jsp로 이동하는 코드
+	    window.location.href = '/category/Necklace';
+	  }
+	});
 
+	</script>
 </body>
 </html>

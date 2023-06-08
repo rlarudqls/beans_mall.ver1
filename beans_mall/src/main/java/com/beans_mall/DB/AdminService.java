@@ -13,7 +13,7 @@ import com.beans_mall.VO.OrderDTO;
 public interface AdminService {
 
 	/* 상품 등록 */
-	public void beanEnroll(BeanVO book);		
+	public void beanEnroll(BeanVO bean);		
 	
 	/* 카테고리 리스트 */
 	public List<CateVO> cateList();	

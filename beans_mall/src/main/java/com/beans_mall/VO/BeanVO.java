@@ -16,6 +16,9 @@ public class BeanVO {
     /* 판매자 id */
     private int authorId;
 
+    /* 판매자 이름 */
+    private String authorName;
+    
     /* 출판일 */
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date publeYear;
@@ -50,8 +53,6 @@ public class BeanVO {
     /* 이미지 정보 */
     private List<AttachImageVO> imageList;
 
-    /* 판매자 이름 */
-    private String authorName;
 
     /* 카테고리 이름 */
     private String cateName;
