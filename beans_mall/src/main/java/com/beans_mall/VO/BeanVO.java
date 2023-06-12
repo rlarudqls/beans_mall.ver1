@@ -18,12 +18,12 @@ public class BeanVO {
 
     /* 판매자 이름 */
     private String authorName;
-    
+
     /* 출판일 */
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date publeYear;
 
-    /* 출판사 */
+    /* 판촉회사 */
     private String publisher;
 
     /* 카테고리 코드 */
@@ -53,7 +53,6 @@ public class BeanVO {
     /* 이미지 정보 */
     private List<AttachImageVO> imageList;
 
-
     /* 카테고리 이름 */
     private String cateName;
 
@@ -79,6 +78,14 @@ public class BeanVO {
 
     public void setAuthorId(int authorId) {
         this.authorId = authorId;
+    }
+
+    public String getAuthorName() {
+        return authorName;
+    }
+
+    public void setAuthorName(String authorName) {
+        this.authorName = authorName;
     }
 
     public Date getPubleYear() {
@@ -169,14 +176,6 @@ public class BeanVO {
         this.imageList = imageList;
     }
 
-    public String getAuthorName() {
-        return authorName;
-    }
-
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
-    }
-
     public String getCateName() {
         return cateName;
     }
@@ -187,9 +186,9 @@ public class BeanVO {
 
     @Override
     public String toString() {
-        return "BeanVO [beanId=" + beanId + ", beanName=" + beanName + ", authorId=" + authorId + ", publeYear=" + publeYear
-                + ", publisher=" + publisher + ", cateCode=" + cateCode + ", beanPrice=" + beanPrice + ", beanStock="
-                + beanStock + ", beanDiscount=" + beanDiscount + ", beanIntro=" + beanIntro + ", beanContents="
+        return "BeanVO [beanId=" + beanId + ", beanName=" + beanName + ", authorId=" + authorId + ", authorName=" + authorName
+                + ", publeYear=" + publeYear + ", publisher=" + publisher + ", cateCode=" + cateCode + ", beanPrice=" + beanPrice
+                + ", beanStock=" + beanStock + ", beanDiscount=" + beanDiscount + ", beanIntro=" + beanIntro + ", beanContents="
                 + beanContents + ", regDate=" + regDate + ", updateDate=" + updateDate + "]";
     }
 }

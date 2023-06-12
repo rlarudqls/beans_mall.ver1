@@ -159,7 +159,7 @@
 	
 	SELECT beanId, beanName, ratingAvg, (SELECT cateName FROM beans_mall_cate WHERE beans_mall_bean.cateCode = beans_mall_cate.cateCode) AS cateName
 	FROM beans_mall_bean
-	ORDER BY ratingAvg DESC LIMIT 8		
+	ORDER BY ratingAvg DESC LIMIT 100		
 	
 	</select>	
 					

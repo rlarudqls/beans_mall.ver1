@@ -24,7 +24,7 @@
   	<select id="getMemberInfo" resultType="com.beans_mall.VO.MemberVO">
   	
   		SELECT memberId, memberName, memberMail, memberAddr1, memberAddr2, memberAddr3, money, point 
-  		FROM bean_member 
+  		FROM beans_mall_member 
   		WHERE memberId = #{memberId}
   	
   	</select> 

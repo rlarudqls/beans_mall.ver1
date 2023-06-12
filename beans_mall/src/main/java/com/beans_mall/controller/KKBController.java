@@ -13,13 +13,12 @@ public class KKBController {
 
     private static final Logger logger = LoggerFactory.getLogger(KKBController.class);
 
-    // 메인 페이지 이동
-    @RequestMapping(value = "/main", method = RequestMethod.GET)
+    @GetMapping("/kkbMain")
     public void mainPageGET() {
         logger.info("메인 페이지 진입");
+        // 여기에 메인 페이지로 이동하는 로직 추가
     }
 
-    // 각 카테고리 페이지 이동
     @GetMapping("/category/{categoryName}")
     public String categoryPageGET(@PathVariable String categoryName) {
         String viewName = "category/" + categoryName;

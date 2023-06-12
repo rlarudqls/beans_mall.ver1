@@ -29,6 +29,14 @@ public class MemberServiceImpl implements MemberService{
     public MemberVO memberLogin(MemberVO member) throws Exception {
         
         return kkbMemberDAO.memberLogin(member);
+        
     }
-	
+
+	/* 주문자 정보 */
+	@Override
+	public MemberVO getMemberInfo(String memberId) {
+		
+		return kkbMemberDAO.getMemberInfo(memberId);
+		
+	}	
 }

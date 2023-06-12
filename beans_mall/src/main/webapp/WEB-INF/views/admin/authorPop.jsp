@@ -7,8 +7,122 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="../resources/css/admin/authorPop.css">
-<script
+<style>@charset "UTF-8";
+
+/* 전체 wrap */
+.wrapper{
+	width:100%;
+	height:535px;
+}
+.subject_name_warp{
+	font-size: 33px;
+    font-weight: bolder;
+    padding-left: 15px;
+    background-color: #333;
+    height: 13%;
+    line-height: 70px;
+    color: white;
+}
+.content_wrap{
+	height:87%;
+}
+
+
+
+
+	/* 작가 목록 영역 */
+.author_table_wrap{
+	padding: 20px 35px
+}
+.table_exist{
+	height:251px;
+}
+.author_table{
+	width: 100%;
+    border: 1px solid #d3d8e1;
+    text-align: center;
+    border-collapse: collapse;
+}
+.author_table td{
+	padding: 10px 5px;
+	border : 1px solid #e9ebf0;
+}
+.author_table thead{
+	background-color: #f8f9fd;	
+	font-weight: 600;
+}
+.author_table a{
+	color:#1088ed;
+	font-weight: 500;
+}
+.th_column_1{
+	width:120px;
+}
+.th_column_3{
+	width:110px;
+}
+
+
+.table_empty{
+	text-align: center;
+    margin: 101px 0 130px 0;
+    font-size: 25px;
+}
+
+	/* 검색 영역 */
+.search_wrap{
+	margin-top:25px;
+}
+.search_input{
+    position: relative;
+    text-align:center;	
+}
+.search_input input[name='keyword']{
+	padding: 4px 10px;
+    font-size: 15px;
+    height: 20px;
+    line-height: 20px;
+}
+.search_btn{
+	height: 32px;
+    width: 80px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    position: absolute;
+    margin-left: 15px;
+    background-color: #c3daf7;
+}
+
+	/* 페이지 버튼 인터페이스 */
+.pageMaker_wrap{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.pageMaker{
+    list-style: none;
+    display: inline-block;
+}	
+.pageMaker_btn {
+	text-align: center;	
+	float: left;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 8px;
+    font-size: 15px;
+}
+.active{
+	border : 2px solid black;
+	font-weight:400;
+}
+.next, .prev {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+.next a, .prev a {
+    color: #ccc;
+}</style><script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
@@ -29,7 +143,6 @@
 	                    			<tr>
 	                    				<td class="th_column_1">판매자 번호</td>
 	                    				<td class="th_column_2">판매자 이름</td>
-	                    				<td class="th_column_3">판매자 국가</td>
 	                    			</tr>
 	                    		</thead>
 	                    		<c:forEach items="${list}" var="bean">
@@ -40,7 +153,6 @@
 	                    					<c:out value="${bean.authorName}"></c:out>
 	                    				</a> 
 	                    			</td>
-	                    			<td><c:out value="${bean.nationName}"></c:out> </td>
 	                    		</tr>
 	                    		</c:forEach>
 	                    	</table>

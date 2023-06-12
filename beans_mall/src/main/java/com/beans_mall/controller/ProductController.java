@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ProductController {
 
-    @GetMapping("/w/product/")
-    public String getProductPage(Model model) {
-        model.addAttribute("productName", "나만의 커스텀 포토 그립 스마트톡");
-        return "/w/product/product";
-    }
+	 @GetMapping("/2023/06/09")
+	    public String handleRequest() {
+	        // 경로에 대한 요청을 처리하는 로직을 구현
+	        return "viewName"; // 처리 결과를 보여줄 뷰의 이름 리턴
+	    }
 }

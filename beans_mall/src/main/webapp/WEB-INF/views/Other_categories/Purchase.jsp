@@ -31,14 +31,11 @@
     </style>
 </head>
 <body>
-    <div class="real-time-purchases">
-        <h1>실시간 구매</h1>
-        <c:forEach items="${purchases}" var="purchase">
-            <div class="purchase-item">
-                <img src="${purchase.productImage}" alt="Product Image">
-                <p>${purchase.memberName}님이 ${purchase.productName} 상품을 구매하셨습니다.</p>
-            </div>
+    <h1>실시간 구매</h1>
+    <ul>
+        <c:forEach var="purchase" items="${realTimePurchases}">
+            <li>${purchase.orderId} - ${purchase.memberId} - ${purchase.orderDate}</li>
         </c:forEach>
-    </div>
+    </ul>
 </body>
 </html>

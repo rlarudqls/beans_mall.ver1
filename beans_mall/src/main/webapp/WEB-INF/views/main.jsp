@@ -82,6 +82,301 @@
 	display: none;
 }
 </style>
+<style>
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+/* 화면 전체 렙 */
+.wrapper {
+	width: 100%;
+	margin-top: 20px;
+}
+/* content 랩 */
+.wrap {
+	width: 1080px;
+	margin: auto;
+}
+
+/* 검색 박스 영역 */
+.search_area {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.search_wrap {
+	width: 100%;
+	height: 100%;
+}
+
+#searchForm {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search_input {
+	display: flex;
+	height: 30%;
+	width: 80%;
+}
+
+.search_input select {
+	width: 20%;
+	text-align: center;
+	font-size: 15px;
+}
+
+.search_input input {
+	margin-left: 10px;
+	width: 57%;
+	font-size: 18px;
+	padding-left: 2%;
+}
+
+.search_btn {
+	margin-left: 10px;
+	width: 17%;
+	border-radius: 14px;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+/* Footer 영역 스타일 */
+.footer {
+	background-color: #f5f5f5;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footer li {
+	display: inline-block;
+	margin: 0 28px;
+}
+
+.footer a {
+	color: #555;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.footer .social-icons {
+	margin-top: 10px;
+}
+
+.footer .social-icons a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #555;
+	color: #fff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 5px;
+}
+
+.footer .social-icons a:hover {
+	background-color: #000;
+}
+
+.footer .award-icons {
+	margin-top: 20px;
+}
+
+.footer .award-icons .icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #ccc;
+	margin-right: 10px;
+}
+
+/* 제품 목록 네비 */
+.navi_bar_area {
+	overflow: hidden;
+	background-color: #5e6b9e;
+	margin-top: 20px;
+}
+
+.navi_bar_area a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 0;
+	text-decoration: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	width: 140px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	width: 466px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: left;
+	width: 80px;
+}
+
+.container_gnb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.navi_bar_area a:hover, .dropdown:hover .dropbtn {
+	background-color: #475382;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* 홈페이지 메인 제품 목록  */
+.content_area {
+	width: 100%;
+	min-height: 1000px;
+}
+
+/* float 속성 해제 */
+.clearfix {
+	clear: both;
+}
+
+/* 슬라이드 */
+.ls_wrap {
+	margin: 30px 0;
+	padding: 0 10px;
+}
+
+.ls_div_content {
+	height: 275px;
+	border: 1px solid #dadada;
+}
+
+.ls_category {
+	text-align: center;
+	font-size: 13px;
+	color: #3e74ab;
+}
+
+.ls_beanName {
+	text-align: center;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+}
+</style>
+
+<style>
+.full-w {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.inner-w {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.inner-w {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.text-box {
+	text-align: center;
+}
+
+.text-box ul {
+	text-align: left;
+}
+
+.text-box.fr .sns-list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.text-box.fr .sns-list a {
+	margin-right: 10px; /* 각 링크 사이의 간격을 조정할 수 있습니다. */
+}
+
+.sns-list {
+	text-align: center;
+}
+
+.inner-w.clf.safe-info {
+	text-align: center;
+}
+
+.empty {
+	flex: 1;
+}
+</style>
+
+<link rel="stylesheet" type="text/css"
+	href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css"
+	href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
 </head>
 <body>
 	<div data-vue="token"></div>
@@ -113,43 +408,32 @@
 	display: block;
 }
 </style>
+					<style>
+.btn-dropdown {
+	margin-top: -5px;
+	margin-right: 10px;
+}
+</style>
+					<style>
+.nav-btn {
+	margin-top: -15px;
+}
+</style>
 
 					<div class="nav-btn ui-dropdown" data-disabled="hover"
 						onmouseover="showDropdown('app-install-guide')"
 						onmouseout="hideDropdown('app-install-guide')">
 						<input readonly type="text" name="" class="btn-dropdown reset"
-							value="빈스몰 앱 설치하기">
-						<section class="menu-dropdown app-install-guide"
-							id="app-install-guide">
-							<h1>빈스몰을 스마트폰으로 더욱 편리하게 사용하세요.</h1>
-							<ol>
-								<li>
-									<h2>1. 문자로 앱설치 안내받기(앱 출시예정)</h2>
-									<form class="form-sms" method="post">
-										<label class="input-text"> <input type="text"
-											placeholder="'-' 없이 번호를 입력하세요" name="cell_phone" required>
-										</label>
-										<button type="submit" class="btn btn-s btn-point">전송</button>
-									</form> <span>앱 설치 URL 전송을 위하여 휴대폰번호를 입력하며<br />입력된 정보는 저장되지
-										않습니다.
-								</span>
-								</li>
-								<li>
-									<h2>2. 앱스토어에서 직접 설치하기</h2>
-									<p>빈스몰 앱을 스마트폰에 더욱 편리하게 사용하려면 아래의 단계를 따라주세요:</p>
-									<ol>
-										<li>스마트폰의 앱스토어(예: App Store 또는 Google Play 스토어)를 엽니다.</li>
-										<li>앱스토어의 검색 창에 "빈스몰"을 입력합니다.</li>
-										<li>검색 결과에서 빈스몰 앱을 찾아 선택합니다.</li>
-										<li>선택한 앱 페이지에서 "설치" 버튼을 눌러 앱을 다운로드합니다.</li>
-										<li>다운로드가 완료되면 빈스몰 앱을 열고 회원가입 또는 로그인을 진행합니다.</li>
-										<li>이제 빈스몰 앱을 스마트폰에서 편리하게 이용할 수 있습니다.</li>
-									</ol>
-								</li>
-							</ol>
-						</section>
+							value="DB없이 작동할때 보일 화면" onclick="redirectToCategory()">
 
 					</div>
+
+					<script>
+						function redirectToCategory() {
+							window.location.href = "/category/Dessert";
+						}
+					</script>
+
 
 					<nav class="fr">
 						<input type="text" id="current_user_email" class="hidden"
@@ -167,7 +451,6 @@
 							dropdownMenu.classList.remove("show");
 						}
 					</script>
-
 					<style>
 .menu-dropdown {
 	display: none;
@@ -180,16 +463,7 @@
 
 
 
-					<div class="nav-btn ui-dropdown"
-						onmouseover="showDropdown('customer-service')"
-						onmouseout="hideDropdown('customer-service')">
-						<button type="button" class="btn-dropdown">고객센터</button>
-						<ul class="menu-dropdown" id="customer-service">
-							<li><a href="/notice/notice">공지사항</a></li>
-							<li><a href="/notice/inquire">자주 묻는 질문</a></li>
-							<li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
-						</ul>
-					</div>
+
 
 					<script>
 						function showDropdown(menuId) {
@@ -203,7 +477,11 @@
 						}
 					</script>
 
-
+					<style>
+.login_button {
+	margin-top: -15px;
+}
+</style>
 
 					<c:if test="${member == null}">
 						<!-- 로그인되지 않은 상태 -->
@@ -241,8 +519,9 @@
 					</div>
 					<nav class="profile-links">
 						<a href="/w/me" class="btn"> <i class="icon-mypage"></i> 내 정보
-						</a> <a id="my-cart-button" href="/w/cart" class="btn"> <span
-							class="cart-counter"></span> <i class="icon-cart"></i> 장바구니
+						</a> <a id="my-cart-button"
+							href="<a href="/cart/${member.memberId}">장바구니</a>" class="btn">
+							<span class="cart-counter"></span> <i class="icon-cart"></i> 장바구니
 						</a>
 					</nav>
 				</div>
@@ -314,7 +593,7 @@
 						<li class="ui_gnb__menu " data-state=""><a
 							href="/other_categories/review">실시간 후기</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
-							href="/category/A_ring">판매자 추천</a></li>
+							href="/goodsDetail/15">판매자 추천</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
 							href="/other_categories/recommendation">실시간 추천</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
@@ -331,6 +610,20 @@
 						</li>
 						<li class="ui_gnb__menu " data-state=""><a
 							href="/other_categories/diy">나만의 DIY</a></li>
+
+						<div class="nav-btn ui-dropdown"
+							onmouseover="showDropdown('customer-service')"
+							onmouseout="hideDropdown('customer-service')">
+							<button type="button" class="btn-dropdown">고객센터</button>
+							<ul class="menu-dropdown" id="customer-service">
+								<li><a href="/notice/notice">공지사항</a></li>
+								<li><a href="/notice/inquire">자주 묻는 질문</a></li>
+								<li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
+							</ul>
+						</div>
+
+
+
 						<li class="ui_gnb__menu " data-state="active"><a
 							href="/w/main/category">카테고리</a></li>
 					</ul>
@@ -616,868 +909,71 @@
 
 				});
 			</script>
+			
 		</header>
-		<div class="dimmed-background"></div>
-		<div data-vue="category-detail">
-			<div id="content" class="content" data-page="2dep-list">
-				<div class="inner-w mobile-full hide-gnb">
-					<div class="ui_title m-mod mobile-hide">
-						<h2 class="ui_title__txt">폰케이스</h2>
+		
+		
+		<div class="wrapper">
+			<div class="wrap">
+
+				<div class="top_area">
+
+					<div class="search_area">
+						<div class="search_wrap">
+							<form id="searchForm" action="/search" method="get">
+								<div class="search_input">
+									<select name="type">
+										<option value="T">상품명</option>
+										<option value="A">판매자</option>
+									</select> <input type="text" name="keyword">
+									<button class='btn search_btn'>검 색</button>
+								</div>
+							</form>
+						</div>
 					</div>
+
+					<div class="clearfix"></div>
 				</div>
-				<div class="inner-w">
-					<div class="ui_grid mt10">
-						<div class="ui_grid__cols--4">
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase1.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">새봄마켓</div>
-											<div class="product-info__name">💖런칭할인💖나만의 커스텀 포토 그립
-												스마트톡</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 40% </span> <span
-													class="price-sale"> 5,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>9,900원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px">
-												<div class="badge badge-repurchase">재구매 많은</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value="4.9"> ★ ★ ★ ★
-														★</span> <span class="review-count">(1918)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">너무 이뻐요 최고예요
-														정면사진 많이 찍어서 또 주문할께요♡♡ 기본사이즈도 좋은데 왕그립톡이 진짜 맘에 듭니다 판매자님
-														감하해요♡♡</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase2.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">리지스토어</div>
-											<div class="product-info__name">강아지 고양이 아기 얼굴 사진 아크릴 그립
-												톡홀더 제작</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 37% </span> <span
-													class="price-sale"> 6,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>10,900원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value="4.9"> ★ ★ ★ ★
-														★ </span> <span class="review-count">(278)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">누끼를 너무 잘따주셔서 너무
-														귀엽게 잘낭왔어여😆</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase3.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">핫티몰</div>
-											<div class="product-info__name">1+1 [에폭시톡+젤리 BEST모음전]
-												핸드폰케이스</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 31% </span> <span
-													class="price-sale"> 12,800<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>18,500원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value="4.9"> ★ ★ ★ ★
-														★ </span> <span class="review-count">(437)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">귀여운 호랑이 쟁여서 너무
-														좋습니다 ㅎㅅㅎ 같이 주신 케이스도 심플하고 넘 마음에 듭니다~~~!!♡</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase4.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">소유템 폰케이스(
-												soutem)</div>
-											<div class="product-info__name">아이폰14 갤럭시❤️포토 커플 아기 톡
-												폰케이스 그립</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 66% </span> <span
-													class="price-sale"> 6,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>20,000원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px">
-												<div class="badge badge-repurchase">재구매 많은</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.8> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(846)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">신랑이 너무너무너무
-														좋아해요! 배송도 빠르고 상담도 너무 좋았습니다💛 아기들 크는 속도가 빨라서 6개월에 한번씩
-														주문하려구요 번창하세요!</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase5.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">비올레타</div>
-											<div class="product-info__name">S23입고]언더더씨 뮤토젤리&그립
-												스마트톡/렌즈보호</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 14,800<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.8> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(127)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">맘에드는 케이스를 발견해서
-														좋고 받아보니 넘 귀여워요!</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase6.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">윰쓰샵 폰케이스</div>
-											<div class="product-info__name">곰돌찡 토끼찡 커플 젤리 폰케이스 4종/
-												신기종추가!</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 15,400<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.9> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(965)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">기념일 선물로 어떤 커플템이
-														좋을까 고민하던 차에 찾게되었는데 기대 이상이에요! 해외여행 다녀온 직후가 기념일이라 시간이 촉박했는데
-														배송도 빠르게 해주셨고 그렇다고 물건의 퀄리티가 떨어지거나 하자가 있지도 않아서 만족했습니다 :) 이번이
-														반지를 제외하면 첫 커플템이네요. 이쁘게 잘 쓰겠습니다~</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase7.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">얀이토리</div>
-											<div class="product-info__name">도레미탭 리듬탭 스마트톡/키링🎶</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 15% </span> <span
-													class="price-sale"> 17,000<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>20,000원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=5> ★ ★ ★ ★ ★ </span>
-													<span class="review-count">(44)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">넘 이뻐여 실물
-														존예ㅠㅠㅠㅠㅋㅋㅋㅌ근데 상품 설명이 좀 더 있었으면 좋게써여ㅠㅠㅠㅋㅋㅋ</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase8.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">보나톡 (BONA TOK)</div>
-											<div class="product-info__name">💐4color 5월 할인중! 수국 생화
-												일반&맥세이프</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 27% </span> <span
-													class="price-sale"> 10,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>15,000원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=5> ★ ★ ★ ★ ★ </span>
-													<span class="review-count">(353)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">너무 예뻐요 사진에 안담겨요
-														진짜 예뻐요 맥세이프 추가로 금액이 좀 올라가서 망설였는데 안샀으면 어쩔뻔!!! 보고있음 행복해져요.
-														빨리 구매들 하세요~~~~</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase9.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">컴바이유 폰케이스</div>
-											<div class="product-info__name">특가할인🔥나만의 주문제작 포토 커스텀
-												그립 스마트톡</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 54% </span> <span
-													class="price-sale"> 6,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>14,900원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.9> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(399)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">도안도 꼼꼼하게 보내주시고
-														요청사항도 잘 들어주셔서 감사합니다.💕 예쁘게 잘 쓰겠습니다!!!!</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase10.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">미소랜드</div>
-											<div class="product-info__name">[투명톡+젤리 BEST모음전] 핸드폰케이스
-											</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 8,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.9> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(244)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">귀여워서 딱 취향저격
-														당했어요😆</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase11.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">소유템 폰케이스(
-												soutem)</div>
-											<div class="product-info__name">아이폰14 갤럭시❤️강아지 고양이 톡
-												폰케이스 그립</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 66% </span> <span
-													class="price-sale"> 6,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>20,000원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.8> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(1614)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">너어어무 이쁘구 너어어무
-														저렴하구 가성비 좋고 퀄리티 좋고 판매자님 친절하시구❤️ 너무 만족스러운 구매였습니다!!! 기회가된다면
-														재구매하구 싶네욤!</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase12.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">코지인사이드
-												COZYINSIDE</div>
-											<div class="product-info__name">💛 바니 폰케이스 아이폰/ S23
-												/제트플립</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 20% </span> <span
-													class="price-sale"> 15,920<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>19,900원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.8> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(104)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">딱봐도 이쁘고 그냥봐도
-														괜찮고 흔하지 않고 굳이예요 💗 일본여행 때 착용했었는데, 케이스 예쁘다고 많이 들었어용 ◡̎ ꪑ
-														동생꺼 주문해볼까 싶어 들어왔다가 후기 남겨욧</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase13.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">일루에이(illu.A)</div>
-											<div class="product-info__name">❤️힙스마일 카드슬라이드 폰케이스</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 17,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.9> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(68)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">그립톡 붙일때 껴봤는데
-														부드럽게 잘들어가더라고요ㅡ 주의사항에 하루정도 두는게 낫대서 우선 펼쳐두고 있어요 ㅎㅎㅎ 색상이 너무
-														예뽀요 ㅠㅠㅠ 귀엽고 배송은 왜케 빨라유???? 거기다가 지시사항도 꼼꼼하게 보내주셔서 좋았어요
-														많이파세요!!!</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase14.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">마인드마이닝</div>
-											<div class="product-info__name">아이폰14💖무배/각인💖이모지
-												업슬라이드카드 폰케이스</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 48% </span> <span
-													class="price-sale"> 12,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>25,000원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.8> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(163)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">케이스 너무
-														이뻐요꒦ິ^꒦ິ..</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase15.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">하루빛</div>
-											<div class="product-info__name">민트/핑크/퍼플❤️ 마카롱 곰돌이 링고리
-												z플립케이스</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 23,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-new">NEW</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=5> ★ ★ ★ ★ ★ </span>
-													<span class="review-count">(1)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">정말 이뻐요 받고
-														소리질렸거든요ㅋㅋㅋ 사진은ㅠ 카메라 고장으로 못 찍어서 올리는데 진짜 실물이 장난아니예요</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase16.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">잉애링</div>
-											<div class="product-info__name">2️⃣버전 💙투명한 푸른바다 폰케이스 &
-												스마트그립톡🌊</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 20% </span> <span
-													class="price-sale"> 20,800<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>25,900원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.9> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(37)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">완전 예뻐요! 오자마자 바로
-														휴대폰에 끼우고 배경화면까지 바다로 맞췄어여</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase17.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">소유템 폰케이스(
-												soutem)</div>
-											<div class="product-info__name">갤럭시 z플립3 4 ♥트웰브 소가죽+링
-												폰케이스 스트랩</div>
-											<div class="product-info__price">
-												<span class="sale-rate"> 23% </span> <span
-													class="price-sale"> 19,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-												<div class="price-origin--before-sale">
-													<del>25,900원</del>
-												</div>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 12px"></div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.7> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(41)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">고급지고 예뻐욤♡</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase18.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">비올레타</div>
-											<div class="product-info__name">봄맞이 벚꽃피크닉 뮤토젤리케이스/렌즈보호
-											</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 14,800<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.9> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(204)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">색상도 상큼하고 귀여워요🥰
-														카메라 부분 보호해 주는것도 너무 좋네용👍🏻</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase19.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">미소랜드</div>
-											<div class="product-info__name">[모양톡+카드하드 BEST모음전]
-												핸드폰케이스</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 11,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.8> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(39)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">핸드폰 사면 주는 기본
-														케이스(왼) 1년 넘도록 쓰다가 너무 귀여워서 새로 배송받아 바로 사진찍고(오) 핸드폰
-														탈바꿈했어요🤣🤣 일찍 알았으면 더 빨리 바꿨을텐데, 꼬질꼬질 케이스에서 귀염뽀짝한 케이스로 바꾸니
-														봄이 온것같고 넘 좋네요 번창하세요 ☺️😍😍</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="ui_grid__item">
-								<div class="base-card card--vertical product">
-									<a href="/w/product/" target="_blank">
-										<div class="card-thumb-cover">
-											<div class="product-thumb-img"
-												style="background-image: url('/resources/category/img/phonecase20.jpg')"></div>
-											<div class="product-bookmark">
-												<button class="full-button">
-													<button type="button" class="sp-icon icon-favorite"></button>
-												</button>
-											</div>
-										</div>
-										<div class="card-info product-info">
-											<div class="product-info__artist-name">일루에이(illu.A)</div>
-											<div class="product-info__name">z플립4 z플립3 츄키스
-												곰돌이키링+하드폰케이스</div>
-											<div class="product-info__price">
-												<span class="price-origin"> 24,900<span
-													style="font-size: 14px;">원</span>
-												</span>
-											</div>
-											<div class="product-info__badge-group"
-												style="margin-top: 8px">
-												<div class="badge badge-delivery">무료배송</div>
-											</div>
-											<div class="product-info__review">
-												<div class="review-rating">
-													<span class="ui_rating fr" data-value=4.9> ★ ★ ★ ★ ★
-													</span> <span class="review-count">(256)</span>
-												</div>
-												<div class="review-comment">
-													<div class="review-comment__badge">후기</div>
-													<div class="review-comment__contents">배송도 빠르고 받자마자
-														써봤는데 너무 좋아요!!</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
+				<div class="navi_bar_area">
+					<div class="dropdown">
+						<button class="dropbtn">국산제품</button>
+						<div class="dropdown-content">
+							<c:forEach items="${cate1}" var="cate">
+								<a href="search?type=C&cateCode=${cate.cateCode}">${cate.cateName}</a>
+							</c:forEach>
+						</div>
+					</div>
+					<div class="dropdown">
+						<button class="dropbtn">외국제품</button>
+						<div class="dropdown-content">
+							<c:forEach items="${cate2}" var="cate">
+								<a href="search?type=C&cateCode=${cate.cateCode}">${cate.cateName}</a>
+							</c:forEach>
 						</div>
 					</div>
 				</div>
+
+
+
+
+
+	<c:forEach items="${ls}" var="item">
+    <a href="/goodsDetail/${item.beanId}">
+        <div class="ls_div_content" style="height: 50%;">
+            <div class="ls_beanName">${item.beanName}</div>
+            <div class="ls_category">${item.cateName}</div>
+        </div>
+    </a>
+</c:forEach>
+
+
+
+
+
+
+
 			</div>
 		</div>
-
 
 		<div data-vue="BottomSheet"></div>
 		<div data-vue="WideBottomSheet"></div>
@@ -1501,32 +997,23 @@
 			</div>
 
 			<div class="inner-w clf" data-has-inquire-btn="false">
-
-
 				<div class="text-box fl">
 					<strong>(주) 빈스몰</strong>
 					<ul>
-						<li>대표이사 : 김경빈</li>
-						<li>서울특별시 송파구 올림픽로135</li>
-						<li>사업자 등록번호 : 000-00-00000 <a
-							href="https://velog.io/@kkb3431" target="blank"
-							class="btn-style-link"> 사업자 벨로그확인 <i
-								class="fa fa-caret-right"></i>
-						</a>
-						</li>
-						<li>판매업신고 : 2023-서울강남-0101</li>
-						<li>호스팅서비스 제공자 : KKB WEB Service, Inc</li>
+						<li><strong>대표이사:</strong> 김경빈</li>
+						<li><strong>서울특별시 송파구 올림픽로135</strong></li>
+						<li><strong>사업자 등록번호:</strong> 000-00-00000 <a
+							href="https://velog.io/@kkb3431" target="_blank"
+							class="btn-style-link">사업자 벨로그확인 <i class="fa fa-caret-right"></i></a></li>
+						<li><strong>판매업신고:</strong> 2023-서울강남-0101</li>
+						<li><strong>호스팅서비스 제공자:</strong> KKB WEB Service, Inc</li>
 					</ul>
-					<span class="mt-fix1"> 빈스몰의 실제 판매촉진 및 상업적 활동을 하지 않습니다.<br>
-						따라서 빈스몰은 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다. <span class="copyright">Copyright
-							© 2023 Beans_mall All right reserved.</span>
-					</span>
+
 				</div>
 
 				<div class="text-box fl">
-					<strong>고객센터</strong> <span
-						style="display: inline-blk; margin-top: 2px;">(평일 오전 10시 ~
-						오후 6시)</span>
+					<span style="display: inline-block; margin-top: 10px;">고객센터(평일
+						오전 10시 ~ 오후 6시)</span>
 					<ul>
 						<li><span class="fix-w">카카오톡</span> <a
 							href="https://www.kakaocorp.com/page/"><em
@@ -1552,47 +1039,76 @@
 							href="https://twitter.com" target="blank"
 							class="sp-icon icon-twitter-c"></a>
 					</nav>
+				</div>
 
-					<span class="mt-fix3"> <span class="sp-icon award-reddot fl"
-						style="margin-right: 24px"></span> <span
-						class="sp-icon award-idea fr"></span>
-					</span>
+				<div class="inner-w clf safe-info">
+					<hr class="divider" />
+					<div class="empty fl"></div>
+					<div class="text-box fl isms"></div>
 				</div>
 			</div>
 
-			<div class="inner-w clf safe-info">
-				<hr class="divider" />
-				<div class="empty fl"></div>
-				<div class="text-box fl isms">
-					<a
-						href="https://isms.kisa.or.kr/main/ispims/issue/?certificationMode=list&crtfYear=&searchCondition=2&searchKeyword=%EB%B0%B1%ED%8C%A8%EC%BB%A4&__encrypted=U8oaEwTLg12yqNDZuCwRPMiDRLgcrZjlbxomU5uctoZc1kXWONBhXaf0KhG%2BaV6wpp2zSeTry6yKT1QpQPP4n6Wl4JbzPyTKSn7s1FoRr90UnnwTp%2BW928V1TpyMuwFVMU8D270RkIg564CRAF0bUnkvpnfyAxjhbyn0pSpjvw%2BMlXuoQnR3oJUfvVi%2B1dac8Gnd7jHhSmiDLOX09CuWhVRPx40RuMcaT%2FHbItyyZvQECWvcAvRb36C1zB%2FnwnWRJNfv74iaCKBgpNE%2BERnypNyBfcqQSKf%2BfDsW9aHcpTOO1K747YgBrg%3D%3D"
-						target="blank"> <span class="sp-icon logo-isms fl"></span>
-					</a> <span class="txt fl"> [김경빈한정 인증범위] 온라인 마켓 플랫폼 운영(빈스몰) <br />
-						[김경빈한정 유효기간] 1999.09.27 - 3999.12.31
-					</span>
-				</div>
-				<div class="text-box fl escrow">
-					<span class="sp-icon escrow fl"></span> <span class="txt fl">
-						고객님은 현금 등으로 결제시 당사에서 가입한 <br /> 구매안전서비스를 이용하실 수 없습니다.
-					</span>
-				</div>
-			</div>
+
+
 		</footer>
 
 	</div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script>
-	$(window).scroll(function() {
-	  var scrollHeight = $(document).height();
-	  var scrollPosition = $(window).height() + $(window).scrollTop();
-	  if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-	    // 페이지 하단에 도달한 경우
-	    // 다음 카테고리로 스크롤하는 코드 작성
-	    // 예를 들어, accessories.jsp로 이동하는 코드
-	    window.location.href = '/category/Dessert';
-	  }
-	});
 
+							
+
+							/* 이미지 삽입 */
+							$(".image_wrap")
+									.each(
+											function(i, obj) {
+
+												const bobj = $(obj);
+
+												if (bobj.data("beanid")) {
+													const uploadPath = bobj
+															.data("path");
+													const uuid = bobj
+															.data("uuid");
+													const fileName = bobj
+															.data("filename");
+
+													const fileCallPath = encodeURIComponent(uploadPath
+															+ "/s_"
+															+ uuid
+															+ "_" + fileName);
+
+													$(this)
+															.find("img")
+															.attr(
+																	'src',
+																	'/display?fileName='
+																			+ fileCallPath);
+												} else {
+													$(this)
+															.find("img")
+															.attr('src',
+																	'/resources/img/goodsNoImage.png');
+												}
+
+											});
+
+						});
+
+		/* gnb_area 로그아웃 버튼 작동 */
+		$("#gnb_logout_button").click(function() {
+			//alert("버튼 작동");
+			$.ajax({
+				type : "POST",
+				url : "/member/logout.do",
+				success : function(data) {
+					alert("로그아웃 성공");
+					document.location.reload();
+				}
+			}); // ajax 
+		});
 	</script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,5 @@
 package com.beans_mall.DAO;
 
-
 import java.util.List;
 
 import com.beans_mall.VO.BeanVO;
@@ -8,10 +7,11 @@ import com.beans_mall.VO.MemberVO;
 import com.beans_mall.VO.OrderDTO;
 import com.beans_mall.VO.OrderItemDTO;
 import com.beans_mall.VO.OrderPageItemDTO;
+
 public interface kkbOrderDAO {
 
 	/* 주문 상품 정보 */
-	public OrderPageItemDTO getBeanInfo(int beanId);
+	public OrderPageItemDTO getGoodsInfo(int beanId);
 
 	/* 주문 상품 정보(주문 처리) */
 	public OrderItemDTO getOrderInfo(int beanId);
@@ -34,6 +34,6 @@ public interface kkbOrderDAO {
 	/* 주문 상품 정보(주문취소) */
 	public List<OrderItemDTO> getOrderItemInfo(String orderId);
 
-	/* 주문 정보(주문취소) */
+	/* 주문 정보(주문 취소) */
 	public OrderDTO getOrder(String orderId);
 }

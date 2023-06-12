@@ -25,7 +25,7 @@ import com.beans_mall.VO.OrderPageItemDTO;
 import com.beans_mall.DAO.kkbCartDAO;
 
 @Service
-public class OrderServiceImpl implements OrderService{
+public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	private kkbOrderDAO kkbOrderDAO;
@@ -49,7 +49,7 @@ public class OrderServiceImpl implements OrderService{
 
 		for (OrderPageItemDTO ord : orders) {
 
-			OrderPageItemDTO beanInfo = kkbOrderDAO.getBeanInfo(ord.getBeanId());
+			OrderPageItemDTO beanInfo = kkbOrderDAO.getGoodsInfo(ord.getBeanId());
 
 			beanInfo.setBeanCount(ord.getBeanCount());
 

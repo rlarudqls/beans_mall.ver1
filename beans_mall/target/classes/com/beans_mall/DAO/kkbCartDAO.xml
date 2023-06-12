@@ -7,7 +7,7 @@
 	<!-- 카트 추가 -->
 	<insert id="addCart">
 	
-		insert into kkb_cart(memberId, beanId, beanCount)
+		insert into beans_mall_cart(memberId, beanId, beanCount)
 		values(#{memberId}, #{beanId}, #{beanCount}) 
 	
 	</insert>
@@ -16,14 +16,14 @@
 	<!-- 카트 삭제 -->
 	<delete id="deleteCart">
 	
-		delete from kkb_cart where cartId = #{cartId}
+		delete from beans_mall_cart where cartId = #{cartId}
 	
 	</delete>
 	
 	<!-- 카트 수량 수정 -->
 	<update id="modifyCount">
 	
-		update kkb_cart set beanCount=#{beanCount} where cartId = #{cartId}
+		update beans_mall_cart set beanCount=#{beanCount} where cartId = #{cartId}
 	
 	</update>
 	
@@ -32,7 +32,7 @@
 	<select id="getCart" resultType="com.beans_mall.VO.CartDTO">
 	
 		select a.cartId, a.memberId, a.beanId, a.beanCount, b.beanName, b.beanPrice, b.beanDiscount
-		from kkb_cart a left outer join kkb_bean b on a.beanId = b.beanId
+		from beans_mall_cart a left outer join beans_mall_bean b on a.beanId = b.beanId
 		where memberId = #{memberId}	
 	
 	</select>
@@ -40,14 +40,14 @@
 	<!-- 카트 확인 -->
 	<select id="checkCart" resultType="com.beans_mall.VO.CartDTO">
 	
-		select * from kkb_cart 
+		select * from beans_mall_cart 
 		where memberId = #{memberId} and beanId = #{beanId}
 	
 	</select>	
 	
 	<delete id="deleteOrderCart">
 	
-		delete from kkb_cart where memberId = #{memberId} and beanId = #{beanId}
+		delete from beans_mall_cart where memberId = #{memberId} and beanId = #{beanId}
 	
 	</delete>		
 	

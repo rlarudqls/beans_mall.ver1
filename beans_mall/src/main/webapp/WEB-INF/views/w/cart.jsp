@@ -1,40 +1,31 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Shopping Cart</title>
+<meta charset="UTF-8">
+<title>Page Redirect</title>
+<style>
+   body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f1;
+   }
+
+   .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+   }
+</style>
+<script>
+   setTimeout(function() {
+      location.href = "/cart/${member.memberId}";
+   }, 1000); // 1초 후에 이동
+</script>
 </head>
 <body>
-    <h1>Shopping Cart</h1>
-    
-    <%-- Display the items in the shopping cart --%>
-    <table>
-        <tr>
-            <th>Item</th>
-            <th>Price</th>
-        </tr>
-        <c:forEach var="item" items="${cart.items}">
-            <tr>
-                <td>${item.name}</td>
-                <td>${item.price}</td>
-            </tr>
-        </c:forEach>
-    </table>
-    
-    <%-- Display the total price --%>
-    <p>Total Price: ${cart.totalPrice}</p>
-    
-    <%-- Add item form --%>
-    <h2>Add Item</h2>
-    <form action="/cart/addItem" method="post">
-        <label for="name">Item Name:</label>
-        <input type="text" id="name" name="name"><br>
-        
-        <label for="price">Price:</label>
-        <input type="number" id="price" name="price"><br>
-        
-        <button type="submit">Add to Cart</button>
-    </form>
+<div class="container">
+   <h1>잠시 후 장바구니 페이지로 자동으로 이동합니다...</h1>
+</div>
 </body>
 </html>

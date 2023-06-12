@@ -395,7 +395,7 @@
 									</li>
 								</ul>
 								<ul>
-									<li><a href="/main" data-log-label="product_category"
+									<li><a href="/category/phonecase" data-log-label="product_category"
 										data-log-object="b3b31a1b-ea75-11e4-8a46-06fd000000c2">폰케이스</a>
 									</li>
 									<li><a href="/category/Digital_Accessories"
