@@ -593,7 +593,7 @@ a {
 						<li class="ui_gnb__menu " data-state=""><a
 							href="/other_categories/review">실시간 후기</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
-							href="/goodsDetail/15">판매자 추천</a></li>
+							href="/goodsDetail/37">판매자 추천</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
 							href="/other_categories/recommendation">실시간 추천</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
