@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome BookMall</title>
+<title>빈스몰</title>
 <style>@charset "UTF-8";
 *{
 	margin: 0;
@@ -24,26 +24,35 @@ a{
 	width : 1080px;
 	margin: auto;
 }
-/* 홈페이지 기능 네비 */ 
-.top_gnb_area{
-	width: 100%;
-    height: 50px;
-    background-color: #f0f0f1;
-    position:relative;    
+/* 상단 네비게이션 */
+.top_gnb_area {
+  background-color: #333;
+  height: 50px;
 }
-.top_gnb_area .list{
-	position: absolute;
-    top: 0px;
-    right: 0;
-    
+
+.top_gnb_area .list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
-.top_gnb_area .list li{
-	list-style: none;	
-    float : left;
-    padding: 13px 15px 0 10px;
-    font-weight: 900;
-    cursor: pointer;
+
+.top_gnb_area .list li {
+  list-style: none;
+  margin-left: 10px;
 }
+
+.top_gnb_area .list li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top_gnb_area .list li a:hover {
+  color: #ff6b6b;
+}
+
 /* 로고, 검색, 로그인 */
 .top_area{
 	width: 100%;
@@ -601,10 +610,7 @@ height: 110px;
 					<li>
 						<a href="/cart/${member.memberId}">장바구니</a>
 					</li>
-				</c:if>				
-				<li>
-					고객센터
-				</li>		
+				</c:if>			
 				<li class="dropdown">
       <li><a href="/notice/notice">공지사항</a></li>
       <li><a href="/notice/inquire">자주 묻는 질문</a></li>

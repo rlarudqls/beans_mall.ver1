@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome BookMall</title>
+<title>beans mall</title>
 <style>
 @charset "UTF-8";
 *{
@@ -25,26 +25,35 @@ a{
 	width : 1080px;
 	margin: auto;
 }
-/* 홈페이지 기능 네비 */ 
-.top_gnb_area{
-	width: 100%;
-    height: 50px;
-    background-color: #f0f0f1;
-    position:relative;    
+/* 상단 네비게이션 */
+.top_gnb_area {
+  background-color: #333;
+  height: 50px;
 }
-.top_gnb_area .list{
-	position: absolute;
-    top: 0px;
-    right: 0;
-    
+
+.top_gnb_area .list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
-.top_gnb_area .list li{
-	list-style: none;	
-    float : left;
-    padding: 13px 15px 0 10px;
-    font-weight: 900;
-    cursor: pointer;
+
+.top_gnb_area .list li {
+  list-style: none;
+  margin-left: 10px;
 }
+
+.top_gnb_area .list li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.top_gnb_area .list li a:hover {
+  color: #ff6b6b;
+}
+
 /* 로고, 검색, 로그인 */
 .top_area{
 	width: 100%;
