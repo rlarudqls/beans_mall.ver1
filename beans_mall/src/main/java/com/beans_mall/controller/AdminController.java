@@ -43,6 +43,7 @@ import com.beans_mall.VO.OrderDTO;
 import com.beans_mall.VO.PageDTO;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 @Controller
 @RequestMapping("/admin")
 public class AdminController {
@@ -54,12 +55,11 @@ public class AdminController {
 
 	@Autowired
 	private AdminService adminService;
-	
+
 	@Autowired
 	private OrderService orderService;
 
-
-	/* 관리자 메인 페이지 이동 */
+	/* 관리자 메인 페이지 이동, 향후 빈스몰 메인페이지를 home으로 통합후 여러 프로젝트를 실행시킬수 있게 할 예정*/
 	@RequestMapping(value = "main", method = RequestMethod.GET)
 	public void adminMainGET() throws Exception {
 		logger.info("관리자 페이지 이동");
@@ -353,7 +353,6 @@ public class AdminController {
 
 				/* 썸네일 생성 */
 				File thumbnailFile = new File(uploadPath, "s_" + uploadFileName);
-
 
 			} catch (Exception e) {
 				e.printStackTrace();

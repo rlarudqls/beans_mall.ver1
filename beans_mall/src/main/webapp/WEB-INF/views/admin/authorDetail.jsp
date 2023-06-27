@@ -120,12 +120,9 @@ ul {
 
 /* 관리자페이지 컨텐츠 영역 */
 .admin_content_wrap {
- 
-   max-width: 1200px;
-  margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
-
-
 
 /* 관리자 컨텐츠 제목 영역 */
 .admin_content_subject {
@@ -284,7 +281,7 @@ ul {
 <body>
 	<%@include file="../includes/admin/header.jsp"%>
 	<div class="admin_content_wrap">
-		
+
 		<div class="admin_content_main">
 			<div class="form_section">
 				<div class="form_section_title">
@@ -313,9 +310,11 @@ ul {
 						<option value="none" selected disabled="disabled">=== 선택
 							===</option>
 						<option value="01" disabled="disabled"
-							<c:out value=" ${authorInfo.nationId eq '01' ?'selected':''}"/>>Made in Korea</option>
+							<c:out value=" ${authorInfo.nationId eq '01' ?'selected':''}"/>>Made
+							in Korea</option>
 						<option value="02" disabled="disabled"
-							<c:out value=" ${authorInfo.nationId eq '02' ?'selected':''}"/>>Made in other countries</option>
+							<c:out value=" ${authorInfo.nationId eq '02' ?'selected':''}"/>>Made
+							in other countries</option>
 					</select>
 				</div>
 			</div>
@@ -359,8 +358,8 @@ ul {
 			value='<c:out value="${authorInfo.authorId }"/>'> <input
 			type="hidden" name="pageNum" value='<c:out value="${cri.pageNum }"/>'>
 		<input type="hidden" name="amount"
-			value='<c:out value="${cri.amount }"/>'> <input
-			type="hidden" name="keyword" value='<c:out value="${cri.keyword }"/>'>
+			value='<c:out value="${cri.amount }"/>'> <input type="hidden"
+			name="keyword" value='<c:out value="${cri.keyword }"/>'>
 	</form>
 
 	<script>
@@ -383,17 +382,3 @@ ul {
 
 </body>
 </html>
-<%--jQuery 라이브러리: 코드의 첫 번째 줄에서 jQuery 라이브러리를 로드하고 있습니다. jQuery는 JavaScript 작업을 간소화하고 효율적으로 처리할 수 있는 많은 기능을 제공합니다. 이를 통해 코드 작성을 단순화하고 브라우저 간의 호환성 문제를 해결할 수 있습니다.
-
-
-재사용 가능한 컴포넌트: 코드에서는 <div>와 <input>과 같은 HTML 요소를 사용하여 판매자 정보를 표시하고 있습니다. 이러한 요소들은 클래스를 통해 스타일링되어 있으며, 이를 통해 디자인을 일관성 있게 유지하고 재사용할 수 있습니다. 이는 유지 보수를 용이하게 만들어주고 코드의 가독성을 향상시킵니다.
-
-
-
-이벤트 처리: 코드는 "판매자 목록" 버튼과 "수정" 버튼에 클릭 이벤트를 추가하고 있습니다. 이를 통해 사용자가 해당 버튼을 클릭했을 때 원하는 동작을 실행할 수 있습니다. 이벤트 처리를 통해 사용자와 상호작용하고 원하는 작업을 수행할 수 있습니다.
-
-
-
-서버로의 데이터 전송: 코드의 마지막 부분에서는 <form> 요소를 사용하여 서버로 데이터를 전송하는 기능을 구현하고 있습니다. 이를 통해 서버에 필요한 데이터를 전송하고 원하는 페이지로 이동할 수 있습니다.
-
- --%>

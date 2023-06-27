@@ -29,38 +29,38 @@ a {
 }
 /* 상단 네비게이션 */
 .top_gnb_area {
-  background-color: #333;
-  height: 50px;
+	background-color: #333;
+	height: 50px;
 }
 
 .top_gnb_area .list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
 }
 
 .top_gnb_area .list li {
-  list-style: none;
-  margin-left: 10px;
+	list-style: none;
+	margin-left: 10px;
 }
 
 .top_gnb_area .list li a {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s ease;
 }
 
 .top_gnb_area .list li a:hover {
-  color: #ff6b6b;
+	color: #ff6b6b;
 }
 
 /* 로고, 검색, 로그인 */
-.top_area{
+.top_area {
 	width: 100%;
-    height: 150px;
-    /* background-color: #f7f0b9; */
+	height: 150px;
+	/* background-color: #f7f0b9; */
 }
 
 /* 로고 영역 */
@@ -598,7 +598,7 @@ th {
 						<li><a href="/w/me">마이페이지</a></li>
 						<li><a href="/cart/${member.memberId}">장바구니</a></li>
 					</c:if>
-					
+
 					<li class="dropdown">
 					<li><a href="/notice/notice">공지사항</a></li>
 					<li><a href="/notice/inquire">자주 묻는 질문</a></li>

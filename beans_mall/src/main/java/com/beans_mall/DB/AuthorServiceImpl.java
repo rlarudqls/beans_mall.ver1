@@ -14,8 +14,8 @@ import com.beans_mall.VO.Criteria;
 @Service
 public class AuthorServiceImpl implements AuthorService {
 
-	private static final Logger log = LoggerFactory.getLogger(AuthorServiceImpl.class);	
-	
+	private static final Logger log = LoggerFactory.getLogger(AuthorServiceImpl.class);
+
 	@Autowired
 	private kkbAuthorDAO kkbAuthorDAO;
 
@@ -23,15 +23,15 @@ public class AuthorServiceImpl implements AuthorService {
 	@Override
 	public void authorEnroll(AuthorVO author) throws Exception {
 		kkbAuthorDAO.authorEnroll(author);
-	}	
+	}
 
 	/* 판매자 목록 */
 	@Override
 	public List<AuthorVO> authorGetList(Criteria cri) throws Exception {
 		log.info("(service)authorGetList()......." + cri);
 		return kkbAuthorDAO.authorGetList(cri);
-	}	
-	
+	}
+
 	/* 판매자 총 수 */
 	@Override
 	public int authorGetTotal(Criteria cri) throws Exception {

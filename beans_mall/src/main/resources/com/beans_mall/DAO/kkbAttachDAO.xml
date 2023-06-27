@@ -2,12 +2,13 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-  <mapper namespace="com.beans_mall.DAO.kkbAttachDAO">
+<mapper namespace="com.beans_mall.DAO.kkbAttachDAO">
 
-	<select id="getAttachList" resultType="com.beans_mall.VO.AttachImageVO">
-	
+	<select id="getAttachList"
+		resultType="com.beans_mall.VO.AttachImageVO">
+
 		select * from beans_mall_image where beanId = #{beanId}
-	
+
 	</select>
 
-  </mapper>
+</mapper>

@@ -395,7 +395,8 @@
 									</li>
 								</ul>
 								<ul>
-									<li><a href="/category/phonecase" data-log-label="product_category"
+									<li><a href="/category/phonecase"
+										data-log-label="product_category"
 										data-log-object="b3b31a1b-ea75-11e4-8a46-06fd000000c2">폰케이스</a>
 									</li>
 									<li><a href="/category/Digital_Accessories"
@@ -859,17 +860,13 @@
 													<span class="ui_rating fr" data-value=5> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(278)</span>
@@ -921,17 +918,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(437)</span>
@@ -982,17 +975,13 @@
 													<span class="ui_rating fr" data-value=4.8> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(846)</span>
@@ -1040,17 +1029,13 @@
 													<span class="ui_rating fr" data-value=4.8> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(127)</span>
@@ -1098,17 +1083,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(965)</span>
@@ -1158,17 +1139,13 @@
 													<span class="ui_rating fr" data-value=5> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(44)</span>
@@ -1218,17 +1195,13 @@
 													<span class="ui_rating fr" data-value=5> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(353)</span>
@@ -1277,17 +1250,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(399)</span>
@@ -1335,17 +1304,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(244)</span>
@@ -1395,17 +1360,13 @@
 													<span class="ui_rating fr" data-value=4.8> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(1614)</span>
@@ -1455,17 +1416,13 @@
 													<span class="ui_rating fr" data-value=4.8> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(104)</span>
@@ -1513,17 +1470,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(68)</span>
@@ -1575,17 +1528,13 @@
 													<span class="ui_rating fr" data-value=4.8> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(163)</span>
@@ -1633,17 +1582,13 @@
 													<span class="ui_rating fr" data-value=5> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(1)</span>
@@ -1693,17 +1638,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(37)</span>
@@ -1753,17 +1694,13 @@
 													<span class="ui_rating fr" data-value=4.7> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(41)</span>
@@ -1811,17 +1748,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(204)</span>
@@ -1869,17 +1802,13 @@
 													<span class="ui_rating fr" data-value=4.8> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(39)</span>
@@ -1927,17 +1856,13 @@
 													<span class="ui_rating fr" data-value=4.9> <i
 														style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
-														data-state="active"></i> <i
-														style="font-size: 11px"
+														data-state="active"></i> <i style="font-size: 11px"
 														class="ui_icon--star idus-icon-star-fill"
 														data-state="active"></i>
 													</span> <span class="review-count">(256)</span>
@@ -2063,7 +1988,7 @@
 
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
+		<script>
 	$(window).scroll(function() {
 	  var scrollHeight = $(document).height();
 	  var scrollPosition = $(window).height() + $(window).scrollTop();
@@ -2076,6 +2001,5 @@
 	});
 
 	</script>
-
 </body>
 </html>

@@ -15,7 +15,7 @@
 </head>
 </head>
 <body>
-
+<!-- 빈스몰 주문관련 메서드 추가 제작. 일정 금액 이상 구매시 택배비할인?? -->
 	<%@include file="../includes/admin/header.jsp"%>
 
 	<div class="admin_content_wrap">

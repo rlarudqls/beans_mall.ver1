@@ -909,10 +909,10 @@ a {
 
 				});
 			</script>
-			
+
 		</header>
-		
-		
+
+
 		<div class="wrapper">
 			<div class="wrap">
 
@@ -957,14 +957,14 @@ a {
 
 
 
-	<c:forEach items="${ls}" var="item">
-    <a href="/goodsDetail/${item.beanId}">
-        <div class="ls_div_content" style="height: 50%;">
-            <div class="ls_beanName">${item.beanName}</div>
-            <div class="ls_category">${item.cateName}</div>
-        </div>
-    </a>
-</c:forEach>
+				<c:forEach items="${ls}" var="item">
+					<a href="/goodsDetail/${item.beanId}">
+						<div class="ls_div_content" style="height: 50%;">
+							<div class="ls_beanName">${item.beanName}</div>
+							<div class="ls_category">${item.cateName}</div>
+						</div>
+					</a>
+				</c:forEach>
 
 
 

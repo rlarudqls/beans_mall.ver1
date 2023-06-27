@@ -32,119 +32,118 @@ import com.beans_mall.VO.ReplyDTO;
 @Controller
 public class BeanController {
 
-    private static final Logger logger = LoggerFactory.getLogger(BeanController.class);
+	private static final Logger logger = LoggerFactory.getLogger(BeanController.class);
 
-    @Autowired
-    private AttachService attachService;
+	@Autowired
+	private AttachService attachService;
 
-    @Autowired
-    private BeanService beanService;
+	@Autowired
+	private BeanService beanService;
 
-    @Autowired
-    private ReplyService replyService;
+	@Autowired
+	private ReplyService replyService;
 
-    @RequestMapping(value="/main", method = RequestMethod.GET)
-    public void mainPageGET(Model model) {
+	@RequestMapping(value = "/main", method = RequestMethod.GET)
+	public void mainPageGET(Model model) {
 
-        logger.info("메인 페이지 진입");
+		logger.info("메인 페이지 진입");
 
-        model.addAttribute("cate1", beanService.getCateCode1());
-        model.addAttribute("cate2", beanService.getCateCode2());
-        model.addAttribute("ls", beanService.likeSelect());
+		model.addAttribute("cate1", beanService.getCateCode1());
+		model.addAttribute("cate2", beanService.getCateCode2());
+		model.addAttribute("ls", beanService.likeSelect());
 
-    }
+	}
 
-    @GetMapping("/display")
-    public ResponseEntity<byte[]> getImage(String fileName){
+	@GetMapping("/display")
+	public ResponseEntity<byte[]> getImage(String fileName) {
 
-        logger.info("getImage()........" + fileName);
+		logger.info("getImage()........" + fileName);
 
-        // "s_" 제외하고 파일 이름만 사용하여 경로 생성
-        String filePath = "c:\\upload\\" + fileName.replace("s_", "");
+		// "s_" 제외하고 파일 이름만 사용하여 경로 생성
+		String filePath = "c:\\upload\\" + fileName.replace("s_", "");
 
-        File file = new File(filePath);
+		File file = new File(filePath);
 
-        ResponseEntity<byte[]> result = null;
+		ResponseEntity<byte[]> result = null;
 
-        try {
+		try {
 
-            HttpHeaders header = new HttpHeaders();
-            header.add("Content-type", Files.probeContentType(file.toPath()));
-            result = new ResponseEntity<>(FileCopyUtils.copyToByteArray(file), header, HttpStatus.OK);
+			HttpHeaders header = new HttpHeaders();
+			header.add("Content-type", Files.probeContentType(file.toPath()));
+			result = new ResponseEntity<>(FileCopyUtils.copyToByteArray(file), header, HttpStatus.OK);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-        return result;
-    }
+		return result;
+	}
 
+	@GetMapping(value = "/getAttachList", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<List<AttachImageVO>> getAttachList(int beanId) {
 
-    @GetMapping(value="/getAttachList", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<List<AttachImageVO>> getAttachList(int beanId){
+		logger.info("getAttachList.........." + beanId);
 
-        logger.info("getAttachList.........." + beanId);
+		return new ResponseEntity<List<AttachImageVO>>(attachService.getAttachList(beanId), HttpStatus.OK);
 
-        return new ResponseEntity<List<AttachImageVO>>(attachService.getAttachList(beanId), HttpStatus.OK);
+	}
 
-    }
+	@GetMapping("/search")
+	public String searchGoodsGET(Criteria cri, Model model) {
 
-    @GetMapping("/search")
-    public String searchGoodsGET(Criteria cri, Model model) {
+		logger.info("cri : " + cri);
 
-        logger.info("cri : " + cri);
+		List<BeanVO> list = beanService.getGoodsList(cri);
+		logger.info("pre list : " + list);
+		if (!list.isEmpty()) {
+			model.addAttribute("list", list);
+			logger.info("list : " + list);
+		} else {
+			model.addAttribute("listcheck", "empty");
 
-        List<BeanVO> list = beanService.getGoodsList(cri);
-        logger.info("pre list : " + list);
-        if(!list.isEmpty()) {
-            model.addAttribute("list", list);
-            logger.info("list : " + list);
-        } else {
-            model.addAttribute("listcheck", "empty");
+			return "search";
+		}
 
-            return "search";
-        }
+		model.addAttribute("pageMaker", new PageDTO(cri, beanService.goodsGetTotal(cri)));
 
-        model.addAttribute("pageMaker", new PageDTO(cri, beanService.goodsGetTotal(cri)));
+		String[] typeArr = cri.getType().split("");
 
-        String[] typeArr = cri.getType().split("");
+		for (String s : typeArr) {
+			if (s.equals("T") || s.equals("A")) {
+				model.addAttribute("filter_info", beanService.getCateInfoList(cri));
+			}
+		}
 
-        for(String s : typeArr) {
-            if(s.equals("T") || s.equals("A")) {
-                model.addAttribute("filter_info", beanService.getCateInfoList(cri));
-            }
-        }
+		return "search";
 
-        return "search";
+	}
 
-    }
+	@GetMapping("/goodsDetail/{beanId}")
+	public String goodsDetailGET(@PathVariable("beanId") int beanId, Model model) {
 
-    @GetMapping("/goodsDetail/{beanId}")
-    public String goodsDetailGET(@PathVariable("beanId")int beanId, Model model) {
+		logger.info("goodsDetailGET()..........");
 
-        logger.info("goodsDetailGET()..........");
+		model.addAttribute("goodsInfo", beanService.getGoodsInfo(beanId));
 
-        model.addAttribute("goodsInfo", beanService.getGoodsInfo(beanId));
+		return "/goodsDetail";
+	}
 
-        return "/goodsDetail";
-    }
+	@GetMapping("/replyEnroll/{memberId}")
+	public String replyEnrollWindowGET(@PathVariable("memberId") String memberId, int beanId, Model model) {
+		BeanVO bean = beanService.getBeanIdName(beanId);
+		model.addAttribute("beanInfo", bean);
+		model.addAttribute("memberId", memberId);
 
-    @GetMapping("/replyEnroll/{memberId}")
-    public String replyEnrollWindowGET(@PathVariable("memberId")String memberId, int beanId, Model model) {
-        BeanVO bean = beanService.getBeanIdName(beanId);
-        model.addAttribute("beanInfo", bean);
-        model.addAttribute("memberId", memberId);
+		return "/replyEnroll";
+	}
 
-        return "/replyEnroll";
-    }
+	@GetMapping("/replyUpdate")
+	public String replyUpdateWindowGET(ReplyDTO dto, Model model) {
+		BeanVO bean = beanService.getBeanIdName(dto.getBeanId());
+		model.addAttribute("beanInfo", bean);
+		model.addAttribute("replyInfo", replyService.getUpdateReply(dto.getReplyId()));
+		model.addAttribute("memberId", dto.getMemberId());
 
-    @GetMapping("/replyUpdate")
-    public String replyUpdateWindowGET(ReplyDTO dto, Model model) {
-        BeanVO bean = beanService.getBeanIdName(dto.getBeanId());
-        model.addAttribute("beanInfo", bean);
-        model.addAttribute("replyInfo", replyService.getUpdateReply(dto.getReplyId()));
-        model.addAttribute("memberId", dto.getMemberId());
-
-        return "/replyUpdate";
-    }
+		return "/replyUpdate";
+	}
 }

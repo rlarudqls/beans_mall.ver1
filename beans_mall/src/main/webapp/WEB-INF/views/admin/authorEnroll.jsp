@@ -119,11 +119,9 @@ ul {
 }
 
 .admin_content_wrap {
- 
-   max-width: 1200px;
-  margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
-
 
 /* 관리자 컨텐츠 제목 영역 */
 .admin_content_subject {
@@ -284,7 +282,7 @@ ul {
 	<%@include file="../includes/admin/header.jsp"%>
 	<div class="admin_wrap">
 		<div class="admin_content_wrap">
-		
+
 			<div class="admin_content_main">
 				<form action="/admin/authorEnroll.do" method="post" id="enrollForm">
 					<div class="form_section">
