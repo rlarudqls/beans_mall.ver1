@@ -19,7 +19,7 @@
 
 
 
-	<!-- 카테고리 리스트 -->ㄴ
+	<!-- 카테고리 리스트 -->
 	<select id="cateList" resultType="com.beans_mall.VO.CateVO">
 		SELECT * FROM beans_mall_cate ORDER BY cateCode
 	</select>

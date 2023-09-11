@@ -424,7 +424,7 @@ a {
 						onmouseover="showDropdown('app-install-guide')"
 						onmouseout="hideDropdown('app-install-guide')">
 						<input readonly type="text" name="" class="btn-dropdown reset"
-							value="DB없이 작동할때 보일 화면" onclick="redirectToCategory()">
+							value="완성품일때 보일화면" onclick="redirectToCategory()">
 
 					</div>
 
@@ -589,9 +589,9 @@ a {
 						<li class="ui_gnb__menu " data-state=""><a href="/main">홈</a>
 						</li>
 						<li class="ui_gnb__menu " data-state=""><a
-							href="/other_categories/purchase">실시간 구매</a></li>
+							href="/other_categories/purchase">구매내역</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
-							href="/other_categories/review">실시간 후기</a></li>
+							href="/other_categories/review">지연 배송 신고</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
 							href="/goodsDetail/37">판매자 추천</a></li>
 						<li class="ui_gnb__menu " data-state=""><a

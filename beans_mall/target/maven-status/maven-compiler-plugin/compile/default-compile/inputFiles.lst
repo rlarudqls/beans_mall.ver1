@@ -2,6 +2,7 @@ C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\VO\MemberVO.j
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\ProductController.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\AdminServiceImpl.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DAO\kkbAuthorDAO.java
+C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\EmailService.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\AttachService.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\VO\PageDTO.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\VO\ReplyDTO.java
@@ -44,6 +45,7 @@ C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\AttachServ
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\SearchController.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\MemberServiceImpl.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\AuthorServiceImpl.java
+C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\ProductServlet.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\HomeController.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\RouletteController.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DAO\kkbAdminDAO.java
@@ -65,3 +67,4 @@ C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\AdminServi
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\VO\ProductVO.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\OrderServiceImpl.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\BeanController.java
+C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\EmailController.java
