@@ -601,7 +601,7 @@ a {
 						<li class="ui_gnb__menu " data-state=""><a
 							href="/other_categories/season_discount">시즌할인</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
-							href="/other_categories/latest">최신 작품</a></li>
+							href="/other_categories/latest">의상 나눔</a></li>
 						<li class="ui_gnb__menu " data-state=""><a
 							href="https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923">인기판매자</a>
 						</li>

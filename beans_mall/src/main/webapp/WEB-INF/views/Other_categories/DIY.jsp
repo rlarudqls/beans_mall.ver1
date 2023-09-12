@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>옷에 프린팅하기</title>
+<title>나만의 DIY</title>
 <style>
 /* 스타일 추가 */
 body {
@@ -99,7 +99,7 @@ canvas {
 </head>
 <body>
 	<header>
-		<h1>옷에 프린팅하기</h1>
+		<h1>나만의 DIY</h1>
 	</header>
 
 	<div id="container">

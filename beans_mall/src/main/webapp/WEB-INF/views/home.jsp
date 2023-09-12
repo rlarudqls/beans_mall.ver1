@@ -114,7 +114,7 @@ footer {
 	text-align: center;
 }
 
-@media (max-width: 767px) {
+@media ( max-width : 767px) {
 	header {
 		text-align: center;
 	}
@@ -155,7 +155,6 @@ footer {
 	footer {
 		padding: 10px;
 	}
-	/* 오른쪽으로 정렬하는 스타일 추가 */
 	nav ul {
 		text-align: right;
 	}
@@ -166,9 +165,7 @@ footer {
 	<header>
 		<nav>
 			<ul>
-				<li><a href="main" id="shopping-pc-link">쇼핑하러가기[PC.VER]</a></li>
-				<li><a href="main" id="shopping-mobile-link">쇼핑하러가기[Mobile.VER]</a></li>
-				<li><a href="http://3.39.110.53:8081/">erp Beta 체험하러 가기</a></li>
+				<li><a href="main" id="shopping-pc-link">쇼핑하러가기</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -180,28 +177,35 @@ footer {
 
 	<section class="product-list">
 		<div class="product">
-			<img src="/resources/img/kkblogo.png" alt="상품1">
+			<img src="/resources/img/kkblogo.png" alt="쇼핑몰">
 			<h3>쇼핑몰</h3>
 			<p>Bean's Mall</p>
-			<button onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=07426f2ee7724b81af5100b41519ae74&pm=c'">더 알아보기</button>
+			<button
+				onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=07426f2ee7724b81af5100b41519ae74&pm=c'">더
+				알아보기</button>
 		</div>
 		<div class="product">
-			<img src="/resources/img/kkbERP_logo.png" alt="상품2">
+			<img src="/resources/img/kkbERP_logo.png" alt="ERP Beta">
 			<h3>ERP Beta</h3>
 			<p>Bean's ERP Beta</p>
-			<button onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=8d610f2bbdc5473c9403c8d90c4ac9a0&pm=c'">더 알아보기</button>
+			<button
+				onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=8d610f2bbdc5473c9403c8d90c4ac9a0&pm=c'">더
+				알아보기</button>
 		</div>
 		<div class="product">
-			<img src="/resources/img/kkbPetWalking.png" alt="상품3">
+			<img src="/resources/img/kkbPetWalking.png" alt="반려동물과 산책">
 			<h3>반려동물과 산책</h3>
 			<p>Bean's petWalking</p>
-			<button onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=02bd1bc055114d1f90d1f9a1f6edbf97&pm=c'">더 알아보기</button>
+			<button
+				onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=02bd1bc055114d1f90d1f9a1f6edbf97&pm=c'">더
+				알아보기</button>
 		</div>
 		<div class="product">
-			<img src="/resources/img/kkbERP_logo.png" alt="상품2">
+			<img src="/resources/img/kkbERP_logo.png" alt="Bean's ERP">
 			<h3>ERP</h3>
 			<p>Bean's ERP</p>
-			<button onclick="location.href='https://github.com/rlarudqls/kkbERP'">더 알아보기</button>
+			<button onclick="location.href='https://github.com/rlarudqls/kkbERP'">더
+				알아보기</button>
 		</div>
 	</section>
 
@@ -209,20 +213,21 @@ footer {
 
 	<!-- JavaScript 코드 추가 -->
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
+		document.addEventListener('DOMContentLoaded', function() {
 			const shoppingPcLink = document.getElementById('shopping-pc-link');
-			const shoppingMobileLink = document.getElementById('shopping-mobile-link');
+			const shoppingMobileLink = document
+					.getElementById('shopping-mobile-link');
 			const pcStyle = document.getElementById('pc-style');
 			const mobileStyle = document.getElementById('mobile-style');
 
-			shoppingPcLink.addEventListener('click', function (event) {
+			shoppingPcLink.addEventListener('click', function(event) {
 				if (mobileStyle.disabled) {
 					mobileStyle.disabled = false;
 					pcStyle.disabled = true;
 				}
 			});
 
-			shoppingMobileLink.addEventListener('click', function (event) {
+			shoppingMobileLink.addEventListener('click', function(event) {
 				if (pcStyle.disabled) {
 					pcStyle.disabled = false;
 					mobileStyle.disabled = true;
