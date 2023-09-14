@@ -10,16 +10,18 @@
 <style>
 /* 전체 영역 */
 body {
-	font-family: Arial, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 예쁜 글꼴로 변경 */
 	margin: 0;
 	padding: 0;
+	background-color: #f8f8f8; /* 페이지 배경색 변경 */
 }
 
 /* 헤더 영역 */
 header {
-	background-color: #e43f5a;
+	background-color: #34495e; /* 헤더 배경색 변경 */
 	padding: 20px;
 	color: #fff;
+	text-align: center;
 }
 
 /* 로고 */
@@ -48,7 +50,7 @@ nav ul li a {
 
 /* 배너 영역 */
 .banner {
-	background-color: #f5f5f5;
+	background-color: #ecf0f1; /* 배너 배경색 변경 */
 	padding: 40px;
 	text-align: center;
 }
@@ -68,6 +70,7 @@ nav ul li a {
 /* 상품 목록 영역 */
 .product-list {
 	padding: 40px;
+	text-align: center; /* 가운데 정렬을 위해 추가 */
 }
 
 .product {
@@ -77,6 +80,7 @@ nav ul li a {
 	padding: 20px;
 	background-color: #fff;
 	border: 1px solid #ccc;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
 }
 
 .product img {
@@ -98,17 +102,24 @@ nav ul li a {
 }
 
 .product button {
-	background-color: #e43f5a;
+	background-color: #e74c3c; /* 버튼 배경색 변경 */
 	color: #fff;
 	border: none;
 	padding: 10px 20px;
 	font-size: 16px;
+	font-weight: bold; /* 버튼 텍스트 굵게 설정 */
+	border-radius: 5px; /* 버튼 모서리 둥글게 만들기 */
 	cursor: pointer;
+	transition: background-color 0.3s ease; /* 버튼 호버 효과 추가 */
+}
+
+.product button:hover {
+	background-color: #c0392b; /* 호버 시 배경색 변경 */
 }
 
 /* 푸터 영역 */
 footer {
-	background-color: #333;
+	background-color: #34495e; /* 푸터 배경색 변경 */
 	padding: 20px;
 	color: #fff;
 	text-align: center;
@@ -155,20 +166,17 @@ footer {
 	footer {
 		padding: 10px;
 	}
-	/* 오른쪽으로 정렬하는 스타일 추가 */
 	nav ul {
-		text-align: right;
+		text-align: center;
 	}
 }
 </style>
 </head>
 <body>
 	<header>
+		<h1 class="logo">김경빈의 프로젝트 메인화면</h1>
 		<nav>
 			<ul>
-				<li><a href="main" id="shopping-pc-link">쇼핑하러가기[PC.VER]</a></li>
-				<li><a href="main" id="shopping-mobile-link">쇼핑하러가기[Mobile.VER]</a></li>
-				<li><a href="http://3.39.110.53:8081/">erp Beta 체험하러 가기</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -176,32 +184,41 @@ footer {
 	<section class="banner">
 		<h1>환영합니다!</h1>
 		<p>빈스몰의 최신 상품을 만나보세요.</p>
+		<a href="main" id="shopping-pc-link" class="button">쇼핑하러가기</a>
 	</section>
 
 	<section class="product-list">
 		<div class="product">
-			<img src="/resources/img/kkblogo.png" alt="상품1">
+			<img src="/resources/img/kkblogo.png" alt="쇼핑몰">
 			<h3>쇼핑몰</h3>
 			<p>Bean's Mall</p>
-			<button onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=07426f2ee7724b81af5100b41519ae74&pm=c'">더 알아보기</button>
+			<button
+				onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=07426f2ee7724b81af5100b41519ae74&pm=c'">더
+				알아보기</button>
 		</div>
 		<div class="product">
-			<img src="/resources/img/kkbERP_logo.png" alt="상품2">
+			<img src="/resources/img/kkbERP_logo.png" alt="ERP Beta">
 			<h3>ERP Beta</h3>
 			<p>Bean's ERP Beta</p>
-			<button onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=8d610f2bbdc5473c9403c8d90c4ac9a0&pm=c'">더 알아보기</button>
+			<button
+				onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=8d610f2bbdc5473c9403c8d90c4ac9a0&pm=c'">더
+				알아보기</button>
 		</div>
 		<div class="product">
-			<img src="/resources/img/kkbPetWalking.png" alt="상품3">
+			<img src="/resources/img/kkbPetWalking.png" alt="반려동물과 산책">
 			<h3>반려동물과 산책</h3>
 			<p>Bean's petWalking</p>
-			<button onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=02bd1bc055114d1f90d1f9a1f6edbf97&pm=c'">더 알아보기</button>
+			<button
+				onclick="location.href='https://bristle-house-c2d.notion.site/fbdf277b33984ffba1046be4320c2923?p=02bd1bc055114d1f90d1f9a1f6edbf97&pm=c'">더
+				알아보기</button>
 		</div>
 		<div class="product">
-			<img src="/resources/img/kkbERP_logo.png" alt="상품2">
+			<img src="/resources/img/kkbERP_logo.png" alt="Bean's ERP">
 			<h3>ERP</h3>
 			<p>Bean's ERP</p>
-			<button onclick="location.href='https://github.com/rlarudqls/kkbERP'">더 알아보기</button>
+			<button
+				onclick="location.href='https://github.com/rlarudqls/kkbERP'">더
+				알아보기</button>
 		</div>
 	</section>
 
@@ -209,20 +226,21 @@ footer {
 
 	<!-- JavaScript 코드 추가 -->
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
+		document.addEventListener('DOMContentLoaded', function() {
 			const shoppingPcLink = document.getElementById('shopping-pc-link');
-			const shoppingMobileLink = document.getElementById('shopping-mobile-link');
+			const shoppingMobileLink = document
+					.getElementById('shopping-mobile-link');
 			const pcStyle = document.getElementById('pc-style');
 			const mobileStyle = document.getElementById('mobile-style');
 
-			shoppingPcLink.addEventListener('click', function (event) {
+			shoppingPcLink.addEventListener('click', function(event) {
 				if (mobileStyle.disabled) {
 					mobileStyle.disabled = false;
 					pcStyle.disabled = true;
 				}
 			});
 
-			shoppingMobileLink.addEventListener('click', function (event) {
+			shoppingMobileLink.addEventListener('click', function(event) {
 				if (pcStyle.disabled) {
 					pcStyle.disabled = false;
 					mobileStyle.disabled = true;

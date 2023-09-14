@@ -114,11 +114,17 @@ a {
 }
 
 .search_btn {
-	margin-left: 10px;
-	width: 17%;
-	border-radius: 14px;
+	width: 20%;
+	border: none;
+	background-color: #04AA6D;
+	color: #fff;
 	font-size: 17px;
 	font-weight: 600;
+	cursor: pointer;
+}
+
+.search_btn:hover {
+	background-color: #3e8e41;
 }
 
 /* 로그인 버튼 영역 */
@@ -282,31 +288,40 @@ a {
 
 /* 로그인 성공 영역 */
 .login_success_area {
-	height: 62%;
-	width: 80%;
-	border: 2px solid #7474ad;
+	background-color: #f5f5f5;
+	border: 2px solid #ddd;
 	border-radius: 15px;
-	margin: 5% auto;
-	padding-top: 5%;
+	padding: 10px; /* 크기 조절 */
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	width: 200px; /* 너비 조절 */
+	margin: 0 auto; /* 가운데 정렬 */
 }
 
+/* 로그아웃 링크 스타일 */
 .login_success_area>a {
-	font-size: 15px;
-	font-weight: 900;
 	display: inline-block;
-	margin-top: 5px;
-	background: #e1e5e8;
-	width: 82px;
-	height: 22px;
-	line-height: 22px;
-	border-radius: 25px;
-	color: #606267;
+	padding: 5px 10px;
+	background-color: #3a60df;
+	color: #fff;
+	font-size: 14px; /* 폰트 크기 조절 */
+	font-weight: 600;
+	border-radius: 20px; /* 버튼 모양을 더 둥글게 만듭니다. */
+	text-decoration: none;
+	margin-top: 10px; /* 버튼과 텍스트 사이의 간격 조절 */
+	transition: background-color 0.3s ease;
 }
 
+.login_success_area>a:hover {
+	background-color: #3048c5;
+}
+
+/* 회원 정보 스타일 */
 .login_success_area>span {
 	display: block;
-	text-align: left;
-	margin-left: 10%;
+	margin-top: 10px; /* 텍스트와 버튼 사이의 간격 조절 */
+	font-size: 16px; /* 폰트 크기 조절 */
+	color: #333;
 }
 
 /* 검색결과 없음 */
@@ -449,6 +464,62 @@ a {
 .clearfix {
 	clear: both;
 }
+/* 필터 버튼 스타일 */
+.filter_button_wrap {
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.filter_button_wrap button {
+	width: 50%;
+	background-color: #04AA6D;
+	border: 1px solid green;
+	color: white;
+	padding: 10px 24px;
+	cursor: pointer;
+	float: left;
+}
+
+.filter_button_wrap:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.filter_button_wrap button:not(:last-child) {
+	border-right: none;
+}
+
+.filter_button:hover {
+	background-color: #3e8e41;
+}
+
+.filter_active {
+	background-color: #045d3c;
+}
+
+/* 상품 목록 스타일 */
+.type_list.large_view {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.type_list.small_view {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.type_list tr {
+	width: calc(33.333% - 20px);
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #e7e7e7;
+	box-sizing: border-box;
+}
 </style>
 <link rel="stylesheet" href="resources/css/search.css">
 <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -456,7 +527,6 @@ a {
 	crossorigin="anonymous"></script>
 </head>
 <body>
-
 	<div class="wrapper">
 		<div class="wrap">
 			<div class="top_gnb_area">
@@ -476,7 +546,6 @@ a {
 						<li><a href="/w/me">마이페이지</a></li>
 						<li><a href="/cart/${member.memberId}">장바구니</a></li>
 					</c:if>
-
 					<li><a href="/notice/notice">공지사항</a></li>
 					<li><a href="/notice/inquire">자주 묻는 질문</a></li>
 					<li><a href="/board/kkb_boardList">Q&A 게시판</a></li>
@@ -496,13 +565,12 @@ a {
 									<option value="A">판매자</option>
 								</select> <input type="text" name="keyword"
 									value="<c:out value="${pageMaker.cri.keyword}"/>">
-								<button class='btn search_btn'>검 색</button>
+								<button class="btn search_btn">검 색</button>
 							</div>
 						</form>
 					</div>
 				</div>
 				<div class="login_area">
-
 					<!-- 로그인 하지 않은 상태 -->
 					<c:if test="${member == null }">
 						<div class="login_button">
@@ -510,31 +578,26 @@ a {
 						</div>
 						<span><a href="/member/join">회원가입</a></span>
 					</c:if>
-
 					<!-- 로그인한 상태 -->
 					<c:if test="${ member != null }">
 						<div class="login_success_area">
-							<span>회원 : ${member.memberName}</span> <span>충전금액 : <fmt:formatNumber
+							<span>회원 : ${member.memberName}</span> <span>사용가능금액 : <fmt:formatNumber
 									value="${member.money }" pattern="\#,###.##" /></span> <span>포인트
 								: <fmt:formatNumber value="${member.point }" pattern="#,###" />
 							</span> <a href="/member/logout.do">로그아웃</a>
 						</div>
 					</c:if>
-
 				</div>
 				<div class="clearfix"></div>
 			</div>
 			<div class="content_area">
-
 				<!-- 게시물 o -->
 				<c:if test="${listcheck != 'empty'}">
-
 					<div class="search_filter">
 						<div class="filter_button_wrap">
 							<button class="filter_button filter_active" id="filter_button_a">국내</button>
 							<button class="filter_button" id="filter_button_b">외국</button>
 						</div>
-
 						<div class="filter_content filter_a">
 							<c:forEach items="${filter_info}" var="filter">
 								<c:if test="${filter.cateGroup eq '1'}">
@@ -549,16 +612,13 @@ a {
 								</c:if>
 							</c:forEach>
 						</div>
-
 						<form id="filter_form" action="/search" method="get">
 							<input type="hidden" name="keyword"> <input type="hidden"
 								name="cateCode"> <input type="hidden" name="type">
 						</form>
-
 					</div>
-
 					<div class="list_search_result">
-						<table class="type_list">
+						<table class="type_list large_view">
 							<colgroup>
 								<col width="110">
 								<col width="*">
@@ -566,7 +626,7 @@ a {
 								<col width="120">
 								<col width="120">
 							</colgroup>
-							<tbody id="searchList>">
+							<tbody id="searchList">
 								<c:forEach items="${list}" var="list">
 									<tr>
 										<td class="image">
@@ -581,7 +641,7 @@ a {
 										<td class="detail">
 											<div class="category">[${list.cateName}]</div>
 											<div class="title">${list.beanName}</div>
-											<div class="author">${list.authorName} |
+											<div class="author">${list.authorName}|
 												${list.publisher} | ${list.publeYear}</div>
 										</td>
 										<td class="info">
@@ -595,30 +655,24 @@ a {
 												</del>
 											</div>
 											<div class="sell_price">
-												<strong> <fmt:formatNumber
+												<strong><fmt:formatNumber
 														value="${list.beanPrice * (1-list.beanDiscount)}"
-														pattern="#,### 원" />
-												</strong>
+														pattern="#,### 원" /></strong>
 											</div>
-										</td>
 										<td class="option"></td>
 									</tr>
 								</c:forEach>
 							</tbody>
-
 						</table>
 					</div>
-
 					<!-- 페이지 이동 인터페이스 -->
 					<div class="pageMaker_wrap">
 						<ul class="pageMaker">
-
 							<!-- 이전 버튼 -->
 							<c:if test="${pageMaker.prev }">
 								<li class="pageMaker_btn prev"><a
 									href="${pageMaker.pageStart -1}">이전</a></li>
 							</c:if>
-
 							<!-- 페이지 번호 -->
 							<c:forEach begin="${pageMaker.pageStart }"
 								end="${pageMaker.pageEnd }" var="num">
@@ -627,7 +681,6 @@ a {
 									<a href="${num}">${num}</a>
 								</li>
 							</c:forEach>
-
 							<!-- 다음 버튼 -->
 							<c:if test="${pageMaker.next}">
 								<li class="pageMaker_btn next"><a
@@ -635,7 +688,6 @@ a {
 							</c:if>
 						</ul>
 					</div>
-
 					<form id="moveForm" action="/search" method="get">
 						<input type="hidden" name="pageNum"
 							value="${pageMaker.cri.pageNum}"> <input type="hidden"
@@ -645,30 +697,17 @@ a {
 							value="<c:out value="${pageMaker.cri.cateCode}"/>"> <input
 							type="hidden" name="type" value="${pageMaker.cri.type}">
 					</form>
-
-
 				</c:if>
 				<!-- 게시물 x -->
 				<c:if test="${listcheck == 'empty'}">
 					<div class="table_empty">검색결과가 없습니다.</div>
 				</c:if>
-
 			</div>
-
-			<!-- Footer 영역 -->
-
 		</div>
-		<!-- class="footer" -->
-
 	</div>
-	<!-- class="wrap" -->
-	</div>
-	<!-- class="wrapper" -->
-
 	<script>
 		/* gnb_area 로그아웃 버튼 작동 */
 		$("#gnb_logout_button").click(function() {
-			//alert("버튼 작동");
 			$.ajax({
 				type : "POST",
 				url : "/member/logout.do",
@@ -676,21 +715,16 @@ a {
 					alert("로그아웃 성공");
 					document.location.reload();
 				}
-			}); // ajax 
+			});
 		});
 
 		/* 페이지 이동 버튼 */
-
 		const moveForm = $('#moveForm');
 
 		$(".pageMaker_btn a").on("click", function(e) {
-
 			e.preventDefault();
-
 			moveForm.find("input[name='pageNum']").val($(this).attr("href"));
-
 			moveForm.submit();
-
 		});
 
 		/* 검색 필터 */
@@ -714,39 +748,32 @@ a {
 		/* 필터링 태그 동작 */
 		$(".filter_content a").on("click", function(e) {
 			e.preventDefault();
-
 			let type = '<c:out value="${pageMaker.cri.type}"/>';
 			if (type === 'A' || type === 'T') {
 				type = type + 'C';
 			}
 			let keyword = '<c:out value="${pageMaker.cri.keyword}"/>';
 			let cateCode = $(this).attr("href");
-
 			$("#filter_form input[name='keyword']").val(keyword);
 			$("#filter_form input[name='cateCode']").val(cateCode);
 			$("#filter_form input[name='type']").val(type);
 			$("#filter_form").submit();
-
 		});
 
 		$(document)
 				.ready(
 						function() {
-
 							// 검색 타입 selected
 							const selectedType = '<c:out value="${pageMaker.cri.type}"/>';
 							if (selectedType != "") {
 								$("select[name='type']").val(selectedType)
 										.attr("selected", "selected");
 							}
-
 							/* 이미지 삽입 */
 							$(".image_wrap")
 									.each(
 											function(i, obj) {
-
 												const bobj = $(obj);
-
 												if (bobj.data("beanid")) {
 													const uploadPath = bobj
 															.data("path");
@@ -754,30 +781,23 @@ a {
 															.data("uuid");
 													const fileName = bobj
 															.data("filename");
-
 													const fileCallPath = encodeURIComponent(uploadPath
 															+ "/s_"
 															+ uuid
 															+ "_" + fileName);
-
 													$(this)
 															.find("img")
 															.attr(
 																	'src',
 																	'/display?fileName='
 																			+ fileCallPath);
-
 												} else {
-
 													$(this)
 															.find("img")
 															.attr('src',
 																	'/resources/img/goodsNoImage.png');
-
 												}
-
 											});
-
 						});
 	</script>
 

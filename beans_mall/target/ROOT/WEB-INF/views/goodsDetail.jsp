@@ -114,11 +114,17 @@ a {
 }
 
 .search_btn {
-	margin-left: 10px;
-	width: 17%;
-	border-radius: 14px;
+	width: 20%;
+	border: none;
+	background-color: #04AA6D;
+	color: #fff;
 	font-size: 17px;
 	font-weight: 600;
+	cursor: pointer;
+}
+
+.search_btn:hover {
+	background-color: #3e8e41;
 }
 
 /* 로그인 버튼 영역 */
@@ -438,31 +444,31 @@ a {
 
 /* 로그인 성공 영역 */
 .login_success_area {
-	height: 62%;
-	width: 80%;
-	border: 2px solid #7474ad;
+	background-color: #f5f5f5;
+	border: 2px solid #ddd;
 	border-radius: 15px;
-	margin: 5% auto;
-	padding-top: 5%;
+	padding: 20px; /* 크기 조절 */
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	width: 200px; /* 너비 조절 */
 }
 
+/* 로그아웃 링크 스타일 */
 .login_success_area>a {
-	font-size: 15px;
-	font-weight: 900;
 	display: inline-block;
-	margin-top: 5px;
-	background: #e1e5e8;
-	width: 82px;
-	height: 22px;
-	line-height: 22px;
-	border-radius: 25px;
-	color: #606267;
+	padding: 5px 10px;
+	background-color: #3a60df;
+	color: #fff;
+	font-size: 14px; /* 폰트 크기 조절 */
+	font-weight: 600;
+	border-radius: 20px; /* 버튼 모양을 더 둥글게 만듭니다. */
+	text-decoration: none;
+	margin-top: 10px; /* 버튼과 텍스트 사이의 간격 조절 */
+	transition: background-color 0.3s ease;
 }
 
-.login_success_area>span {
-	display: block;
-	text-align: left;
-	margin-left: 10%;
+.login_success_area>a:hover {
+	background-color: #3048c5;
 }
 
 /* 검색결과 없음 */
@@ -668,14 +674,16 @@ a {
 					</c:if>
 
 					<!-- 로그인한 상태 -->
-					<c:if test="${ member != null }">
-						<div class="login_success_area">
-							<span>회원 : ${member.memberName}</span> <span>충전금액 : <fmt:formatNumber
-									value="${member.money }" pattern="\#,###.##" /></span> <span>포인트
-								: <fmt:formatNumber value="${member.point }" pattern="#,###" />
-							</span> <a href="/member/logout.do">로그아웃</a>
-						</div>
-					</c:if>
+<c:if test="${member != null}">
+    <div class="login_success_area">
+        <span>회원: ${member.memberName}</span><br>
+        <span>사용가능금액: <fmt:formatNumber value="${member.money}" pattern="\#,###.##" /></span><br>
+        <span>포인트: <fmt:formatNumber value="${member.point}" pattern="#,###" /></span><br>
+        <a href="/member/logout.do">로그아웃</a>
+    </div>
+</c:if>
+
+
 
 				</div>
 				<div class="clearfix"></div>
@@ -845,7 +853,7 @@ a {
 
 							// 연도, 월, 일 추출
 							const yearArray = year.split("-");
-							const publeYear = "상품등록 일자: "+yearArray[0] + "년 ";
+							const publeYear = "상품등록 일자: " + yearArray[0] + "년 ";
 
 							$(".publeyear").html(publeYear);
 
