@@ -127,35 +127,36 @@ a {
 	background-color: #3e8e41;
 }
 
-/* 로그인 버튼 영역 */
-.login_area {
-	width: 25%;
-	height: 100%;
-	display: inline-block;
+
+
+/* 로그인 성공 영역 */
+.login_success_area {
+	background-color: #f5f5f5;
+	border: 2px solid #ddd;
+	border-radius: 15px;
+	padding: 20px; /* 크기 조절 */
 	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	width: 200px; /* 너비 조절 */
+	float: right; /* 오른쪽으로 이동 */
 }
 
-.login_button {
-	height: 50%;
-	background-color: #D4DFE6;
-	margin-top: 30px;
-	line-height: 77px;
-	font-size: 40px;
-	font-weight: 900;
-	border-radius: 10px;
-	cursor: pointer;
-}
-
-.login_area>span {
-	margin-top: 10px;
-	font-weight: 900;
+/* 로그아웃 링크 스타일 */
+.login_success_area>a {
 	display: inline-block;
+	padding: 5px 10px;
+	background-color: #3a60df;
+	color: #fff;
+	font-size: 14px; /* 폰트 크기 조절 */
+	font-weight: 600;
+	border-radius: 20px; /* 버튼 모양을 더 둥글게 만듭니다. */
+	text-decoration: none;
+	margin-top: 10px; /* 버튼과 텍스트 사이의 간격 조절 */
+	transition: background-color 0.3s ease;
 }
 
-.login_button {
-	height: 50%;
-	background-color: #D4DFE6;
-	margin-top: 30px;
+.login_success_area>a:hover {
+	background-color: #3048c5;
 }
 
 /* 제품 목록 네비 */
@@ -442,35 +443,6 @@ a {
 	cursor: pointer;
 }
 
-/* 로그인 성공 영역 */
-.login_success_area {
-	background-color: #f5f5f5;
-	border: 2px solid #ddd;
-	border-radius: 15px;
-	padding: 20px; /* 크기 조절 */
-	text-align: center;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	width: 200px; /* 너비 조절 */
-}
-
-/* 로그아웃 링크 스타일 */
-.login_success_area>a {
-	display: inline-block;
-	padding: 5px 10px;
-	background-color: #3a60df;
-	color: #fff;
-	font-size: 14px; /* 폰트 크기 조절 */
-	font-weight: 600;
-	border-radius: 20px; /* 버튼 모양을 더 둥글게 만듭니다. */
-	text-decoration: none;
-	margin-top: 10px; /* 버튼과 텍스트 사이의 간격 조절 */
-	transition: background-color 0.3s ease;
-}
-
-.login_success_area>a:hover {
-	background-color: #3048c5;
-}
-
 /* 검색결과 없음 */
 .table_empty {
 	height: 50px;
@@ -665,23 +637,18 @@ a {
 				</div>
 				<div class="login_area">
 
-					<!-- 로그인 하지 않은 상태 -->
-					<c:if test="${member == null }">
-						<div class="login_button">
-							<a href="/member/login">로그인</a>
-						</div>
-						<span><a href="/member/join">회원가입</a></span>
-					</c:if>
+					
 
 					<!-- 로그인한 상태 -->
-<c:if test="${member != null}">
-    <div class="login_success_area">
-        <span>회원: ${member.memberName}</span><br>
-        <span>사용가능금액: <fmt:formatNumber value="${member.money}" pattern="\#,###.##" /></span><br>
-        <span>포인트: <fmt:formatNumber value="${member.point}" pattern="#,###" /></span><br>
-        <a href="/member/logout.do">로그아웃</a>
-    </div>
-</c:if>
+					<c:if test="${member != null}">
+						<div class="login_success_area">
+							<span>회원: ${member.memberName}</span><br> <span>사용가능금액:
+								<fmt:formatNumber value="${member.money}" pattern="\#,###.##" />
+							</span><br> <span>포인트: <fmt:formatNumber
+									value="${member.point}" pattern="#,###" /></span><br> <a
+								href="/member/logout.do">로그아웃</a>
+						</div>
+					</c:if>
 
 
 
@@ -767,43 +734,11 @@ a {
 
 					<div class="reply_not_div"></div>
 					<ul class="reply_content_ul">
-						<!-- 
-					<li>
-						<div class="comment_wrap">
-							<div class="reply_top">
-								<span class="id_span">sjinjin7</span>
-								<span class="date_span">2021-10-11</span>
-								<span class="rating_span">평점 : <span class="rating_value_span">4</span>점</span>
-								<a class="update_reply_btn">수정</a><a class="delete_reply_btn">삭제</a>
-							</div>
-							<div class="reply_bottom">
-								<div class="reply_bottom_txt">
-									사실 기대를 많이하고 읽기시작했는데 읽으면서 가가 쓴것이 맞는지 의심들게합니다 문체도그렇고 간결하지 않네요 제가 기대가 크던 작았던간에 책장이 사실 안넘겨집니다.
-								</div>
-							</div>
-						</div>
-					</li>
-					 -->
+
 					</ul>
 					<div class="repy_pageInfo_div">
 						<ul class="pageMaker">
-							<!--					
-						<li class="pageMaker_btn prev">
-							<a>이전</a>
-						</li>
-						<li class="pageMaker_btn">
-							<a>1</a>
-						</li>
-						<li class="pageMaker_btn">
-							<a>2</a>
-						</li>
-						<li class="pageMaker_btn active">
-							<a>3</a>
-						</li>													
-						<li class="pageMaker_btn next">
-							<a>다음</a>
-						</li>
-					 -->
+
 						</ul>
 					</div>
 
