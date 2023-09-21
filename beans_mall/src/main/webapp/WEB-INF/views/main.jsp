@@ -93,6 +93,13 @@
 a {
 	text-decoration: none;
 }
+
+@media ( max-width : 767px) {
+	.content {
+		width: 100%;
+		padding: 10px;
+	}
+}
 /* 화면 전체 렙 */
 .wrapper {
 	width: 100%;
