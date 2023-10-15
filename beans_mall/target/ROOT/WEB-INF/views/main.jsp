@@ -93,6 +93,13 @@
 a {
 	text-decoration: none;
 }
+
+@media ( max-width : 767px) {
+	.content {
+		width: 100%;
+		padding: 10px;
+	}
+}
 /* 화면 전체 렙 */
 .wrapper {
 	width: 100%;
@@ -371,7 +378,40 @@ a {
 	flex: 1;
 }
 </style>
+<style>/* 모바일 화면용 스타일 */
+@media screen and (max-width: 768px) {
+	/* 검색 영역 스타일 수정 */
+	.search_area {
+		width: 100%; /* 모바일 화면에서는 전체 너비로 변경 */
+		float: none; /* float 제거 */
+	}
+	.search_input {
+		flex-direction: column; /* 세로 정렬로 변경 */
+	}
+	.search_input select {
+		width: 100%; /* 전체 너비로 변경 */
+		margin-bottom: 10px; /* 간격 추가 */
+	}
+	.search_input input {
+		width: 100%; /* 전체 너비로 변경 */
+	}
+	.search_btn {
+		width: 100%; /* 전체 너비로 변경 */
+		margin-top: 10px; /* 간격 추가 */
+	}
 
+	/* 네비게이션 바 스타일 수정 */
+	.navi_bar_area a {
+		padding: 10px 0; /* 간격 수정 */
+	}
+	.dropdown .dropbtn {
+		padding: 10px 16px; /* 간격 수정 */
+	}
+	.dropdown-content {
+		width: 100%; /* 전체 너비로 변경 */
+	}
+}
+</style>
 <link rel="stylesheet" type="text/css"
 	href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <link rel="stylesheet" type="text/css"
