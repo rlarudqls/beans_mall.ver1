@@ -20,6 +20,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.beans_mall.VO.MemberVO;
 import com.beans_mall.DB.MemberService;
+import org.mindrot.jbcrypt.BCrypt;
 
 @Controller
 @RequestMapping(value = "/member")
@@ -42,6 +43,15 @@ public class memberController {
 	// 회원가입
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
 	public String joinPOST(MemberVO member) throws Exception {
+		// 요청에서 비밀번호를 가져옵니다.
+		String password = member.getMemberPw();
+
+		// BCrypt를 사용하여 비밀번호를 해싱합니다.
+		String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+
+		// 해싱된 비밀번호를 MemberVO에 설정합니다.
+		member.setMemberPw(hashedPassword);
+
 		memberService.memberJoin(member);
 		return "redirect:/main";
 	}
@@ -132,14 +142,9 @@ public class memberController {
 	/* 메인페이지 로그아웃 */
 	@RequestMapping(value = "logout.do", method = RequestMethod.GET)
 	public String logoutMainGET(HttpServletRequest request) throws Exception {
-
 		logger.info("logoutMainGET메서드 진입");
-
 		HttpSession session = request.getSession();
-
 		session.invalidate();
-
 		return "redirect:/main";
-
 	}
 }
