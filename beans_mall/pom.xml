@@ -168,14 +168,14 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
-			<version>5.4.2</version>
+			<version>5.5.0</version>
 		</dependency>
 
 		<!-- org.springframework.security spring-security-web 추가 -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
-			<version>5.4.2</version>
+			<version>5.5.0</version>
 		</dependency>
 
 		<!-- org.springframework.security spring-security-config 추가 -->
