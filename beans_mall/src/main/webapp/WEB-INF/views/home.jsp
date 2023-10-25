@@ -251,7 +251,7 @@ footer {
 		</div>
 		<div class="product">
 			<img src="/resources/img/TEAM_ERP_LOGO.png" alt="KOREA ERP">
-			<h3>ERP[Team]</h3>
+			<h3>ERP Application[Team]</h3>
 			<p>KOREA ERP</p>
 			<button
 				onclick="location.href='https://github.com/rlarudqls/beans_erp_mvc--Team'">더
