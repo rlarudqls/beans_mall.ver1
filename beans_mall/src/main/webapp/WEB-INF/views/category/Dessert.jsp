@@ -1614,5 +1614,18 @@
 	});
 
 	</script>
+	
+	<script>
+        // 페이지 로드 시 실행할 함수
+        window.addEventListener('load', function () {
+            // 메시지를 표시할 함수
+            function showMessage() {
+            	alert("현재 보고 계신 페이지는 목표로 하는 완성된 예시 홈페이지입니다.\n카테고리 관련 목록은 기능 업데이트가 지연될 수 있음을 양해해주시기 바랍니다.");
+            }
+
+            // showMessage 함수를 0.5초 뒤에 실행 (페이지 로드 후 0.5초 후에 실행됨)
+            setTimeout(showMessage, 500); 
+        });
+    </script>
 </body>
 </html>
