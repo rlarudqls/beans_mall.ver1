@@ -17,6 +17,7 @@ com\beans_mall\VO\UpdateReplyDTO.class
 com\beans_mall\DB\AdminService.class
 com\beans_mall\DB\kkb_BoardRepository.class
 com\beans_mall\VO\AttachImageVO.class
+utils\NaverShopSearch.class
 com\beans_mall\VO\CartDTO.class
 com\beans_mall\DB\AttachService.class
 com\beans_mall\DAO\kkbBeanDAO.class
@@ -59,6 +60,7 @@ com\beans_mall\VO\ReplyDTO.class
 com\beans_mall\DateFormatter.class
 com\beans_mall\controller\categoryController.class
 com\beans_mall\DB\AuthorServiceImpl.class
+config\SecurityConfig.class
 com\beans_mall\controller\CartController.class
 com\beans_mall\controller\KKBController.class
 com\beans_mall\controller\BeanController.class
