@@ -76,13 +76,14 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 
-		<!-- spring-test 추가 -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-test</artifactId>
-			<version>${org.springframework-version}</version>
-			<scope>test</scope>
-		</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <version>2.5.4</version>
+    <scope>test</scope>
+</dependency>
+
+
 
 		<!-- MySQL connector -->
 		<dependency>
@@ -232,14 +233,15 @@
 			<artifactId>spring-boot-starter</artifactId>
 			<version>2.5.4</version> <!-- 사용하는 스프링 부트 버전에 맞게 수정하세요. -->
 		</dependency>
+		
+
 		<dependency>
 			<groupId>org.mindrot</groupId>
 			<artifactId>jbcrypt</artifactId>
 			<version>0.4</version>
 		</dependency>
 
-		<!-- SLF4J, Logback 설명
-		 SLF4J는 로깅 API의 추상화 계층이며, Logback은 SLF4J와 호환되는 구현체로 
+		<!-- SLF4J, Logback 설명 SLF4J는 로깅 API의 추상화 계층이며, Logback은 SLF4J와 호환되는 구현체로 
 			실제 로깅 작업을 수행합니다. Logback 설정 파일(logback.xml)을 추가하여 로깅 형식, 출력 위치 및 로그 레벨을 구성할 
 			수 있습니다. 이 파일을 프로젝트의 클래스패스에 추가하면 Logback은 해당 설정에 따라 로그를 처리합니다. 설정 파일을 추가하지 
 			않으면 Logback은 기본 설정을 사용합니다. -->
@@ -255,6 +257,19 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.2.6</version>
+		</dependency>
+		<!-- Mockito는 Java에서 모의 객체(Mock Objects)를 만들고 테스트하기 위한 유용한 라이브러리 -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>3.12.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.8.1</version> <!-- 원하는 JUnit 5 버전을 지정하세요 -->
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
