@@ -1,6 +1,4 @@
-# 📖 Project 소개
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e168262b-4d7d-4187-baa2-27c28e0b3233/e7e33b1e-8eec-4a2c-9b16-3f4bcfdaa0af/Untitled.png)
+# 제목 없음
 
 [프로젝트 개요](https://www.notion.so/74c9150599034e0f9d80da811bdb312e?pvs=21)
 
