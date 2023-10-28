@@ -31,7 +31,7 @@
 </aside>
 
 <aside>
-💡 [**[링크] 빈스몰.ver2 리팩토링 Github**](https://github.com/rlarudqls/beans_mall.ver2/tree/master)
+💡 [빈스몰.ver2 리팩토링 Github**](https://github.com/rlarudqls/beans_mall.ver2/tree/master)
 
 - 리팩토링 주요 내용
     1. Autowire 대신 생성자 주입 활용
