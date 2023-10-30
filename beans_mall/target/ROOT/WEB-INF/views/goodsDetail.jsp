@@ -1053,6 +1053,17 @@ a {
 
 		}
 	</script>
+<script>
+        // 페이지 로드 시 실행할 함수
+        window.addEventListener('load', function () {
+            // 메시지를 표시할 함수
+            function showMessage() {
+            	alert("AWS내 HTTP HTTPS 리다이렉트 공격을 받아\nDocker Registry에서 Local Image Repository로 이미지 이동 중입니다.\n주의: 이미지 출력이 중단될 수 있습니다.");
+            }
 
+            // showMessage 함수를 0.5초 뒤에 실행 (페이지 로드 후 0.5초 후에 실행됨)
+            setTimeout(showMessage, 500); 
+        });
+    </script>
 </body>
 </html>

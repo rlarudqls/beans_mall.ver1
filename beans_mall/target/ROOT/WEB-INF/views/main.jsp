@@ -602,186 +602,7 @@ a {
             placeholder: 'NaverShopSearch를 사용한 검색엔진 ',
             placeholderWord: '김경빈의날',
             searchWord: decodingWord,
-            popularWordList : [
-				{
-					"key" : "\uc2a4\uc2b9\uc758\ub0a0",
-					"docCount" : 1390000
-				},
-				{
-					"key" : "\ud0a4\ub9c1",
-					"docCount" : 950000
-				},
-				{
-					"key" : "\ub124\uc784\ud0dd",
-					"docCount" : 686000
-				},
-				{
-					"key" : "\ud3f0\ucf00\uc774\uc2a4",
-					"docCount" : 663000
-				},
-				{
-					"key" : "\uc9c0\ube44\uce20",
-					"docCount" : 613000
-				},
-				{
-					"key" : "\uadf8\ub9bd\ud1a1",
-					"docCount" : 564000
-				},
-				{
-					"key" : "\ubc18\uc9c0",
-					"docCount" : 430000
-				},
-				{
-					"key" : "\uce74\ub4dc\uc9c0\uac11",
-					"docCount" : 398000
-				},
-				{
-					"key" : "\ucf00\uc774\ud06c",
-					"docCount" : 375000
-				},
-				{
-					"key" : "\ucfe0\ud0a4",
-					"docCount" : 372000
-				},
-				{
-					"key" : "\ud314\ucc0c",
-					"docCount" : 368000
-				},
-				{
-					"key" : "\ub2f5\ub840\ud488",
-					"docCount" : 345000
-				},
-				{
-					"key" : "\uac00\ubc29",
-					"docCount" : 331000
-				},
-				{
-					"key" : "\ud30c\uc6b0\uce58",
-					"docCount" : 310000
-				},
-				{
-					"key" : "\uc57d\uacfc",
-					"docCount" : 310000
-				},
-				{
-					"key" : "\ucee4\ud50c\ub9c1",
-					"docCount" : 305000
-				},
-				{
-					"key" : "\ubaa9\uac78\uc774",
-					"docCount" : 286000
-				},
-				{
-					"key" : "\ud578\ub4dc\ud3f0\ucf00\uc774\uc2a4",
-					"docCount" : 280000
-				}, {
-					"key" : "\uc5d0\ucf54\ubc31",
-					"docCount" : 273000
-				}, {
-					"key" : "\ub9c8\uce74\ub871",
-					"docCount" : 269000
-				} ],
-		hotWordList : [
-				{
-					"key" : "\ud658\uac11",
-					"doc_count" : 14084,
-					"diff_rank" : 0
-				},
-				{
-					"key" : "\uac1c\uc131\uc8fc\uc545",
-					"doc_count" : 13541,
-					"diff_rank" : 0
-				},
-				{
-					"key" : "\ub2e4\uc774\uc5b4\ud2b8",
-					"doc_count" : 11480,
-					"diff_rank" : 2
-				},
-				{
-					"key" : "\uc5d0\uc5b4\ud31f\ucf00\uc774\uc2a4",
-					"doc_count" : 11439,
-					"diff_rank" : 0
-				},
-				{
-					"key" : "\uc0dd\uc77c",
-					"doc_count" : 10493,
-					"diff_rank" : 2
-				},
-				{
-					"key" : "\ud478\ub529",
-					"doc_count" : 9740,
-					"diff_rank" : 5
-				},
-				{
-					"key" : "\uc57d\uacfc\ucfe0\ud0a4",
-					"doc_count" : 9505,
-					"diff_rank" : 6
-				},
-				{
-					"key" : "\ucc28\ud0a4\ucf00\uc774\uc2a4",
-					"doc_count" : 9174,
-					"diff_rank" : -2
-				},
-				{
-					"key" : "\uc778\ud615",
-					"doc_count" : 8901,
-					"diff_rank" : 99
-				},
-				{
-					"key" : "\ud06c\ub85c\uc2a4\ubc31",
-					"doc_count" : 8719,
-					"diff_rank" : 0
-				},
-				{
-					"key" : "\ucee4\ud50c",
-					"doc_count" : 8651,
-					"diff_rank" : 6
-				},
-				{
-					"key" : "\ud53c\uc5b4\uc2f1",
-					"doc_count" : 8602,
-					"diff_rank" : -4
-				},
-				{
-					"key" : "\ud658\uac11 \ud604\uc218\ub9c9",
-					"doc_count" : 8028,
-					"diff_rank" : 3
-				},
-				{
-					"key" : "\uc9d1\ub4e4\uc774",
-					"doc_count" : 8012,
-					"diff_rank" : 99
-				},
-				{
-					"key" : "\ucc28\ub7c9\uc6a9\ubc29\ud5a5\uc81c",
-					"doc_count" : 7900,
-					"diff_rank" : -6
-				},
-				{
-					"key" : "\ucea0\ud551",
-					"doc_count" : 7814,
-					"diff_rank" : -1
-				},
-				{
-					"key" : "\ub514\uc800\ud2b8",
-					"doc_count" : 7789,
-					"diff_rank" : -5
-				},
-				{
-					"key" : "\uac1c\uc5c5\uc120\ubb3c",
-					"doc_count" : 7782,
-					"diff_rank" : 99
-				},
-				{
-					"key" : "\uce90\ub9ac\uc5b4\ub124\uc784\ud0dd",
-					"doc_count" : 7331,
-					"diff_rank" : 1
-				},
-				{
-					"key" : "\ub9e5\uc138\uc774\ud504 \uadf8\ub9bd\ud1a1",
-					"doc_count" : 7303,
-					"diff_rank" : 99
-				} ],
+            
 		isEdu : false,
 		isClassSearch : false,
 		topNavNudging : topNavNudging
@@ -813,16 +634,6 @@ a {
         });
     });
 </script>
-
-
-
-
-
-
-
-
-
-
 			<div class="full-w gnb-scroll " data-ui="gnb-scroll"
 				data-state="static">
 
@@ -939,20 +750,18 @@ a {
 
 					<div class="search_area">
 						<div class="search_wrap">
-							 <form id="searchForm" action="/search" method="get">
-                        <div class="search_input">
-                            <select name="type">
-                                <option value="T">상품명</option>
-                                <option value="A">판매자</option>
-                            </select>
-                            <input type="text" name="keyword" placeholder="빈스몰 내 판매상품 검색">
-                            <!-- 버튼 요소 -->
-                            <button class='btn search_btn' style="text-align: left;">
-                                모든 상품보기
-                            </button>
-                            
-                        </div>
-                    </form>
+							<form id="searchForm" action="/search" method="get">
+								<div class="search_input">
+									<select name="type">
+										<option value="T">상품명</option>
+										<option value="A">판매자</option>
+									</select> <input type="text" name="keyword" placeholder="빈스몰 내 판매상품 검색">
+									<!-- 버튼 요소 -->
+									<button class='btn search_btn' style="text-align: left;">
+										상품 미리보기</button>
+
+								</div>
+							</form>
 						</div>
 					</div>
 
@@ -1133,7 +942,7 @@ a {
 	</script>
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
+	<script>
         // 페이지 로드 시 실행할 함수
         window.addEventListener('load', function () {
             // 메시지를 표시할 함수
