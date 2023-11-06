@@ -44,6 +44,7 @@ com\beans_mall\controller\RouletteController.class
 com\beans_mall\controller\memberController.class
 com\beans_mall\ProductServlet.class
 com\beans_mall\DB\CartServiceImpl.class
+config\RedisConfig.class
 com\beans_mall\DAO\kkbCartDAO.class
 com\beans_mall\DAO\kkbReplyDAO.class
 com\beans_mall\VO\OrderItemDTO.class

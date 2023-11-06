@@ -70,3 +70,4 @@ C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\VO\ProductVO.
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\DB\OrderServiceImpl.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\BeanController.java
 C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\com\beans_mall\controller\EmailController.java
+C:\Users\kyeon\git\kkbmall\beans_mall\src\main\java\config\RedisConfig.java

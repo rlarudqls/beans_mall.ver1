@@ -476,16 +476,6 @@ a {
 }
 </style>
 
-
-
-
-
-
-
-
-
-
-
 					<div class="nav-btn ui-dropdown" data-disabled="hover"
 						onmouseover="showDropdown('app-install-guide')"
 						onmouseout="hideDropdown('app-install-guide')">
@@ -557,6 +547,9 @@ a {
 				</a>
 				<div data-vue="bottom-nav-message-nudging"></div>
 			</nav>
+
+
+
 
 
 

@@ -33,7 +33,7 @@
 
 	<!-- 주문 아이템 테이블 등록 -->
 	<insert id="enrollOrderItem">
-		INSERT INTO beans_mall_orderItem (orderId, beanId,
+		INSERT INTO beans_mall_orderitem (orderId, beanId,
 		beanCount, beanPrice, beanDiscount, savePoint)
 		VALUES (#{orderId},
 		#{beanId}, #{beanCount}, #{beanPrice}, #{beanDiscount}, #{savePoint})
@@ -66,7 +66,7 @@
 	<select id="getOrderItemInfo"
 		resultType="com.beans_mall.VO.OrderItemDTO">
 		SELECT *
-		FROM beans_mall_orderItem
+		FROM beans_mall_orderitem
 		WHERE orderId = #{orderId}
 	</select>
 
