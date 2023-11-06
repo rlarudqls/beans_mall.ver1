@@ -1,0 +1,12 @@
+빈스몰 sql 관련 업데이트
+
+#### CASCADE DELETE 사용:
+주문과 관련된 다른 테이블에 대한 외래 키 제약 조건을 CASCADE DELETE로 설정하여, 주문을 삭제할 때 연결된 모든 데이터도 함께 삭제합니다.
+
+
+ALTER TABLE beans_mall_orderitem
+ADD CONSTRAINT fk_order_item_order
+FOREIGN KEY (orderId)
+REFERENCES beans_mall_order (orderId)
+ON DELETE CASCADE;
+
